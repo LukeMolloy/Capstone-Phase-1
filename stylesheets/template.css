@@ -1,0 +1,215 @@
+/*dy {
+	background-color:#666666;
+	padding: 0px;
+	marfont-family: sans-serif;
+	width: 100%;
+}	*/
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+input[type="text"], textarea {
+
+  background-color: white;
+}
+
+input:-webkit-autofill {
+    color: #2a2a2a !important;
+}
+
+html {
+    overflow: hidden;
+    font-family: "Calibri";
+}
+
+body {
+    /*background-color: lightgrey;*/
+    background-image: url(/images/flowerbackground.jpeg);
+}
+
+.header {
+    background: #333; /* For browsers that do not support gradients */
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    text-align: center;
+}
+
+.loginform {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
+    width: 70%;
+    background-color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+    
+    
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 611.55px;
+}
+
+li {
+    float: right;
+    color: white;
+}
+
+.title {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    font-size: large;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+table {
+    border-spacing:20px 0px;
+}
+
+/* Overlay when Modal is open */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/* Modal box or Popup box */
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:80px;
+	background: #FFF;
+}
+
+
+/* User Login Form */
+.user_login  {
+    display:  none;
+}
+
+.user_login label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+}
+
+.user_login input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+hr {
+margin: auto;
+background:#505050;
+}
+
+
+.user_login input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_login .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+
+.forgot_password  {
+    display: block;
+     margin:  20px 0 10px;
+     clear:  both;
+     overflow:  hidden;
+     text-decoration:  none;
+     color: #ED6347;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+    

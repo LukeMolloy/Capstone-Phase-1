@@ -2,32 +2,68 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<?php
+		session_start();
+		
+	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
-  <link rel="stylesheet" href="stylesheets/index.css">
-	<div class="navbar">
-	</div>
+
+  <link rel="stylesheet" href="stylesheets/template.css">
+  <link rel="stylesheet" href="stylesheets/home.css">
+		<?php include 'dbLogin.php' ?>
+		<script src="validationClient.js"></script>
 </head>
 
 <body>
-	<div class="loginform">	
-		<form method="post" action="">
-			<center>
-			<p>
-				For our Women and children - an immediate, safe, secure, suportive, caring, free placement within a private home.
-			</p>
-			<label id="Username">Username</label> <input name="Username" type="text" /><br /><br />
-			<label id="Password">Password</label> <input name="Password" type="password" /><br /><br />
-			<input name="Signin" type="submit" value="Sign in" />
-			<input name="Register" type="submit" value="Register" />
-			</center>
-		</form>
-	</div>
+<div class="loginform">
+	<center><h1 class="heading">SH.OW</h1></center>
+	<center><h2 class="heading2">- Our Women We Care -</h2></center>
+</div>
+<div class="header">
+	<label class="title">Safe Haven Our Women</label>
+ 		<li><a href="/login.php">Login / Register</a></li>
+		<li><a href="/About.php">About Us</a></li>
+		<li><a href="/Contact.php">Contact Us</a></li>
+		<li><a href="/index.php">Home</a></li>
+	</ul> 
+</div>
+<div class="loginform" >
+    <p></p>
+    <center>
+    <div class="links">
+        <table class="pics" align="" cellpadding="20px">
+        <tr>
+        <th>
+        <div id="news">
+            <img src="images/newspaper.png" alt="Mountain View" style="width:220px;height:160px;">
+        </div>
+        </th>
+        <th>
+        <div id="sm">
+            <img src="images/SocialMedia.gif" alt="Mountain View" style="width:220px;height:160px;">
+        </div>
+        </th>
+        <th>
+        <div id="sponsors">
+            <img src="images/sponsor.png" alt="Mountain View" style="width:220px;height:160px;">
+        </div>
+        </th>
+        </tr>
+        <tr>
+        <td><center><strong>News</strong></center></td>
+        <td><center><strong>Social Media</strong></center></td>
+        <td><center><strong>Sponsors</strong></center></td>
+        </tr>
+        </table>
+    </div>
+    </center>
+    <p></p>
+</div>
 </body>
 
 <footer>
-<br />
-	Contact Us	|	About
+	<center>Contact Us	|	About</center>
 </footer>
 
 </html>
