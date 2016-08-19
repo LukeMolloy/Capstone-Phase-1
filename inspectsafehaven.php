@@ -8,6 +8,7 @@
 ?>	
 
 
+
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/inspectlocation.js"></script>
 <script type="text/javascript" src="/popups.js"></script>
@@ -120,14 +121,20 @@ geocoder.geocode( { 'address': address}, function(results, status) {
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
                     
                         echo $_GET['FirstName'];
+                        
+                        
+                        
                       
                       
            
           //          echo "</table>";
-               	?>
+               	?> <br /> <br />
+               	    <img src="images/inclusions1.jpg">
         </td>
     </table>
     <br /><br />
+    
+
    <a href="/safehaven.php"><button>Go back</button></a>
 
 </div>

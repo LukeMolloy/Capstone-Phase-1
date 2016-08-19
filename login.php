@@ -29,8 +29,8 @@
 		<form method="post" action="">
 			<center>
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-			<label id="username">Username</label> &nbsp; <input name="Username" type="text" /><br /><br />
-			<label id="password">Password</label> &nbsp; <input name="Password" type="password" /><br /><br />
+			<label id="username">Username</label> &nbsp; <input name="Username" type="text" value="Bob"/><br /><br />
+			<label id="password">Password</label> &nbsp; <input name="Password" type="password" value="bob"/><br /><br />
 			<input name="Signin" type="submit" value="Sign In" />
 			<br /> <br />
 			<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a>

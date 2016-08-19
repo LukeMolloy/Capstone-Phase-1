@@ -2,42 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<?php
-	ob_start();
-	session_start();
-?>	
-
-
+    <?php
+	    ob_start();
+	    session_start();
+    ?>	
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="/location.js"></script>
-<script type="text/javascript" src="/popups.js"></script>
+    <script type="text/javascript" src="/location.js"></script>
+    <script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>SafeHaven.OurWomen</title>
-  <link rel="stylesheet" href="stylesheets/template.css">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>SafeHaven.OurWomen</title>
+    <link rel="stylesheet" href="stylesheets/template.css">
     <link rel="stylesheet" href="stylesheets/popups.css">
 	<div class="navbar">
 	</div>
-		<?php include 'dbLogin.php' ?>
+	<?php include 'dbLogin.php' ?>
 </head>
+
 	<div class="header">
 		<label class="title">Safe Haven Our Women</label>
- 			<li><a href="">Login</a></li>
- 			<li><a href="">Apply</a></li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
-		</ul> 
-		
+ 		<li><a href="">Login</a></li>
+ 		<li><a href="">Apply</a></li>
+		<li><a href="">About Us</a></li>
+		<li><a href="">Contact Us</a></li>
 	</div>
-		<div class="navbar">
+	<div class="navbar">
 		 
 	</div>
+	
 <body>
-
-    
-    
-    
-    
     <div class="loginform">
       <h2>Find a safe haven.</h2>
             <br /> <br />
@@ -45,72 +38,50 @@
         <label class="search">Search nearby an address: </label><input type="text" name="searchinput" size="100"> <button>Search!</button>
     </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
-        
-        
-        
     <table align="center" cellpadding = "20">
         <tr>
             <th>
                 <h1>You are here:</h1>
-                <?php
-			       	echo $phone;
-			    ?>
             </th>
             <th>
                 <h1>Suggested safe havens:</h1>
-                
             </th>
         </tr>
-        
         <tr>
-            <td>
+        </tr>
+        <td>
             <article>
             <!-- Place the map here -->  
             </article>
         </td>
-        
-        
-        
-
-        <td>
-               <?php
-               	  /*  $sql2="SELECT * FROM Client WHERE $user = PhoneNumber";
-               	    $result2 = mysqli_query($db, $sql2);
-               	    
-               	    while($row2 = $result2->fetch_assoc()) {
-               	        $userDependants = $result2['Dependants'];
-               	        $userPets = $result2['Pets'];
-               	        $userInfants = $result2['Infants'];
-               	    }*/
-               	    
-               	    $sql="SELECT * FROM House";// WHERE DependantSpaces >= $userDependants AND InfantSpaces >= $userInfants AND PetSpaces >= $userPets AND SpacesAvailable >= 0";
-                    $result = mysqli_query($db, $sql);
-                    
-                    
-                    if ($result->num_rows > 0) {
-                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
-                    }
-                    
-                    
-                    
-                    
-                    while($row = $result->fetch_assoc()) {
-                        
-                        echo "
-                        <tr><td>".$row["FirstName"]."</td>
-                        <td>".$row["LastName"]."</td>
-                        <td>".$row["PhoneNumber"]."</td>
-                        <td>".$row["Email"]."</td>
-                        <td>".$row["Address"]."<br /><br /></td>
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
-                    }
-                    echo "</table>";
-              	?>
-              	</form>
+        <td valign="top">
+            <?php
+                $client = $_SESSION['Phone'];
+                $sql2="SELECT * FROM Client WHERE PhoneNumber = $client;";
+            	$result2 = mysqli_query($db, $sql2);
+            	
+               	while($row2 = $result2->fetch_assoc()) {
+               	    $userDependants = $row2['Dependants'];
+               	    $userPets = $row2['Pets'];
+               	    $userInfants = $row2['Infants'];
+               	}
+               	$spaces = $userDependants + 1;
+               	$sql="SELECT * FROM House WHERE SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	$result = mysqli_query($db, $sql);
+               	echo "<table align='center' cellpadding = '20'>";
+               	while($row = $result->fetch_assoc()) {
+                    echo "
+                    <tr><td>".$row["FirstName"]."</td>
+                    <td>".$row["LastName"]."</td>
+                    <td>".$row["PhoneNumber"]."</td>
+                    <td>".$row["Email"]."</td>
+                    <td>".$row["Address"]."<br /><br /></td>
+                    <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
+                }
+                echo "</table>";
+            ?>
         </td>
     </table>
-
-
 </div>
 
 

@@ -5,6 +5,7 @@
 	<?php
 		session_start();
 		$_SESSION['FirstName'] = $_POST['FirstName'];
+		//$_SESSION['Phone'] = $_POST['Phone'];
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
@@ -35,19 +36,25 @@
 		$dependants = ($_POST['Dependants']);
 		$pets =  ($_POST['Pets']);
 		$infants = ($_POST['Infants']);
+
 		
 	
-	
-	
-		$sql = "INSERT INTO Client (FirstName, LastName, Email, PhoneNumber, Dependants, Pets, Infants)
-		VALUES ('$first', '$last', '$email', '$phone', '$dependants', '$pets', '$infants')";
 		
-		mysqli_query($db, $sql);
-		$_SESSION['Client'] = $_POST['Phone'];
+		if($first == "" || $last == "" || $email == "" || $phone == "" || $dependants == "" || $pets == "" || $infants == ""){
+		
+		}else{
+			$sql = "INSERT INTO Client (FirstName, LastName, Email, PhoneNumber, Dependants, Pets, Infants)
+			VALUES ('$first', '$last', '$email', '$phone', '$dependants', '$pets', '$infants')";
+			
+			mysqli_query($db, $sql);
+			$_SESSION['Phone'] = $phone;
+			header('Location: safehaven.php');
+		}
+		
 	?>
 	
 	<div class="loginform">
-		<form name="clientRegistration" action="/safehaven.php" onsubmit="return validateRegistrationForm()" method="post">
+		<form name="clientRegistration" onsubmit="return validateRegistrationForm()" method="post">
 			<center>
 				<?php
 					$user = $_SESSION['Username'];
@@ -58,26 +65,26 @@
 			<table align="center">
 				<tr>
 					<td>
-			<label id="FirstName">First Name</label><br /> <input name="FirstName" type="text" value="Jess"/><br /><br /><br /><br /></td>
+			<label id="FirstName">First Name</label><br /> <input name="FirstName" type="text"/><br /><br /><br /><br /></td>
 		<td>
-			<label id="LastName">Last Name</label><br /> <input name="LastName" type="text" value="Smith"/><br /><br /><br /><br /></td>
+			<label id="LastName">Last Name</label><br /> <input name="LastName" type="text"/><br /><br /><br /><br /></td>
 			</tr>
 			<tr>
 				<td>
-			<label id="Email">Email</label><br /> <input name="Email" type="text" value="jesssmith@hotmail.com"/><br /><br /><br /><br /></td>
+			<label id="Email">Email</label><br /> <input name="Email" type="text"/><br /><br /><br /><br /></td>
 			<td>
-			<label id="Phone">Phone Number</label><br /> <input name="Phone" type="text" value="32817382"/><br /><br /><br /><br /></td>
+			<label id="Phone">Phone Number</label><br /> <input name="Phone" type="text"/><br /><br /><br /><br /></td>
 			</tr>
 			
 			<tr>
 				<td>
-			<label id="Dependants">Dependants</label><br /> <input name="Dependants" type="text" value="2"/><br /><br /><br /><br /></td>
+			<label id="Dependants">Dependants</label><br /> <input name="Dependants" type="text"/><br /><br /><br /><br /></td>
 			<td>
-			<label id="Pets">Pets</label><br /> <input name="Pets" type="text" value="1 Dog"/><br /><br /><br /><br /></td>
+			<label id="Pets">Pets</label><br /> <input name="Pets" type="text"/><br /><br /><br /><br /></td>
 			</tr>
 			<tr>
 				<td>
-			<label id="Infants">Infants</label><br /> <input name="Infants" type="text" value="1"/><br /><br /><br /><br /></td>
+			<label id="Infants">Infants</label><br /> <input name="Infants" type="text"/><br /><br /><br /><br /></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center">

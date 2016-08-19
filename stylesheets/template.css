@@ -99,6 +99,8 @@ li a:hover {
 
 table {
     border-spacing:20px 0px;
+    margin: auto;
+    text-align: center;
 }
 
 /* Overlay when Modal is open */
@@ -211,5 +213,50 @@ background:#505050;
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Style the list */
+ul.tab {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
     

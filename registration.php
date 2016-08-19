@@ -30,7 +30,9 @@
 	
 	
 		$sql = "INSERT INTO User (FirstName, LastName, EmailAddress, Password)
-		VALUES ('$first', '$last', '$email', '$password')";
+		VALUES ('$first', '$last', '$email', SHA256('$password'))";
+		
+		//SHA256('".$password."')
 		
 		mysqli_query($db, $sql);
 	?>

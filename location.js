@@ -2,8 +2,8 @@ function success(position) {
     var long = position.coords.longitude - 0.005;
     var lat = position.coords.latitude - 0.005;
     
-    var longtwo = position.coords.longitude + 0.005;
-    var lattwo = position.coords.latitude + 0.005;
+    var longtwo = position.coords.longitude + 0.008;
+    var lattwo = position.coords.latitude + 0.008;
   var mapcanvas = document.createElement('div');
   mapcanvas.id = 'mapcontainer';
   mapcanvas.style.height = '400px';
@@ -16,7 +16,7 @@ function success(position) {
     var safehaventwo = new google.maps.LatLng(lattwo, longtwo);
   
   var options = {
-    zoom: 15,
+    zoom: 14,
     center: coords,
     mapTypeControl: false,
     navigationControlOptions: {
