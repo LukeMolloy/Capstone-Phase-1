@@ -26,13 +26,12 @@
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
 		$password = ($_POST['Password']);
+		$salt = uniqid(mt_rand(), true);
 	
-	
+		$hashpassword = hash("sha256", $password.$salt);
 	
 		$sql = "INSERT INTO User (FirstName, LastName, EmailAddress, Password)
-		VALUES ('$first', '$last', '$email', SHA256('$password'))";
-		
-		//SHA256('".$password."')
+		VALUES ('$first', '$last', '$email', '$hashpassword')";
 		
 		mysqli_query($db, $sql);
 	?>
