@@ -65,6 +65,13 @@ article {
     margin-top: 10%;
 }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
 
 ul {
     list-style-type: none;
@@ -95,3 +102,13 @@ li a {
 li a:hover {
     background-color: #111;
 }*/
+
+
+footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    height: 0px;
+    background: #f0f0f0;
+    width: 100%;
+}

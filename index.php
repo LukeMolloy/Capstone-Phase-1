@@ -4,16 +4,15 @@
 <head>
 	<?php
 		session_start();
-		
+		require('sendgrid-php/SendGrid_loader.php');
 	?>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>SafeHaven.OurWomen</title>
-
-  <link rel="stylesheet" href="stylesheets/template.css">
-  <link rel="stylesheet" href="stylesheets/home.css">
-		<?php include 'dbLogin.php' ?>
-		<script src="validationClient.js"></script>
-</head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>SafeHaven.OurWomen</title>
+    <link rel="stylesheet" href="stylesheets/template.css">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <?php include 'dbLogin.php' ?>
+	<script src="validationClient.js"></script>
+</head
 
 <body>
 <div class="loginform">
@@ -60,6 +59,24 @@
     </center>
     <p></p>
 </div>
+<?php
+    //if(isset($_POST['submit']))
+    /*{
+        $sendgrid = new SendGrid('app55568313@heroku.com', 'p50ukokc0282');
+
+        $mail = new SendGrid\Mail();
+        $mail->
+            addTo('email@gmail.com')->
+            setFrom('app55568313@heroku.com')->
+            setSubject('Subject goes here')->
+            setText('Hello World!')->
+            setHtml('<strong>Hello World!</strong>');
+
+        $sendgrid->
+            smtp->
+            send($mail);
+    //}*/
+?>
 </body>
 
 <footer>

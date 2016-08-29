@@ -2,27 +2,68 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<?php include 'dbLogin.php' ?>
 	<?php
-		session_start();
-		$_SESSION['FirstName'] = $_POST['FirstName'];
+	session_start();
+	
+		if (!isset($_SESSION['loggedin']) && !$_SESSION['loggedin'] == true) {
+	    		header("Location: login.php");
+			}
+	
+	
+	$useruser = $_SESSION['Username'];
+
+	
+	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
+	$aresult = mysqli_query($db, $asql);
+	$row = mysqli_fetch_row($aresult);
+	//print_r($row);	
+//	if ($row[7] == 1) {
+//		echo "dsssdasfafasfs";
+//	}
+//	else {
+//		echo "no";
+//	}
+	
+	
+	
+		
+	
 		//$_SESSION['Phone'] = $_POST['Phone'];
+		
+		//if($_SESSION['Admin'] == 1) {
+	//		echo "admin";
+   // 	}
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
 
   <link rel="stylesheet" href="stylesheets/template.css">
-		<?php include 'dbLogin.php' ?>
+		
 		<script src="validationClient.js"></script>
 </head>
 
 <body>
 <div class="header">
 		<label class="title">Safe Haven Our Women</label>
- 			<li><a href="">Login</a></li>
+			<?php
+			if ($row[7] == 1) {
+				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
+			}
+			
+			session_start();
+			if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	    		echo "<li><a href='logout.php'>Logout</a></li>";
+			}
+			else {
+				echo "<li><a href='login.php'>Login</a></li>";
+			}
+			
+			?>
  			<li><a href="">Apply</a></li>
 			<li><a href="">About Us</a></li>
 			<li><a href="">Contact Us</a></li>
-		</ul> 
+ 
 		
 	</div>
 	<div class="navbar">
@@ -36,7 +77,8 @@
 		$dependants = ($_POST['Dependants']);
 		$pets =  ($_POST['Pets']);
 		$infants = ($_POST['Infants']);
-
+		
+		
 		
 	
 		

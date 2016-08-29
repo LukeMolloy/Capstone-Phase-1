@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <?php
-//	ob_start();
+	ob_start();
 	session_start();
-//	$_SESSION['Username'] = $_POST['Username'];
-//		session_start();
-//		$_SESSION['FirstName'] = $_POST['FirstName'];
-//?>	
+	$_SESSION['Username'] = $_POST['Username'];
+		session_start();
+		$_SESSION['FirstName'] = $_POST['FirstName'];
+?>	
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -33,19 +33,17 @@
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 			<label id="username">Username</label> &nbsp; <input name="Username" type="text" value="Bob"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password" value="bob"/><br /><br />
-			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="/registration.php"><button type="button" id="Apply">&nbsp Apply &nbsp</button></a>
-			
-		<!--	<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a> -->
-		    
+			<input name="Signin" type="submit" value="Sign In" /><br />
+			Incorrect username or password!
+			<br />
+			<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a>
 			</center>
+
+		</form>
 	</div>
 </div>
 </body>
 </div>
-
-
-
-
 
 <footer>
 	

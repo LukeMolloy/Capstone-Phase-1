@@ -39,10 +39,10 @@
 		echo $_SESSION["login_user"] . ".<br>";
 	?>
 	<div class="loginform">
-		<form name="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post">
-			<center>
+		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post">
 				<p>
-					<h1>Register</h1>
+					<h1>Register as...</h1><br />
+					<h2>Authority or Safe Haven</h2>
 				</p>
 				
 			
@@ -63,7 +63,7 @@
 			<label id = "ConfirmPasswordError"></label> <br /><br /><br /><br />
 			
 			<input name="Register" type="submit" value="Register" />
-			</center>
+
 		</form>
 	</div>
 </body>

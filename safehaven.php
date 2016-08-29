@@ -4,7 +4,7 @@
 <head>
     <?php
 	    ob_start();
-	    session_start();
+
     ?>	
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="/location.js"></script>
@@ -17,14 +17,45 @@
 	<div class="navbar">
 	</div>
 	<?php include 'dbLogin.php' ?>
+	
+	<?php
+	session_start();
+	
+		if (!isset($_SESSION['loggedin']) && !$_SESSION['loggedin'] == true) {
+	    		header("Location: login.php");
+			}
+	
+	
+	$useruser = $_SESSION['Username'];
+
+	
+	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
+	$aresult = mysqli_query($db, $asql);
+	$row = mysqli_fetch_row($aresult);
+	?>
 </head>
+
 
 	<div class="header">
 		<label class="title">Safe Haven Our Women</label>
- 		<li><a href="">Login</a></li>
- 		<li><a href="">Apply</a></li>
-		<li><a href="">About Us</a></li>
-		<li><a href="">Contact Us</a></li>
+		<?php
+			if ($row[7] == 1) {
+				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
+			}
+			
+			session_start();
+			if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	    		echo "<li><a href='logout.php'>Logout</a></li>";
+			}
+			else {
+				echo "<li><a href='login.php'>Login</a></li>";
+			}
+			
+			?>
+ 			<li><a href="">Apply</a></li>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Contact Us</a></li>
+
 	</div>
 	<div class="navbar">
 		 
