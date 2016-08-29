@@ -4,7 +4,7 @@
 <head>
 	<?php
 		session_start();
-		require('sendgrid-php/SendGrid_loader.php');
+		//require('sendgrid-php/SendGrid_loader.php');
 	?>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>SafeHaven.OurWomen</title>
