@@ -27,7 +27,7 @@ html {
 body {
     /*background-color: lightgrey;*/
     background-image: url(/images/flowerbackground.jpeg);
-    text-align: left;
+
 }
 
 .header {
@@ -52,6 +52,8 @@ article {
 
 h2 {
     display:inline;
+    text-align: center;
+    
 }
 
 .loginform {

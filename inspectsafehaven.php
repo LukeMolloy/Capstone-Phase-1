@@ -107,7 +107,7 @@ geocoder.geocode( { 'address': address}, function(results, status) {
                     $result = mysqli_query($db, $sql);
                  
                     if ($result->num_rows > 0) {
-                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
+                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>City</th> <th></th></tr>";
                     }
                     
                     
@@ -121,6 +121,7 @@ geocoder.geocode( { 'address': address}, function(results, status) {
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>
                         <td><div id='add'>".$row["Address"]."</div></td>
+                        <td><div id='city'>".$row["City"]."</div></td>
                         </tr>";
                     }
                     echo "</table>";

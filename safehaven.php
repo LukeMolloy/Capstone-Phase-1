@@ -62,25 +62,32 @@
 	
 <body>
     <div class="loginform">
-        <h2>Find a safe haven.</h2>
+        <h2 align>Find a safe haven.</h2>
         <br /> <br />
         <form method ="post" action ="searchsafehaven.php">
-            <label class="search">      Search By Suburb: </label>
-            <input type="text" name="Suburb" size="30">
-            <label class="search">      Search By Post Code: </label>
+            <table>
+                
+            <th><label class="search">      Search By Suburb: </label>
+            <input type="text" name="Suburb" size="30"></th>
+            
+            <th><label class="search">      Search By Post Code: </label>
             <input type="intager" name="Postcode" size="30"> 
-            <label class="search">      Search By City: </label>
-            <input type="text" name="City" size="30"> 
-            <label class="search">      Search By State: </label>
-            <input type="text" name="State" size="30"> 
-            <input name="Search" type="submit" value="Search"/>
+            <label class="search">      Search By City: </label></th>
+            
+            <td><input type="text" name="City" size="30"> 
+            <label class="search">      Search By State: </label></td>
+            
+            <td><input type="text" name="State" size="30"> 
+            <input name="Search" type="submit" value="Search"/></td>
+            </table>
         </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
  
  <!--           <article>
              Place the map here 
             </article> -->
-        
+         <h2>Suggested Safe Haven(s):</h2>
+        <br /> <br />
             <?php
                 $client = $_SESSION['Phone'];
                 $sql2="SELECT * FROM Client WHERE PhoneNumber = $client;";
@@ -91,9 +98,7 @@
                	    $userPets = $row2['Pets'];
                	    $userInfants = $row2['Infants'];
                	}
-               	echo $userDependants;
-               	echo $userPets;
-               	echo $userInfants;
+         
                	
                	$spaces = $userDependants + 1;
                	

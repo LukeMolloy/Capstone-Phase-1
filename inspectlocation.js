@@ -2,7 +2,9 @@ function success(position) {
   
   
   var geocoder = new google.maps.Geocoder();
-var address = document.getElementById("add").innerHTML;
+  var street = document.getElementById("add").innerHTML;
+  var city = document.getElementById("city").innerHTML;
+  var address = city.concat(street);
 
 
 geocoder.geocode( { 'address': address}, function(results, status) {
