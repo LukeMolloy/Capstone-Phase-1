@@ -54,21 +54,21 @@
 			
 			<div id="step1form">
 			<label id="FirstName">First Name</label> <input name="FirstName" type="text" />
-			<label id = "FirstNameError"></label> <br /><br /><br /><br />
+			<label id = "FirstNameError" class="error"></label> <br /><br /><br /><br />
 			
 			<label id="LastName">Last Name</label> <input name="LastName" type="text" />
-			<label id = "LastNameError"></label> <br /><br /><br /><br />
+			<label id = "LastNameError" class="error"></label> <br /><br /><br /><br />
 			
 			<label id="PhoneNumber">Phone Number</label> <input name="PhoneNumber" type="text" />
-			<label id = "PhoneNumberError"></label> <br /><br /><br /><br />
+			<label id = "PhoneError" class="error"></label> <br /><br /><br /><br />
 			
 			<label id="Email">Email</label> <input name="Email" type="text" />
-			<label id = "EmailError"></label> <br /><br /><br /><br />
+			<label id = "EmailError" class="error"></label> <br /><br /><br /><br />
 						
 						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
 		<br /><br /><br /><br />
 		
-			<button id="next" type="button" onclick="return validateSafeHavenRegistrationForm()">Next</button>
+			<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 			</div>
 			
 			<div id="step2form">
@@ -111,7 +111,7 @@
 			
 			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
 			<label id = "DescriptionError"></label> <br /><br /> <br />
-				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register" />
+				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register" onclick="return validateSecondSafeHavenRegistrationForm()/>
 			</div>
 
 			

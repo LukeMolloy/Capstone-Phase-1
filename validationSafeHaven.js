@@ -1,6 +1,6 @@
 var error = 0;
 var success = 0;
-function validateSafeHavenRegistrationForm (){
+function validateFirstSafeHavenRegistrationForm (){
     var clientForm = document.forms["safeHavenRegistration"];
     var first = clientForm.elements.FirstName.value; 
     var last = clientForm.elements.LastName.value; 
@@ -18,12 +18,35 @@ function validateSafeHavenRegistrationForm (){
     
     checkPhone();
     
+    if (first == "" || last == "" || email == "" || phone == ""){
+        error = 1;
+        return false;
+        
+    }
+    if (first != "" || last != "" || email != "" || phone != ""){
+        error = 0;
+        return true;
+
+    }
+}
+
+function validateSecondSafeHavenRegistrationForm (){
+    var clientForm = document.forms["safeHavenRegistration"];
+    var first = clientForm.elements.FirstName.value; 
+    var last = clientForm.elements.LastName.value; 
+    var email = clientForm.elements.Email.value; 
+    var phone = clientForm.elements.PhoneNumber.value;
+   // var dependants = clientForm.elements.Dependants.value;
+    //var pets = clientForm.elements.Pets.value;
+    //var infants = clientForm.elements.Infants.value;
+   
+    checkFirstName();
     
-    //checkDependants();
+    checkLastName();
+
+    checkEmail();
     
-//    checkPets();
-    
-  //  checkInfants();
+    checkPhone();
     
     if (first == "" || last == "" || email == "" || phone == ""){
         error = 1;
@@ -75,7 +98,7 @@ function checkEmail() {
 
 function checkPhone() {
     var clientForm = document.forms["safeHavenRegistration"];
-    var phone = clientForm.elements.Phone.value;      
+    var phone = clientForm.elements.PhoneNumber.value;      
      if (phone == "") {
         window.document.getElementById("PhoneError").innerHTML = "Please enter a phone number";
         return false;
@@ -85,38 +108,38 @@ function checkPhone() {
     }    
 }
 
-function checkDependants() {
+function checkAddress() {
     var clientForm = document.forms["safeHavenRegistration"];
-    var dependants = clientForm.elements.Dependants.value;      
+    var dependants = clientForm.elements.Address.value;      
      if (dependants == "") {
-        window.document.getElementById("DependantsError").innerHTML = "Dependants cannot be blank";
+        window.document.getElementById("AddressError").innerHTML = "Please enter an address";
         return false;
     }
     else {
-        window.document.getElementById("DependantsError").innerHTML = "";
+        window.document.getElementById("AddressError").innerHTML = "";
     }    
 }
 
-function checkPets() {
+function checkSuburb() {
     var clientForm = document.forms["safeHavenRegistration"];
-    var pets = clientForm.elements.Pets.value;      
+    var pets = clientForm.elements.Suburb.value;      
      if (pets == "") {
-        window.document.getElementById("PetsError").innerHTML = "PPets cannot be blank";
+        window.document.getElementById("SuburbError").innerHTML = "PPlease enter a suburb";
         return false;
     }
     else {
-        window.document.getElementById("PetsError").innerHTML = "";
+        window.document.getElementById("SuburbError").innerHTML = "";
     }    
 }
 
-function checkInfants() {
+function checkPostCode() {
     var clientForm = document.forms["safeHavenRegistration"];
-    var infants = clientForm.elements.Infants.value;      
+    var infants = clientForm.elements.PostCode.value;      
      if (infants == "") {
-        window.document.getElementById("InfantsError").innerHTML = "Infants cannot be blank";
+        window.document.getElementById("PostCodeError").innerHTML = "Please enter a postcode";
         return false;
     }
     else {
-        window.document.getElementById("InfantsError").innerHTML = "";
+        window.document.getElementById("PostCodeError").innerHTML = "";
     }    
 }
