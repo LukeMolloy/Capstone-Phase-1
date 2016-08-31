@@ -1,18 +1,15 @@
 <?php
-require_once 'Mail.php';
+require 'vendor/autoload.php';
+$sendgrid = new SendGrid('lukemolloy01', 'Tuchanka12');
 
-$wgSMTP = array(
-    'host' => 'tls://smtp.sendgrid.net',
-    'IDHost' => 'heroku.com',
-    'port' => 587,
-    'username' => getenv("lukemolloy01"), 
-    'password' => getenv("Tuchanka12"),
-    'auth' => true
- );
- 
-$msg = "First line of text\nSecond line of text";
+$email = new SendGrid\Email();
+$email->addTo('luke.d.a.molloy@icloud.com')
+    ->setFrom('me@bar.com')
+    ->setSubject('Subject goes here')
+    ->setText('Hello World!')
+    ->setHtml('<strong>Hello World!</strong>');
 
-mail("luke.d.a.molloy@icloud.com","My subject",$msg);
+$sendgrid->send($email);
 
 ?>
 

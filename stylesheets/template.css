@@ -59,7 +59,7 @@ h2 {
 .loginform {
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align:left;
+    text-align:center;
     width: 80%;
     background-color: white;
     opacity: 0.85;
@@ -122,7 +122,6 @@ li a:hover {
 }
 
 table {
-    border-spacing:20px 0px;
     margin: auto;
     text-align: center;
 }
