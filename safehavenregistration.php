@@ -48,7 +48,7 @@
 		<form name="safeHavenRegistration" onsubmit="return validateRegistrationForm()" method="post">
 			<center>
 				<p>
-					<h1>Safe Haven Registration</h1>
+					<h1>Safe Haven Registration</h1><br />
 				</p>
 				
 			<label id="S1Label"><h2>Personal Details</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>House Details</h2></label><br /><br /><br /><br />
@@ -73,24 +73,23 @@
 			<div id="step2form">
 
 			<label id="Address">Address</label> <input name="Address" type="text" />
-			<label id = "AddressError"></label> <br /><br /><br /><br />
+			<label id = "AddressError"></label> <br /><br /><br />
 			
 			<label id="Suburb">Suburb</label> <input name="Suburb" type="text" />
-			<label id = "SuburbError"></label> <br /><br /><br /><br />
+			<label id = "SuburbError"></label> <br /><br /><br />
 			
 			<label id="PostCode">Post Code</label> <input name="PostCode" type="text" />
-			<label id = "PostCodeError"></label> <br /><br /><br /><br />
+			<label id = "PostCodeError"></label> <br /><br /><br />
 			
 			<label id="SpacesAvailable">Spaces Available</label> 
 				<select name="SpacesAvailable">
-				  <option value="0" selected>0</option>
-				  <option value="1">1</option>
+				  <option value="1" selected>1</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "SpacesAvailableError"></label> <br /><br /><br /><br />
+			<label id = "SpacesAvailableError"></label> <br /><br /><br />
 			
 			<label id="InfantSpaces">Infant Spaces</label> 
 					<select name="InfantSpaces">
@@ -101,16 +100,16 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br /><br />
+			<label id = "InfantSpacesError"></label> <br /><br /><br />
 			
 			<label id="PetFriendly">Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="Yes"> Yes
 			<input type="radio" name="PetFriendly" value="No" checked> No
-			<label id = "PetFriendlyError"></label> <br /><br /><br /><br />
+			<label id = "PetFriendlyError"></label> <br /><br /><br />
 
 			
-			<label id="Description">Description</label> <textarea name="Description" rows = "5" cols = "50"></textarea>
-			<label id = "DescriptionError"></label> <br /><br /> <br /><br />
+			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
+			<label id = "DescriptionError"></label> <br /><br /> <br />
 				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register" />
 			</div>
 
