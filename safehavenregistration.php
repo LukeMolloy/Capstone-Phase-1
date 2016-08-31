@@ -44,7 +44,7 @@
 	?>
 	
 	<div class="loginform">
-		<form name="safeHavenRegistration" onsubmit="return validateRegistrationForm()" method="post">
+		<form name="safeHavenRegistration" onsubmit="return validateSecondSafeHavenRegistrationForm()" method="post">
 			<center>
 				<p>
 					<h1>Safe Haven Registration</h1><br />
@@ -74,13 +74,13 @@
 			<div id="step2form">
 
 			<label id="Address">Address</label> <input name="Address" type="text" />
-			<label id = "AddressError"></label> <br /><br /><br />
+			<label id = "AddressError" class="error"></label> <br /><br /><br />
 			
 			<label id="Suburb">Suburb</label> <input name="Suburb" type="text" />
-			<label id = "SuburbError"></label> <br /><br /><br />
+			<label id = "SuburbError" class="error"></label> <br /><br /><br />
 			
 			<label id="PostCode">Post Code</label> <input name="PostCode" type="text" />
-			<label id = "PostCodeError"></label> <br /><br /><br />
+			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 			
 			<label id="SpacesAvailable">Spaces Available</label> 
 				<select name="SpacesAvailable">
@@ -111,7 +111,7 @@
 			
 			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
 			<label id = "DescriptionError"></label> <br /><br /> <br />
-				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register" onclick="return validateSecondSafeHavenRegistrationForm()/>
+				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register")/>
 			</div>
 
 			

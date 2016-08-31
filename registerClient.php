@@ -136,7 +136,7 @@
 			<br /><br /><br /><br />
 			
 			<label id="Pets">Pets: </label>
-			<input type="radio" name="Pets" value="No" checked="checked"> No  &nbsp&nbsp <input type="radio" name="Pets" value="Yes" selected> Yes<br><br /><br /><br /><br />
+			<input type="radio" name="Pets" value="0" checked="checked"> No  &nbsp&nbsp <input type="radio" name="Pets" value="1" selected> Yes<br><br /><br /><br /><br />
 			
 			
 			<label id="Infants">Infants: </label> 

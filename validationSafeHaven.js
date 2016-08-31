@@ -32,28 +32,24 @@ function validateFirstSafeHavenRegistrationForm (){
 
 function validateSecondSafeHavenRegistrationForm (){
     var clientForm = document.forms["safeHavenRegistration"];
-    var first = clientForm.elements.FirstName.value; 
-    var last = clientForm.elements.LastName.value; 
-    var email = clientForm.elements.Email.value; 
-    var phone = clientForm.elements.PhoneNumber.value;
-   // var dependants = clientForm.elements.Dependants.value;
-    //var pets = clientForm.elements.Pets.value;
-    //var infants = clientForm.elements.Infants.value;
-   
-    checkFirstName();
-    
-    checkLastName();
+    var address = clientForm.elements.Address.value; 
+    var suburb = clientForm.elements.Suburb.value; 
+    var postcode = clientForm.elements.PostCode.value; 
 
-    checkEmail();
+    checkAddress();
+    
+    checkSuburb();
+
+    checkPostCode();
     
     checkPhone();
     
-    if (first == "" || last == "" || email == "" || phone == ""){
+    if (address == "" || suburb == "" || postcode == ""){
         error = 1;
         return false;
         
     }
-    if (first != "" || last != "" || email != "" || phone != ""){
+    if (address == "" || suburb == "" || postcode == ""){
         error = 0;
         return true;
 

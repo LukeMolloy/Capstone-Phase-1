@@ -26,17 +26,16 @@
 	
 	<div class="loginform">
 		<center><h1></h1></center>
-	</div>
 	<h1>About</h1>
 	<h2>Safe Haven Our Women</h2>
 	<img src="images/aboutImage.gif"></img>
 </body>
-	<div class="loginform">
 <div class = "content">
 	<p>The SH.OW  project aims to help solve the problem of domestic violence in our society by providing a much needed service to sufferers of domestic violence. </p>
 	<p>This service is the ability for people who deal with domestic violence victims to find them safe temporary accommodation in an area of their choosing at a moment’s notice.  </p>
 </div>
 </div>
+
 <footer>
 	
 </footer>

@@ -76,23 +76,11 @@
             <input name="Search" type="submit" value="Search"/>
         </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
-    <table align="center" cellpadding = "20">
-        <tr>
-            <th>
-                <h1>You are here:</h1>
-            </th>
-            <th>
-                <h1>Suggested safe havens:</h1>
-            </th>
-        </tr>
-        <tr>
-        </tr>
-        <td>
-            <article>
-            <!-- Place the map here -->  
-            </article>
-        </td>
-        <td valign="top">
+ 
+ <!--           <article>
+             Place the map here 
+            </article> -->
+        
             <?php
                 $client = $_SESSION['Phone'];
                 $sql2="SELECT * FROM Client WHERE PhoneNumber = $client;";
@@ -103,6 +91,10 @@
                	    $userPets = $row2['Pets'];
                	    $userInfants = $row2['Infants'];
                	}
+               	echo $userDependants;
+               	echo $userPets;
+               	echo $userInfants;
+               	
                	$spaces = $userDependants + 1;
                	
                	$suburb = $_SESSION['Suburb'];
@@ -128,8 +120,7 @@
                	    echo "No results";
                	}
             ?>
-        </td>
-    </table>
+
 </div>
 
 
