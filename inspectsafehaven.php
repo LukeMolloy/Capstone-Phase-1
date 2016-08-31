@@ -21,14 +21,27 @@
 	</div>
 		<?php include 'dbLogin.php' ?>
 </head>
-	<div class="header">
-	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/login.php">Login / Register</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
-	</ul> 
-</div>
+		<div class="header">
+		<label class="title">Safe Haven Our Women</label>
+		<?php
+			if ($row[7] == 1) {
+				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
+			}
+			
+			session_start();
+			if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	    		echo "<li><a href='logout.php'>Logout</a></li>";
+			}
+			else {
+				echo "<li><a href='login.php'>Login</a></li>";
+			}
+			
+			?>
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/registerClient.php">Register Client</a></li>
+
+	</div>
 		<div class="navbar">
 		 
 	</div>

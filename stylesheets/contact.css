@@ -1,3 +1,41 @@
+
+.row {
+    margin: 50px 420px 50px;
+}
+.input {
+        width: 500px;
+
+}
+#submit_button {
+        margin-left: 420px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The following has been copied from template.css
+*/ 
+
 /*dy {
 	background-color:#666666;
 	padding: 0px;
@@ -5,10 +43,7 @@
 	width: 100%;
 }	*/
 
-* {
-    padding: 0px;
-    margin: 0px
-}
+
 
 input[type="text"], textarea {
 
@@ -45,15 +80,6 @@ article {
     text-align: center;
 }
 
-#step2form {
-   visibility: hidden;
-   height: 0px;
-}
-
-h2 {
-    display:inline;
-}
-
 .loginform {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -73,16 +99,7 @@ h2 {
     padding-left: 50px;
 }
 
-#map-canvas {
-   width: 400px;
-   height: 400px;
-}
 
-.error {
-    color: red;
-    position: fixed;
-    padding-left: 10px;
-}
 
 ul {
     list-style-type: none;

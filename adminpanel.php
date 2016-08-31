@@ -97,7 +97,7 @@
                     <ul class="tab" align="center">
                       <li><a href="#" class="tablinks" onclick="changeTabs(event, 'Clients')">Clients</a></li>
                       <li><a href="#" class="tablinks" onclick="changeTabs(event, 'Safe Havens')">Safe Havens</a></li>
-                      <li><a href="#" class="tablinks" onclick="changeTabs(event, 'Users')">Users</a></li>
+                      <li><a href="#" class="tablinks" onclick="changeTabs(event, 'Users')">Pending Users</a></li>
                     </ul>
                     
                     <div id="Clients" class="tabcontent">

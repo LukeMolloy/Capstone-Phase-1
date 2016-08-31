@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="stylesheets/template.css">
 		<?php include 'dbLogin.php' ?>
 		<script src="validation.js"></script>
+		<script src="validationClient.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -46,56 +48,107 @@
 		<form name="safeHavenRegistration" onsubmit="return validateRegistrationForm()" method="post">
 			<center>
 				<p>
-					Safe Haven Registration
+					<h1>Safe Haven Registration</h1>
 				</p>
 				
+			<label id="S1Label"><h2>Personal Details</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>House Details</h2></label><br /><br /><br /><br />
 			
-			
+			<div id="step1form">
 			<label id="FirstName">First Name</label> <input name="FirstName" type="text" />
-			<label id = "FirstNameError"></label> <br /><br />
+			<label id = "FirstNameError"></label> <br /><br /><br /><br />
 			
 			<label id="LastName">Last Name</label> <input name="LastName" type="text" />
-			<label id = "LastNameError"></label> <br /><br />
+			<label id = "LastNameError"></label> <br /><br /><br /><br />
 			
 			<label id="PhoneNumber">Phone Number</label> <input name="PhoneNumber" type="text" />
-			<label id = "PhoneNumberError"></label> <br /><br />
+			<label id = "PhoneNumberError"></label> <br /><br /><br /><br />
 			
 			<label id="Email">Email</label> <input name="Email" type="text" />
-			<label id = "EmailError"></label> <br /><br />
-	
+			<label id = "EmailError"></label> <br /><br /><br /><br />
+						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
+			<label id = "BluecardNumber"></label> <br /><br /><br /><br />
+			<button id="next" type="button">Next</button>
+			</div>
+			
+			<div id="step2form">
 
 			<label id="Address">Address</label> <input name="Address" type="text" />
-			<label id = "AddressError"></label> <br /><br />
+			<label id = "AddressError"></label> <br /><br /><br /><br />
 			
 			<label id="Suburb">Suburb</label> <input name="Suburb" type="text" />
-			<label id = "SuburbError"></label> <br /><br />
+			<label id = "SuburbError"></label> <br /><br /><br /><br />
 			
 			<label id="PostCode">Post Code</label> <input name="PostCode" type="text" />
-			<label id = "PostCodeError"></label> <br /><br />
+			<label id = "PostCodeError"></label> <br /><br /><br /><br />
 			
-			<label id="SpacesAvailable">Spaces Available</label> <input name="SpacesAvailable" type="text" />
-			<label id = "SpacesAvailableError"></label> <br /><br />
+			<label id="SpacesAvailable">Spaces Available</label> 
+				<select name="SpacesAvailable">
+				  <option value="0" selected>0</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5+">5+</option>
+			</select>
+			<label id = "SpacesAvailableError"></label> <br /><br /><br /><br />
 			
-			<label id="InfantSpaces">Infant Spaces</label> <input name="InfantSpaces" type="text" />
-			<label id = "InfantSpacesError"></label> <br /><br />
+			<label id="InfantSpaces">Infant Spaces</label> 
+					<select name="InfantSpaces">
+				  <option value="0" selected>0</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5+">5+</option>
+			</select>
+			<label id = "InfantSpacesError"></label> <br /><br /><br /><br />
 			
 			<label id="PetFriendly">Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="Yes"> Yes
 			<input type="radio" name="PetFriendly" value="No" checked> No
-			<label id = "PetFriendlyError"></label> <br /><br />
+			<label id = "PetFriendlyError"></label> <br /><br /><br /><br />
 
-			<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
-			<label id = "BluecardNumber"></label> <br /><br />
 			
 			<label id="Description">Description</label> <textarea name="Description" rows = "5" cols = "50"></textarea>
-			<label id = "DescriptionError"></label> <br /><br /> 
-
+			<label id = "DescriptionError"></label> <br /><br /> <br /><br />
+				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register" />
+			</div>
 
 			
-			<input name="Register" type="submit" value="Register" />
+			<br /><br />
+			<a href="/index.php"><button type="button">Back to login</button></a>
 			</center>
 		</form>
 	</div>
+	
+	<script>
+  $("#S1Label").css('text-decoration', 'underline');
+
+
+$( "#next" ).click(function() {
+
+  $("#step1form").css('visibility', 'hidden');
+  $("#step1form").css('height', '0px');
+    $("#step2form").css('height', 'auto');
+  $("#step2form").css('visibility', 'VISIBLE');
+  $("#S2Label").css('text-decoration', 'underline');
+    $("#S1Label").css('text-decoration', 'none');
+});
+
+
+$( "#back" ).click(function() {
+	
+$("#step2form").css('visibility', 'hidden');
+  $("#step2form").css('height', '0px');
+  $("#step1form").css('height', 'auto');
+   $("#step1form").css('visibility', 'VISIBLE');
+       $("#S2Label").css('text-decoration', 'none');
+         $("#S1Label").css('text-decoration', 'underline');
+         return true;
+});
+
+
+</script>
 </body>
 
 <footer>

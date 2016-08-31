@@ -29,6 +29,47 @@
 		$salt = uniqid(mt_rand(), true);
 	
 		$hashpassword = hash("sha256", $password.$salt);
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($first)) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($first);
+  }
+  
+  if (empty($last)) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($last);
+  }
+  
+  if (empty($email)) {
+    $emailErr = "Email is required";
+  } else {
+  	Correctemail("$email");
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($password)) {
+    $password = "password is required";
+  } else {
+    $password = test_input($password);
+  }
+}
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+function Correctemail($email){
+	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $emailErr = "Invalid email format"; 
+}
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 	
 		$sql = "INSERT INTO User (FirstName, LastName, EmailAddress, Password)
 		VALUES ('$first', '$last', '$email', '$hashpassword')";
@@ -62,7 +103,7 @@
 			<label id="ConfirmPassword">Confirm Password</label> <input name="ConfirmPassword" type="password" />
 			<label id = "ConfirmPasswordError"></label> <br /><br /><br /><br />
 			
-			<input name="Register" type="submit" value="Register" />
+			<a href="/index.php"><button type="button">Back</button></a> &nbsp&nbsp&nbsp <input name="Register" type="submit" value="Register" />
 
 		</form>
 	</div>
@@ -72,4 +113,12 @@
 	<center>Contact Us	|	About</center>
 </footer>
 
+</html>
+
+
+<body>  
+
+
+
+</body>
 </html>

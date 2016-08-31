@@ -37,6 +37,7 @@
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <link rel="stylesheet" href="stylesheets/template.css">
 		
@@ -60,9 +61,10 @@
 			}
 			
 			?>
- 			<li><a href="">Apply</a></li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
+			
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+
  
 		
 	</div>
@@ -96,7 +98,8 @@
 	?>
 	
 	<div class="loginform">
-		<form name="clientRegistration" onsubmit="return validateRegistrationForm()" method="post">
+		<form name="clientRegistration" method="post">
+			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
 				<?php
 					$user = $_SESSION['Username'];
@@ -105,37 +108,100 @@
 				?>
 			<br /><br /><br /><br />
 			<table align="center">
-				<tr>
-					<td>
-			<label id="FirstName">First Name</label><br /> <input name="FirstName" type="text"/><br /><br /><br /><br /></td>
-		<td>
-			<label id="LastName">Last Name</label><br /> <input name="LastName" type="text"/><br /><br /><br /><br /></td>
-			</tr>
-			<tr>
-				<td>
-			<label id="Email">Email</label><br /> <input name="Email" type="text"/><br /><br /><br /><br /></td>
-			<td>
-			<label id="Phone">Phone Number</label><br /> <input name="Phone" type="text"/><br /><br /><br /><br /></td>
-			</tr>
+				
+			<label id="S1Label"><h2>Step 1</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>Step 2</h2></label><br /><br /><br /><br />
+			<div id="step1form">
+
+			<label id="FirstName">First Name: </label> <input name="FirstName" type="text"/><label id="FirstNameError" class="error"></label><br /><br /><br /><br />
+
+			<label id="LastName">Last Name: </label> <input name="LastName" type="text"/><label id="LastNameError" class="error"></label><br /><br /><br /><br />
+
+			<label id="Email">Email Address: </label> <input name="Email" type="text"/><label id="EmailError" class="error"></label><br /><br /><br /><br />
 			
-			<tr>
-				<td>
-			<label id="Dependants">Dependants</label><br /> <input name="Dependants" type="text"/><br /><br /><br /><br /></td>
-			<td>
-			<label id="Pets">Pets</label><br /> <input name="Pets" type="text"/><br /><br /><br /><br /></td>
-			</tr>
-			<tr>
-				<td>
-			<label id="Infants">Infants</label><br /> <input name="Infants" type="text"/><br /><br /><br /><br /></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-			<input name="Register" type="submit" value="Register" /></td></tr>
+			<label id="Phone">Phone Number: </label> <input name="Phone" type="text"/><label id="PhoneError" class="error"></label><br /><br /><br /><br />
+			<button id="next" type="button" onclick="return validateRegistrationForm()">Next</button>
+			</div>
+			
+			<div id ="step2form">
+			<label id="Dependants">Dependants: </label>
+			
+			<select name="Dependants">
+				  <option value="0" selected>0</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5+">5+</option>
+			</select>
+			<br /><br /><br /><br />
+			
+			<label id="Pets">Pets: </label>
+			<input type="radio" name="Pets" value="No" checked="checked"> No  &nbsp&nbsp <input type="radio" name="Pets" value="Yes" selected> Yes<br><br /><br /><br /><br />
+			
+			
+			<label id="Infants">Infants: </label> 
+				<select name="Infants">
+				  <option value="0" selected>0</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5+">5+</option>
+			</select>
+			<br /><br /><br /><br />
+			
+			 <textarea name="Extra" rows="10" cols="100">
+				Add any extra information here.
+			 </textarea>
+			 <br /><br /><br /><br />
+					<button id="back" type="button">Back</button>	<input name="Register" type="submit" value="Register" />
+			</div>
+			
+		
 			</table>
+			
 			</center>
 		</form>
 	</div>
 </body>
+
+
+<script>
+  $("#S1Label").css('text-decoration', 'underline');
+
+
+$( "#next" ).click(function() {
+	
+	if (error > 0) {
+		return false;
+	}
+
+  $("#step1form").css('visibility', 'hidden');
+  $("#step1form").css('height', '0px');
+    $("#step2form").css('height', 'auto');
+  $("#step2form").css('visibility', 'VISIBLE');
+  $("#S2Label").css('text-decoration', 'underline');
+    $("#S1Label").css('text-decoration', 'none');
+});
+
+
+$( "#back" ).click(function() {
+	
+$("#step2form").css('visibility', 'hidden');
+  $("#step2form").css('height', '0px');
+  $("#step1form").css('height', 'auto');
+   $("#step1form").css('visibility', 'VISIBLE');
+       $("#S2Label").css('text-decoration', 'none');
+         $("#S1Label").css('text-decoration', 'underline');
+         return true;
+});
+
+
+</script>
+
+
+
+
 
 <footer>
 <br />

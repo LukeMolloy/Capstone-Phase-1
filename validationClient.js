@@ -1,12 +1,14 @@
+var error = 0;
+var success = 0;
 function validateRegistrationForm (){
     var clientForm = document.forms["clientRegistration"];
     var first = clientForm.elements.FirstName.value; 
     var last = clientForm.elements.LastName.value; 
     var email = clientForm.elements.Email.value; 
     var phone = clientForm.elements.Phone.value;
-    var dependants = clientForm.elements.Dependants.value;
-    var pets = clientForm.elements.Pets.value;
-    var infants = clientForm.elements.Infants.value;
+   // var dependants = clientForm.elements.Dependants.value;
+    //var pets = clientForm.elements.Pets.value;
+    //var infants = clientForm.elements.Infants.value;
    
     checkFirstName();
     
@@ -16,16 +18,20 @@ function validateRegistrationForm (){
     
     checkPhone();
     
-    checkDependants();
     
-    checkPets();
+    //checkDependants();
     
-    checkInfants();
+//    checkPets();
     
-    if (first == "" || last == "" || email == "" || phone == "" || dependants == "" || pets == "" || infants == ""){
+  //  checkInfants();
+    
+    if (first == "" || last == "" || email == "" || phone == ""){
+        error = 1;
         return false;
+        
     }
-    else {
+    if (first != "" || last != "" || email != "" || phone != ""){
+        error = 0;
         return true;
 
     }
@@ -112,5 +118,5 @@ function checkInfants() {
     }
     else {
         window.document.getElementById("InfantsError").innerHTML = "";
-    }    f
+    }    
 }

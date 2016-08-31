@@ -39,14 +39,26 @@ article {
     width: 30%;
     padding: 30px;
     background-color: white;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
     margin-left: auto;
     margin-right: auto;
     height: 30%;
-    
-    
 }
+
+.applyform {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 30%;
+    padding: 30px;
+    background-color: white;
+    margin-top: 10px;
+        opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+    word-wrap: break-word;
+}
+
 /*
 .navbar {
     border-top:white;

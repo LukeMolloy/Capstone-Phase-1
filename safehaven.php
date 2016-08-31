@@ -4,7 +4,6 @@
 <head>
     <?php
 	    ob_start();
-
     ?>	
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="/location.js"></script>
@@ -52,9 +51,9 @@
 			}
 			
 			?>
- 			<li><a href="">Apply</a></li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/registerClient.php">Register Client</a></li>
 
 	</div>
 	<div class="navbar">
@@ -63,11 +62,19 @@
 	
 <body>
     <div class="loginform">
-      <h2>Find a safe haven.</h2>
-            <br /> <br />
-            <form method ="post" action ="inspectsafehaven.php">
-        <label class="search">Search nearby an address: </label><input type="text" name="searchinput" size="100"> <button>Search!</button>
-    </form>
+        <h2>Find a safe haven.</h2>
+        <br /> <br />
+        <form method ="post" action ="searchsafehaven.php">
+            <label class="search">      Search By Suburb: </label>
+            <input type="text" name="Suburb" size="30">
+            <label class="search">      Search By Post Code: </label>
+            <input type="intager" name="Postcode" size="30"> 
+            <label class="search">      Search By City: </label>
+            <input type="text" name="City" size="30"> 
+            <label class="search">      Search By State: </label>
+            <input type="text" name="State" size="30"> 
+            <input name="Search" type="submit" value="Search"/>
+        </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
     <table align="center" cellpadding = "20">
         <tr>
@@ -97,19 +104,29 @@
                	    $userInfants = $row2['Infants'];
                	}
                	$spaces = $userDependants + 1;
-               	$sql="SELECT * FROM House WHERE SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	
+               	$suburb = $_SESSION['Suburb'];
+               	$postcode = $_SESSION['Postcode'];
+               	$city = $_SESSION['City'];
+               	$state = $_SESSION['State'];
+               	
+               	$sql="SELECT * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
                	echo "<table align='center' cellpadding = '20'>";
-               	while($row = $result->fetch_assoc()) {
-                    echo "
-                    <tr><td>".$row["FirstName"]."</td>
-                    <td>".$row["LastName"]."</td>
-                    <td>".$row["PhoneNumber"]."</td>
-                    <td>".$row["Email"]."</td>
-                    <td>".$row["Address"]."<br /><br /></td>
-                    <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
-                }
-                echo "</table>";
+               	if($result != NULL){
+               	    while($row = $result->fetch_assoc()) {
+                        echo "
+                        <tr><td>".$row["FirstName"]."</td>
+                        <td>".$row["LastName"]."</td>
+                        <td>".$row["PhoneNumber"]."</td>
+                        <td>".$row["Email"]."</td>
+                        <td>".$row["Address"]."<br /><br /></td>
+                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
+                    }
+                    echo "</table>"; 
+               	}else{
+               	    echo "No results";
+               	}
             ?>
         </td>
     </table>

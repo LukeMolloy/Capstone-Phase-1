@@ -1,51 +1,117 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-	<?php
-		session_start();
-		//require('sendgrid-php/SendGrid_loader.php');
-	?>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>SafeHaven.OurWomen</title>
-    <link rel="stylesheet" href="stylesheets/template.css">
-    <link rel="stylesheet" href="stylesheets/home.css">
-    <?php include 'dbLogin.php' ?>
-	<script src="validationClient.js"></script>
-</head
+<?php
+//	ob_start();
+	session_start();
+//	$_SESSION['Username'] = $_POST['Username'];
+//		session_start();
+//		$_SESSION['FirstName'] = $_POST['FirstName'];
+//?>	
 
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>SafeHaven.OurWomen</title>
+ 	<link rel="stylesheet" href="stylesheets/index.css">
+ 	<link rel="stylesheet" href="stylesheets/template.css">
+	<?php include 'dbLogin.php' ?>
+</head>
+<div id="wrapper">
 <body>
-<div class="loginform">
-	<center><h1 class="heading">SH.OW</h1></center>
-	<center><h2 class="heading2">- Our Women We Care -</h2></center>
-</div>
-<div class="header">
+    <form method="post" action="mail.php">
+    <input name="Signin" type="submit"/>
+    </form>
+    
+	<div class="header">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/login.php">Login / Register</a></li>
+ 		<li><a href="/safehavenregistration.php">Safe Haven Application</a></li>
+ 		 <li><a href="/registration.php">User Application</a></li>
 		<li><a href="/About.php">About Us</a></li>
 		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
 	</ul> 
 </div>
-<div class="loginform" >
-    <p></p>
+	<div class="loginform1">	
+		<h1>Safe Haven Our Women</h1><br/>
+		<form method="post" action="checklogin.php">
+			<center>
+			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
+			<label id="username">Username</label> &nbsp; <input name="Username" type="text" value="Bob"/><br /><br />
+			<label id="password">Password</label> &nbsp; <input name="Password" type="password" value="bob"/><br /><br />
+			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+				</div>
+				<center>
+			<div class="applyform">
+			    <table>
+			        <td>
+			           <button class="safehavenyes">Volunteer a Safe Haven</button>
+			         </td>
+			         <td>
+			           <button class="registeryes">Apply for the service</button><br />
+			        </td>
+			    </table>
+			    <div class="moreinfo"></div>
+			</div>
+			
+			</center>
+			
+			
+			
+		<!--	<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a> -->
+		    
+			</center>
+</div>
+
+</body>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+    $(".safehavenyes").click(function(){
+        $(".moreinfo").animate({
+            height: '+100px'
+        });
+        $( ".moreinfo" ).empty();
+        $( ".moreinfo" ).append( "<br /><br /><br />Are you willing to offer your house as a safe haven? If so, click here to register: <a href='/safehavenregistration.php'><button>Register</button></a>" );
+    });
+    
+    $(".registeryes").click(function(){
+        $(".moreinfo").animate({
+            height: '+100px'
+        });
+        $( ".moreinfo" ).empty();
+        $( ".moreinfo" ).append( "<br /><br /><br />Are you willing to become a registered user with the responsibility of adding clients to the server? If so, click here to register: <a href='/registration.php'><button>Register</button></a>" );
+    });
+    
+    
+});
+</script>
+
+
+
+
+<footer>
+	
+	<p></p>
     <center>
     <div class="links">
         <table class="pics" align="" cellpadding="20px">
         <tr>
         <th>
         <div id="news">
-            <img src="images/newspaper.png" alt="Mountain View" style="width:220px;height:160px;">
+          
         </div>
         </th>
         <th>
         <div id="sm">
-            <img src="images/SocialMedia.gif" alt="Mountain View" style="width:220px;height:160px;">
+       
         </div>
         </th>
         <th>
         <div id="sponsors">
-            <img src="images/sponsor.png" alt="Mountain View" style="width:220px;height:160px;">
+            
         </div>
         </th>
         </tr>
@@ -58,29 +124,7 @@
     </div>
     </center>
     <p></p>
-</div>
-<?php
-    //if(isset($_POST['submit']))
-    /*{
-        $sendgrid = new SendGrid('app55568313@heroku.com', 'p50ukokc0282');
-
-        $mail = new SendGrid\Mail();
-        $mail->
-            addTo('email@gmail.com')->
-            setFrom('app55568313@heroku.com')->
-            setSubject('Subject goes here')->
-            setText('Hello World!')->
-            setHtml('<strong>Hello World!</strong>');
-
-        $sendgrid->
-            smtp->
-            send($mail);
-    //}*/
-?>
-</body>
-
-<footer>
-	<center>Contact Us	|	About</center>
+	
 </footer>
 
 </html>

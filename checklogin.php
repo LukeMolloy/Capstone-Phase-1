@@ -1,9 +1,6 @@
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>SafeHaven.OurWomen</title>
- 	<link rel="stylesheet" href="stylesheets/index.css">
- 	<link rel="stylesheet" href="stylesheets/template.css">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<?php include 'dbLogin.php' ?>
 </head>
 
