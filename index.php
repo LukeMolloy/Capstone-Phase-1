@@ -44,10 +44,10 @@
 			<div class="applyform">
 			    <table>
 			        <td>
-			           <button class="safehavenyes">Volunteer a Safe Haven</button>
+			           <button class="safehavenyes">Safe Haven Application</button>
 			         </td>
 			         <td>
-			           <button class="registeryes">Apply for the service</button><br />
+			           <button class="registeryes">User Application</button><br />
 			        </td>
 			    </table>
 			    <div class="moreinfo"></div>

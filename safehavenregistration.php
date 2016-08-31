@@ -6,8 +6,7 @@
 <title>SafeHaven.OurWomen</title>
   <link rel="stylesheet" href="stylesheets/template.css">
 		<?php include 'dbLogin.php' ?>
-		<script src="validation.js"></script>
-		<script src="validationClient.js"></script>
+		<script src="validationSafeHaven.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
@@ -65,9 +64,11 @@
 			
 			<label id="Email">Email</label> <input name="Email" type="text" />
 			<label id = "EmailError"></label> <br /><br /><br /><br />
+						
 						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
-			<label id = "BluecardNumber"></label> <br /><br /><br /><br />
-			<button id="next" type="button">Next</button>
+		<br /><br /><br /><br />
+		
+			<button id="next" type="button" onclick="return validateSafeHavenRegistrationForm()">Next</button>
 			</div>
 			
 			<div id="step2form">
@@ -120,11 +121,15 @@
 		</form>
 	</div>
 	
-	<script>
+<script>
   $("#S1Label").css('text-decoration', 'underline');
 
 
 $( "#next" ).click(function() {
+	
+	if (error > 0) {
+		return false;
+	}
 
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
@@ -148,6 +153,7 @@ $("#step2form").css('visibility', 'hidden');
 
 
 </script>
+
 </body>
 
 <footer>
