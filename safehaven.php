@@ -65,21 +65,16 @@
         <h2 align>Find a safe haven.</h2>
         <br /> <br />
         <form method ="post" action ="searchsafehaven.php">
-            <table>
-                
-            <th><label class="search">      Search By Suburb: </label>
-            <input type="text" name="Suburb" size="30"></th>
             
-            <th><label class="search">      Search By Post Code: </label>
+            <label class="search">      Search By Suburb: </label>
+            <input type="text" name="Suburb" size="30">
+            <label class="search">      Search By Post Code: </label>
             <input type="intager" name="Postcode" size="30"> 
-            <label class="search">      Search By City: </label></th>
-            
-            <td><input type="text" name="City" size="30"> 
-            <label class="search">      Search By State: </label></td>
-            
-            <td><input type="text" name="State" size="30"> 
-            <input name="Search" type="submit" value="Search"/></td>
-            </table>
+            <label class="search">      Search By City: </label>
+            <input type="text" name="City" size="30"> 
+            <label class="search">      Search By State: </label>
+            <input type="text" name="State" size="30"> 
+            <input name="Search" type="submit" value="Search"/>
         </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
  
@@ -109,7 +104,7 @@
                	
                	$sql="SELECT * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
-               	echo "<table align='center' cellpadding = '20'>";
+               	echo "<table align='center'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
@@ -117,7 +112,12 @@
                         <td>".$row["LastName"]."</td>
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>
-                        <td>".$row["Address"]."<br /><br /></td>
+                        <td>".$row["Address"]."</td>
+                        <td>".$row["Suburb"]."</td>
+                        <td>".$row["City"]."</td>
+                        <td>".$row["State"]."</td>
+                        
+                        <br /><br />
                         <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
                     }
                     echo "</table>"; 

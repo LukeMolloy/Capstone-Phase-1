@@ -1,27 +1,18 @@
 <?php
-include('Mail.php');
-$recipients = 'luke.d.a.molloy@icloud.com'; //CHANGE
-$headers['From']= 'luke.d.a.molloy@icloud.com'; //CHANGE
-$headers['To']= 'luke.d.a.molloy@icloud.com'; //CHANGE
-$headers['Subject'] = 'Test message';
-$body = 'Test message'; // Define SMTP Parameters
-$params['host'] = 'smtp.gmail.com';
-$params['port'] = '465';
-$params['auth'] = 'PLAIN';
-$params['username'] = 'shealteredearth@gmail.com'; //CHANGE
-$params['password'] = 'Capstone1'; //CHANGE
+require_once 'Mail.php';
 
-/* The following option enables SMTP debugging and will print the SMTP conversation to the page, it will only help with authentication issues, if PEAR::Mail is not installed you won't get this far. */
+$wgSMTP = array(
+    'host' => 'tls://smtp.sendgrid.net',
+    'IDHost' => 'heroku.com',
+    'port' => 587,
+    'username' => getenv("lukemolloy01"), 
+    'password' => getenv("Tuchanka12"),
+    'auth' => true
+ );
+ 
+$msg = "First line of text\nSecond line of text";
 
-$params['debug'] = 'true'; // Create the mail object using the Mail::factory method
-$mail_object =& Mail::factory('smtp', $params); // Print the parameters you are using to the page
-
-foreach ($params as $p){
- echo "$p<br />";
-}
-
-// Send the message
-$mail_object->send($recipients, $headers, $body);
+mail("luke.d.a.molloy@icloud.com","My subject",$msg);
 
 ?>
 
