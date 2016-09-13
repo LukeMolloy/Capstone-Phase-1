@@ -12,40 +12,39 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
- 	<link rel="stylesheet" href="stylesheets/index.css">
- 	<link rel="stylesheet" href="stylesheets/template.css">
+ 	<link rel="stylesheet" href="stylesheets/indextest.css">
+ 	<link rel="stylesheet" href="stylesheets/templatetest.css">
 	<?php include 'dbLogin.php' ?>
 </head>
 <div id="wrapper">
 <body>
-    <form method="post" action="mail.php">
+    <!----<form method="post" action="mail.php">
     <input name="Signin" type="submit"/>
-    </form>
+    </form>----->
     
 	<div class="header">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/safehavenregistration.php">Safe Haven Application</a></li>
- 		 <li><a href="/registration.php">User Application</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
+	<label class="title">SAFE HAVEN OUR WOMEN</label>
+ 		<li><a href="/safehavenregistration.php">SAFE HAVEN APPLICATION</a></li>
+ 		 <li><a href="/registration.php">USER APPLICATION</a></li>
+		<li><a href="/About.php">ABOUT</a></li>
+		<li><a href="/Contact.php">CONTACT</a></li>
 	</ul> 
 </div>
 	<div class="loginform1">	
-		<h1>Safe Haven Our Women</h1><br/>
+		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
+		<hr><br />
 		<form method="post" action="checklogin.php">
-			<center>
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 			<label id="username">Username</label> &nbsp; <input name="Username" type="text" value="Bob"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password" value="bob"/><br /><br />
 			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
 				</div>
-				<center>
 			<div class="applyform">
 			    <table>
 			        <td>
-			           <button class="safehavenyes">Safe Haven Application</button>
-			         </td>
+			           <button class="safehavenyes">Safe Haven Application</button> 
+			         </td><td>&nbsp&nbsp</td>
 			         <td>
 			           <button class="registeryes">User Application</button><br />
 			        </td>
@@ -93,38 +92,36 @@ $(document).ready(function(){
 
 
 <footer>
-	
-	<p></p>
-    <center>
-    <div class="links">
-        <table class="pics" align="" cellpadding="20px">
-        <tr>
-        <th>
-        <div id="news">
-          
-        </div>
-        </th>
-        <th>
-        <div id="sm">
-       
-        </div>
-        </th>
-        <th>
-        <div id="sponsors">
-            
-        </div>
-        </th>
-        </tr>
-        <tr>
-        <td><center><strong>News</strong></center></td>
-        <td><center><strong>Social Media</strong></center></td>
-        <td><center><strong>Sponsors</strong></center></td>
-        </tr>
-        </table>
-    </div>
-    </center>
-    <p></p>
-	
+<br />
+<table class="footertable">
+	<tr>
+		<td class="lightertext">SHOW</td>
+		<td class="lightertext">ABOUT</td>
+		<td class="lightertext">HELP</td>
+		<td class="lightertext">CONNECT</td>
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
 </footer>
 
 </html>

@@ -2,7 +2,7 @@
     // A simple PHP script demonstrating how to connect to MySQL.
     // Press the 'Run' button on the top to start the web server,
     // then click the URL that is emitted to the Output tab of the console.
-
+/*
     $servername = "127.0.0.1";
     $username = 'lukemolloy';
     $password = "";
@@ -11,6 +11,17 @@
 
     // Create connection
     $db = new mysqli($servername, $username, $password, $database, $dbport);
+*/
+
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    $server = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $db = substr($url["path"], 1);
+
+    $db = new mysqli($server, $username, $password, $db);
+    
 
     // Check connection
     /*if ($db->connect_error) {

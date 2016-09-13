@@ -6,6 +6,7 @@ function validateFirstSafeHavenRegistrationForm (){
     var last = clientForm.elements.LastName.value; 
     var email = clientForm.elements.Email.value; 
     var phone = clientForm.elements.PhoneNumber.value;
+    var password = clientForm.elements.Password.value;
    // var dependants = clientForm.elements.Dependants.value;
     //var pets = clientForm.elements.Pets.value;
     //var infants = clientForm.elements.Infants.value;
@@ -18,7 +19,11 @@ function validateFirstSafeHavenRegistrationForm (){
     
     checkPhone();
     
-    if (first == "" || last == "" || email == "" || phone == ""){
+    checkPassword();
+    
+
+    
+    if (first == "" || last == "" || email == "" || phone == "" || password == ""){
         error = 1;
         return false;
         
@@ -68,6 +73,19 @@ function checkFirstName () {
     }    
 }
 
+function checkPassword () {
+    var clientForm = document.forms["safeHavenRegistration"];
+    var password = clientForm.elements.Password.value; 
+    if (password == "") {
+        window.document.getElementById("PasswordError").innerHTML = "Please enter a first name";
+        return false;
+    }
+    else {
+        window.document.getElementById("PasswordError").innerHTML = "";
+    }    
+}
+
+
 function checkLastName() {
     var clientForm = document.forms["safeHavenRegistration"];
     var last = clientForm.elements.LastName.value; 
@@ -103,6 +121,9 @@ function checkPhone() {
         window.document.getElementById("PhoneError").innerHTML = "";
     }    
 }
+
+
+
 
 function checkAddress() {
     var clientForm = document.forms["safeHavenRegistration"];

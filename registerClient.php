@@ -39,7 +39,7 @@
 <title>SafeHaven.OurWomen</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  <link rel="stylesheet" href="stylesheets/template.css">
+  <link rel="stylesheet" href="stylesheets/templatetest.css">
 		
 		<script src="validationClient.js"></script>
 </head>
@@ -101,15 +101,17 @@
 		<form name="clientRegistration" method="post">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
+				<div class="instructions">
 				<?php
 					$user = $_SESSION['Username'];
-					echo "<h1>Welcome, $user.</h1><br />
+					echo "<br /><h1>Welcome, $user.</h1><br />
 					<h2>Please enter the client's details below to search for a safe haven.</h2>";
 				?>
-			<br /><br /><br /><br />
+				</div>
+			<br /><br /><hr width="70%"><br /><br />
 			<table align="center">
 				
-			<label id="S1Label"><h2>Step 1</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>Step 2</h2></label><br /><br /><br /><br />
+			<label id="S1Label"><h2>Step 1</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>Step 2</h2></label><br /><br /><br /><br />
 			<div id="step1form">
 
 			<label id="FirstName">First Name: </label> <input name="FirstName" type="text"/><label id="FirstNameError" class="error"></label><br /><br /><br /><br />
@@ -153,7 +155,7 @@
 			 <textarea name="Extra" rows="10" cols="100">
 				Add any extra information here.
 			 </textarea>
-			 <br /><br /><br /><br />
+			 <br /><br />
 					<button id="back" type="button">Back</button>	<input name="Register" type="submit" value="Register" />
 			</div>
 			
@@ -205,7 +207,35 @@ $("#step2form").css('visibility', 'hidden');
 
 <footer>
 <br />
-	<center>Contact Us	|	About</center>
+<table class="footertable">
+	<tr>
+		<td class="lightertext">SHOW</td>
+		<td class="lightertext">ABOUT</td>
+		<td class="lightertext">HELP</td>
+		<td class="lightertext">CONNECT</td>
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
 </footer>
 
 </html>

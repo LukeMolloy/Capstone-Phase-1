@@ -123,13 +123,14 @@ geocoder.geocode( { 'address': address}, function(results, status) {
                         <td><div id='add'>".$row["Address"]."</div></td>
                         <td><div id='city'>".$row["City"]."</div></td>
                         </tr>";
+                        $description = $row["Description"];
                     }
                     echo "</table>";
                     
                     echo "<br /><br /><button>Contact</button><br /> <br /><br />
                     
                     <b>Description:</b><br /><br />
-                    Nice house with pleasant owners able to provide a safe haven for anyone in need.<br />Three bedroom house with two bathrooms. <br />Pet friendly, and willing to also accommodate for children.";
+                    $description";
                     
                 
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
