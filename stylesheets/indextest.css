@@ -22,16 +22,22 @@ html {
     font-family: "Calibri";
 }
 
+article {
+    text-align: center;
+}
+
+
+*/
 body {
     background-image: url(/images/flowerbackground.jpeg);
-    background-position: 0px -200px;
+    background-position: 0px -200px; 
 }
 
 
 
 article {
     text-align: center;
-}*/
+}
 
 .loginform1 {
     text-align:left;
