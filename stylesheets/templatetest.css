@@ -292,7 +292,7 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 footer {
     background-color: black;
     position: absolute;
-    top: 0;
+    margin-top: 0;
     bottom: 0;
     height: 15%;
     width: 100%;
