@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
-  <link rel="stylesheet" href="stylesheets/template.css">
+  <link rel="stylesheet" href="stylesheets/templatetest.css">
 		<?php include 'dbLogin.php' ?>
 		<script src="validation.js"></script>
 </head>
@@ -120,6 +120,39 @@ function test_input($data) {
 <body>  
 
 
-
 </body>
+<footer>
+<br />
+<table class="footertable">
+	<tr>
+		<td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
+</footer>
+
+
 </html>
