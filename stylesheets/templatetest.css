@@ -26,7 +26,7 @@ html {
 
 body {
     /*background-color: lightgrey;*/
-
+    background-color: white;
 
 }
 
@@ -35,7 +35,6 @@ body {
     list-style-type: none;
     padding-right: 20px;
     padding: 0;
-    overflow: hidden;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -69,8 +68,8 @@ h2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-        overflow: auto;
-        height: 85%;
+    overflow: auto;
+    height: auto;
 
 }
 
