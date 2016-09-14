@@ -30,7 +30,7 @@
 	
 //		$hashpassword = hash("sha256", $password.$salt);
 	$hashpassword = hash("sha256", $password);
-		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+/*		if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($first)) {
     $nameErr = "Name is required";
   } else {
@@ -70,7 +70,7 @@ function test_input($data) {
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
-}
+}*/
 	
 		$sql = "INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
 		VALUES ('$first', '$last', '$email', '$hashpassword')";
