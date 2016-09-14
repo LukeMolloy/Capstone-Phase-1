@@ -104,9 +104,9 @@
 			
 			<label id="GenderTaken">* Gender Taken</label> 
 				<select name="GenderTaken">
-				  <option value="1">Male</option>
-				  <option value="2">Female</option>
-				  <option value="3" selected>Either</option>
+				  <option value="Male">Male</option>
+				  <option value="Female">Female</option>
+				  <option value="No Preference" selected>No Preference</option>
 
 			</select>
 			<label id = "SpacesAvailableError"></label> <br /><br /><br />
