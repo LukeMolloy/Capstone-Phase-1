@@ -18,7 +18,7 @@ $email->addTo($emailEntered)
     ->setFrom('noreply@show.com')
     ->setSubject('Thank you for registering!')
     //->setText('I cant believe this works!')
-    ->setHtml('<strong>Hello $firstNameEntered! </strong> <br /> <br />
+    ->setHtml('<strong>Hello <php echo $firstNameEntered! ?> </strong> <br /> <br />
     Your account is requiring validation, and then you may use the system.<br /><br /> Thank you!
    ');
 
