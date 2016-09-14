@@ -179,10 +179,10 @@ $("#step2form").css('visibility', 'hidden');
 <br />
 <table class="footertable">
 	<tr>
-		<td class="lightertext">SHOW</td>
-		<td class="lightertext">ABOUT</td>
-		<td class="lightertext">HELP</td>
-		<td class="lightertext">CONNECT</td>
+		<td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>
 	</tr>
 	<tr>
 		<td class="darkertext">
@@ -207,5 +207,6 @@ $("#step2form").css('visibility', 'hidden');
 	</tr>
 </table>
 </footer>
+
 
 </html>
