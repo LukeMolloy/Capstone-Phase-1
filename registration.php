@@ -22,9 +22,9 @@
 
 	</div>
 	<?php
-		$first = ($_POST['Firstname']);
-		$last =  ($_POST['Lastname']);
-		$email = ($_POST['Emailaddress']);
+		$first = ($_POST['FirstName']);
+		$last =  ($_POST['LastName']);
+		$email = ($_POST['Email']);
 		$password = ($_POST['Password']);
 	//	$salt = uniqid(mt_rand(), true);
 	
