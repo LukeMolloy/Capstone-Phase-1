@@ -18,9 +18,9 @@
     $server = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
-    $db = substr($url["path"], 1);
+    $database = substr($url["path"], 1);
 
-    $db = new mysqli($server, $username, $password, $db);
+    $db = new mysqli($server, $username, $password, $database);
     
 
     // Check connection
