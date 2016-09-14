@@ -70,11 +70,14 @@ h2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    height: 1000px;
-    overflow: auto;
-    height: 300px;
+        overflow: auto;
+
 }
 
+.wrapper {
+
+    height: 80%;   
+}
 
 .authorityRegistration {
     padding-left: 50px;
@@ -297,6 +300,8 @@ footer {
     width: 100%;
     text-align: left;
 }
+
+
 
 .footertable {
       border-spacing: 100px 0;

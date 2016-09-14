@@ -11,6 +11,9 @@
 </head>
 
 <body>
+	
+<div class="wrapper">
+	
 <div class="header">
 	<label class="title">Safe Haven Our Women</label>
  		<li><a href="/login.php">Login / Register</a></li>
@@ -171,7 +174,7 @@ $("#step2form").css('visibility', 'hidden');
 </script>
 
 </body>
-
+</div>
 <footer>
 <br />
 <table class="footertable">
