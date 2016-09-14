@@ -65,7 +65,7 @@
 			<label id="PhoneNumber">* Phone Number</label> <input name="PhoneNumber" type="text" />
 			<label id = "PhoneError" class="error"></label> <br /><br /><br /><br />
 			
-			<label id="Email">* Email</label> <input name="Email" type="email"/><button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
+			<label id="Email">* Email</label> <input name="Email" type="email"/>
 			<label id = "EmailError" class="error"></label> <br /><br /><br /><br />
 						
 						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
@@ -76,7 +76,7 @@
 			
 					<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
 			<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br /><br />
-		
+			<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 			
 			</div>
 			
