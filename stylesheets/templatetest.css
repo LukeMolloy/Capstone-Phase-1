@@ -69,8 +69,9 @@ h2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
         overflow: auto;
-        height: 100px;
+        height: 300px;
 
 }
 
