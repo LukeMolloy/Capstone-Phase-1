@@ -62,8 +62,8 @@
 			
 			?>
 			
-			<li><a href="/About.php">About Us</a></li>
-			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/About.php">ABOUT US</a></li>
+			<li><a href="/Contact.php">CONTACT US</a></li>
 
  
 		
