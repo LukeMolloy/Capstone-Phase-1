@@ -12,9 +12,11 @@
 				
 								
 
-				$salt = uniqid(mt_rand(), true);
+			//	$salt = uniqid(mt_rand(), true);
 	
-				$hashpassword = hash("sha256", $password.$salt);
+			//	$hashpassword = hash("sha256", $password.$salt);
+			
+				$hashpassword = hash("sha256", $password);
 		
 				$sql="SELECT * FROM User WHERE EmailAddress='$myusername' and Password='$hashpassword'";
 				$result = mysqli_query($db, $sql);

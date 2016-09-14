@@ -26,9 +26,10 @@
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
 		$password = ($_POST['Password']);
-		$salt = uniqid(mt_rand(), true);
+	//	$salt = uniqid(mt_rand(), true);
 	
-		$hashpassword = hash("sha256", $password.$salt);
+//		$hashpassword = hash("sha256", $password.$salt);
+	$hashpassword = hash("sha256", $password);
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($first)) {
     $nameErr = "Name is required";
