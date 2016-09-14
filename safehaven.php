@@ -147,3 +147,37 @@
 </div>
 
 </body>
+
+
+<footer>
+<br />
+<table class="footertable">
+	<tr>
+		<td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
+</footer>
