@@ -22,9 +22,9 @@
 
 	</div>
 	<?php
-		$first = ($_POST['FirstName']);
-		$last =  ($_POST['LastName']);
-		$email = ($_POST['Email']);
+		$first = ($_POST['Firstname']);
+		$last =  ($_POST['Lastname']);
+		$email = ($_POST['Emailaddress']);
 		$password = ($_POST['Password']);
 	//	$salt = uniqid(mt_rand(), true);
 	
@@ -72,7 +72,7 @@ function test_input($data) {
   return $data;
 }
 	
-		$sql = "INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+		$sql = "INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
 		VALUES ('$first', '$last', '$email', '$hashpassword')";
 		
 		mysqli_query($db, $sql);
