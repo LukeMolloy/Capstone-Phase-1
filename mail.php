@@ -23,5 +23,5 @@ $email->addTo($emailEntered)
    ');
 
 $sendgrid->send($email);
-
+	header("location:index.php");
 ?>
