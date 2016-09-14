@@ -7,6 +7,7 @@ function validateFirstSafeHavenRegistrationForm (){
     var email = clientForm.elements.Email.value; 
     var phone = clientForm.elements.PhoneNumber.value;
     var password = clientForm.elements.Password.value;
+    var confirmpassword = clientForm.elements.ConfirmPassword.value;
    // var dependants = clientForm.elements.Dependants.value;
     //var pets = clientForm.elements.Pets.value;
     //var infants = clientForm.elements.Infants.value;
@@ -21,14 +22,15 @@ function validateFirstSafeHavenRegistrationForm (){
     
     checkPassword();
     
+    checkConfirmPassword();
 
     
-    if (first == "" || last == "" || email == "" || phone == "" || password == ""){
+    if (first == "" || last == "" || email == "" || phone == "" || password == "" || confirmpassword == "" || password != confirmpassword){
         error = 1;
         return false;
         
     }
-    if (first != "" || last != "" || email != "" || phone != ""){
+    if (first != "" || last != "" || email != "" || phone != "" || password == "" || confirmpassword == ""){
         error = 0;
         return true;
 
@@ -77,11 +79,43 @@ function checkPassword () {
     var clientForm = document.forms["safeHavenRegistration"];
     var password = clientForm.elements.Password.value; 
     if (password == "") {
-        window.document.getElementById("PasswordError").innerHTML = "Please enter a first name";
+        window.document.getElementById("PasswordError").innerHTML = "Please enter a password";
         return false;
     }
+    
+    if (password.length < 6) {
+        window.document.getElementById("PasswordError").innerHTML = "Please ensure your password is 6 characters or more";
+        return false;
+    }
+    
     else {
         window.document.getElementById("PasswordError").innerHTML = "";
+    }    
+}
+
+function checkConfirmPassword () {
+    var clientForm = document.forms["safeHavenRegistration"];
+    var password = clientForm.elements.Password.value; 
+    var confirmpassword = clientForm.elements.ConfirmPassword.value; 
+    if (confirmpassword == "") {
+        window.document.getElementById("ConfirmPasswordError").innerHTML = "Please enter a password";
+        return false;
+    }
+    
+    if (confirmpassword != password) {
+        window.document.getElementById("ConfirmPasswordError").innerHTML = "Please ensure the passwords match";
+        return false;
+    }
+    
+    if (confirmpassword.length < 6) {
+        window.document.getElementById("ConfirmPasswordError").innerHTML = "Please ensure your password is 6 characters or more";
+        return false;
+    }
+    
+    
+    
+    else {
+        window.document.getElementById("ConfirmPasswordError").innerHTML = "";
     }    
 }
 
@@ -100,11 +134,20 @@ function checkLastName() {
 
 function checkEmail() {
     var clientForm = document.forms["safeHavenRegistration"];
+    var valid = /[@]/igm;
     var email = clientForm.elements.Email.value;      
      if (email == "") {
         window.document.getElementById("EmailError").innerHTML = "Please enter an email";
         return false;
     }
+   
+    if (!valid.test(email)) {
+        window.document.getElementById("EmailError").innerHTML = "Please enter a valid email";
+        return false;
+    }
+    
+
+    
     else {
         window.document.getElementById("EmailError").innerHTML = "";
     }    
@@ -117,6 +160,13 @@ function checkPhone() {
         window.document.getElementById("PhoneError").innerHTML = "Please enter a phone number";
         return false;
     }
+    
+    if (isNaN(phone)) {
+        window.document.getElementById("PhoneError").innerHTML = "Please enter a valid phone number";
+        return false;
+    }
+    
+    
     else {
         window.document.getElementById("PhoneError").innerHTML = "";
     }    
