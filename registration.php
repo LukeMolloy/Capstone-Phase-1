@@ -22,6 +22,7 @@
 
 	</div>
 	<?php
+		session_start();
 		$first = ($_POST['FirstName']);
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
@@ -81,7 +82,7 @@ function test_input($data) {
 		echo $_SESSION["login_user"] . ".<br>";
 	?>
 	<div class="loginform">
-		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post">
+		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="mail.php">
 				<p>
 					<h1>Register as...</h1><br />
 					<h2>Authority or Safe Haven</h2>
