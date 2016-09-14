@@ -71,8 +71,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     height: 1000px;
-
-    
+    overflow: auto;
+    height: 300px;
 }
 
 
@@ -293,7 +293,7 @@ footer {
     background-color: black;
     position: absolute;
     bottom: 0;
-    height: 150px;
+    height: 15%;
     width: 100%;
     text-align: left;
 }
