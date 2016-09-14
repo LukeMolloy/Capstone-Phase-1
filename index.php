@@ -36,8 +36,10 @@
 		<hr><br />
 		<form method="post" action="checklogin.php">
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-			<label id="username">Username</label> &nbsp; <input name="Username" type="text" value="Bob"/><br /><br />
-			<label id="password">Password</label> &nbsp; <input name="Password" type="password" value="bob"/><br /><br />
+				
+				
+			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
+			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
 			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
 				</div>
 			<div class="applyform">

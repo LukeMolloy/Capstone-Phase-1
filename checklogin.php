@@ -8,9 +8,15 @@
 	ob_start();
 				
 				$myusername=$_POST['Username'];
-				$mypassword=$_POST['Password']; 
+				$password=$_POST['Password']; 
+				
+								
+
+				$salt = uniqid(mt_rand(), true);
+	
+				$hashpassword = hash("sha256", $password.$salt);
 		
-				$sql="SELECT * FROM User WHERE EmailAddress='$myusername' and Password='$mypassword'";
+				$sql="SELECT * FROM User WHERE EmailAddress='$myusername' and Password='$hashpassword'";
 				$result = mysqli_query($db, $sql);
 				$count = mysqli_num_rows($result);
 				
