@@ -156,7 +156,7 @@
 				  <option value="14">14</option>
 				  <option value="15">15+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br />
+			<label id = "NightsError"></label> <br /><br /><br />
 			
 			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
 			
@@ -168,14 +168,14 @@
 	
 <script>
 
-//$(document).ready(function() {
-
-	if (error > 0 && event.keyCode == 13) {
-  
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
       return false;
-   }
-  //});
-//});
+    }
+  });
+});
 
   $("#S1Label").css('text-decoration', 'underline');
 
@@ -184,6 +184,15 @@ $( "#next" ).click(function() {
 	
 	if (error > 0) {
 		return false;
+	}
+	
+	if (error < 1) {
+		  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return true;
+    }
+  });
 	}
 	
   $("#step1form").css('visibility', 'hidden');
