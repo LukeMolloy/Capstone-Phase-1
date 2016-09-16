@@ -137,7 +137,29 @@
 			
 			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
 			<label id = "DescriptionError"></label> <br /><br /> <br /><br /><br /> 
-				<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
+			
+			<label id="Nights">* Length of Stay</label> 
+			<select name="Nights">
+				  <option value="1" selected>1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5">5</option>
+				  <option value="6">6</option>
+				  <option value="7">7</option>
+				  <option value="8">8</option>
+				  <option value="9">9</option>
+				  <option value="10">10</option>
+				  <option value="11">11</option>
+				  <option value="12">12</option>
+				  <option value="13">13</option>
+				  <option value="14">14</option>
+			</select>
+			<label id = "InfantSpacesError"></label> <br /><br /><br />
+			
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
+			
+			
 			</div>
 			</center>
 		</form>
@@ -145,14 +167,15 @@
 	
 <script>
 
-$(document).ready(function() {
-  $(window).keydown(function(event){
-    if(event.keyCode == 13) {
+//$(document).ready(function() {
+
+	if (error > 0 && event.keyCode == 13) {
+   
       event.preventDefault();
       return false;
-    }
-  });
-});
+   }
+  //});
+//});
 
   $("#S1Label").css('text-decoration', 'underline');
 
@@ -160,9 +183,6 @@ $(document).ready(function() {
 $( "#next" ).click(function() {
 	
 	if (error > 0) {
-		if(event.keyCode == 13) {
-    		event.preventDefault();
-    		return false;
 		return false;
 	}
 	
