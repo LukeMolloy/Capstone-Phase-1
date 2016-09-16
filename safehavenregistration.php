@@ -152,6 +152,7 @@ $( "#next" ).click(function() {
   $("#step2form").css('visibility', 'VISIBLE');
   $("#S2Label").css('text-decoration', 'underline');
     $("#S1Label").css('text-decoration', 'none');
+     $("#step2form").css('overflow-y', 'auto');
 });
 
 
