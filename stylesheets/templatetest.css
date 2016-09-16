@@ -68,9 +68,14 @@ h2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-        overflow-y: auto;
+
 
 }
+
+.step1form {
+    overflow-y: auto;
+}
+
 
 .step2form {
     overflow-y: auto;
