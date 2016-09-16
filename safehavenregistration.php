@@ -154,6 +154,7 @@
 				  <option value="12">12</option>
 				  <option value="13">13</option>
 				  <option value="14">14</option>
+				  <option value="15">15+</option>
 			</select>
 			<label id = "InfantSpacesError"></label> <br /><br /><br />
 			
@@ -170,8 +171,7 @@
 //$(document).ready(function() {
 
 	if (error > 0 && event.keyCode == 13) {
-   
-      event.preventDefault();
+  
       return false;
    }
   //});
