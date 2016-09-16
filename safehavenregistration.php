@@ -127,7 +127,7 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br />
+			<label id = "InfantSpacesError"></label> <br /><br /><br /><input name="Register" type="submit" value="Register")/>
 			
 			<label id="PetFriendly">* Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="Yes"> Yes
@@ -158,7 +158,7 @@
 			</select>
 			<label id = "NightsError"></label> <br /><br /><br />
 			
-			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;
 			
 			
 			</div>
@@ -189,7 +189,6 @@ $( "#next" ).click(function() {
 	if (error < 1) {
 		  $(window).keydown(function(event){
     if(event.keyCode == 13) {
-      event.preventDefault();
       return true;
     }
   });
