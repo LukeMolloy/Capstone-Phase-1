@@ -91,6 +91,13 @@
 			<label id="PostCode">* Post Code</label> <input name="PostCode" type="text" />
 			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 			
+			<label id="City">* City/Town</label> <input name="City" type="text" />
+			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
+			
+			<label id="PostCode">* Post Code</label> <input name="PostCode" type="text" />
+			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
+			
+			
 			<label id="SpacesAvailable">* Spaces Available</label> 
 			<select name="SpacesAvailable">
 				  <option value="1" selected>1</option>
@@ -162,6 +169,7 @@ $( "#next" ).click(function() {
 	if(event.keyCode == 13) {
     		event.preventDefault();
     		return true;
+	}
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
     $("#step2form").css('height', 'auto');
