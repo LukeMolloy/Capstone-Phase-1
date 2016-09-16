@@ -72,12 +72,12 @@ h2 {
 
 }
 
-.step1form {
+#step1form {
     overflow-y: auto;
 }
 
 
-.step2form {
+#step2form {
     overflow-y: auto;
 }
 
