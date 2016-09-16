@@ -32,6 +32,8 @@
 		$email = ($_POST['Email']);
 		$address = ($_POST['Address']);
 		$suburb = ($_POST['Suburb']);
+		$city = ($_POST['City']);
+		$state = ($_POST['State']);
 		$postcode = ($_POST['PostCode']);
 		$spacesavailable = ($_POST['SpacesAvailable']);
 		$infantspaces = ($_POST['InfantSpaces']);
@@ -41,7 +43,7 @@
 	
 	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
-		VALUES ('$first', '$last', '$phonenumber', '$email', '$address', '$suburb',  '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
+		VALUES ('$first', '$last', '$phonenumber', '$email', '$address', '$suburb', '$city', '$state', '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
 		
 		mysqli_query($db, $sql);
 	?>
@@ -104,7 +106,7 @@
 				  <option value="2">2</option>
 				  <option value="3">3</option>
 				  <option value="4">4</option>
-				  <option value="5+">5+</option>
+				  <option value="5">5+</option>
 			</select>
 			<label id = "SpacesAvailableError"></label> <br /><br /><br />
 			
@@ -130,8 +132,8 @@
 			<label id = "InfantSpacesError"></label> <br /><br /><br /><input name="Register" type="submit" value="Register")/>
 			
 			<label id="PetFriendly">* Pet Friendly</label>   
-			<input type="radio" name="PetFriendly" value="Yes"> Yes
-			<input type="radio" name="PetFriendly" value="No" checked> No
+			<input type="radio" name="PetFriendly" value="1"> Yes
+			<input type="radio" name="PetFriendly" value="0" checked> No
 			<label id = "PetFriendlyError"></label> <br /><br /><br />
 
 			
