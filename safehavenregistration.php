@@ -40,6 +40,8 @@
 		$petfriendly = ($_POST['PetFriendly']);
 		$bluecardnumber = ($_POST['BlueCardNumber']);
 		$description = ($_POST['Description']);
+		$gender = ($_POST['Description']);
+		$nights = ($_POST['Description']);
 	
 	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
@@ -129,7 +131,7 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br /><input name="Register" type="submit" value="Register")/>
+			<label id = "InfantSpacesError"></label> <br /><br /><br />
 			
 			<label id="PetFriendly">* Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="1"> Yes
@@ -138,7 +140,7 @@
 
 			
 			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
-			<label id = "DescriptionError"></label> <br /><br /> <br /><br /><br /> 
+			<label id = "DescriptionError"></label> <br /><br /> <br />
 			
 			<label id="Nights">* Length of Stay</label> 
 			<select name="Nights">
@@ -160,7 +162,7 @@
 			</select>
 			<label id = "NightsError"></label> <br /><br /><br />
 			
-			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
 			
 			
 			</div>
@@ -177,14 +179,15 @@ $( "#next" ).click(function() {
 	if (error > 0) {
 		return false;
 	}
-	
-	
+
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
     $("#step2form").css('height', 'auto');
   $("#step2form").css('visibility', 'VISIBLE');
   $("#S2Label").css('text-decoration', 'underline');
     $("#S1Label").css('text-decoration', 'none');
+     $("#step2form").css('overflow-y', 'auto');
+
 });
 
 
