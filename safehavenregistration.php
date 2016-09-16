@@ -47,8 +47,8 @@
 		$hashpassword = hash("sha256", $password);
 	
 	
-		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
-		VALUES ('$first', '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$city', '$state', '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
+		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
+		VALUES ('$first', '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$postcode', '$city', '$state', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
 		
 		mysqli_query($db, $sql);
 	?>
