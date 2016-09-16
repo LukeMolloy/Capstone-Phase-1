@@ -130,12 +130,8 @@
 			
 			<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
 			<label id = "DescriptionError"></label> <br /><br /> <br />
-				<button id="back" type="button">Back</button> <input name="Register" type="submit" value="Register")/>
+				<button id="back" type="button">Back</button> &emsp&emsp&emsp&emsp<input name="Register" type="submit" value="Register")/>
 			</div>
-
-			
-			<br /><br />
-			<a href="/index.php"><button type="button">Back to login</button></a>
 			</center>
 		</form>
 	</div>
