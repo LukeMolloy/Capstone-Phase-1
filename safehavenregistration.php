@@ -38,7 +38,7 @@
 		$spacesavailable = ($_POST['SpacesAvailable']);
 		$infantspaces = ($_POST['InfantSpaces']);
 		$petfriendly = ($_POST['PetFriendly']);
-		$bluecardnumber = ($_POST['BlueCardNumber']);
+		$bluecardnumber = ($_POST['BluecardNumber']);
 		$description = ($_POST['Description']);
 		$gender = ($_POST['GenderTaken']);
 		$nights = ($_POST['Nights']);
