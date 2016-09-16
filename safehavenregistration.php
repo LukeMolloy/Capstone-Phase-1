@@ -42,11 +42,13 @@
 		$description = ($_POST['Description']);
 		$gender = ($_POST['GenderTaken']);
 		$nights = ($_POST['Nights']);
-		$nights = ($_POST['Nights']);
+		$DOB = ($_POST['Nights']);
+		$password = ($_POST['Password']);
+		$hashpassword = hash("sha256", $password);
 	
 	
-		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
-		VALUES ('$first', '$last', '$phonenumber', '$email', '$address', '$suburb', '$city', '$state', '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
+		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
+		VALUES ('$first', '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$city', '$state', '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
 		
 		mysqli_query($db, $sql);
 	?>
