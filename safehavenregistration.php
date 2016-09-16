@@ -122,7 +122,7 @@
 				  <option value="Female">Female</option>
 				  <option value="No Preference" selected>No Preference</option>
 
-			</select>
+			</select><input name="Register" type="submit" value="Register")/>
 			<label id = "SpacesAvailableError"></label> <br /><br /><br />
 			
 			<label id="InfantSpaces">* Infant Spaces</label> 
@@ -165,7 +165,7 @@
 			</select>
 			<label id = "NightsError"></label> <br /><br /><br />
 			
-			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;
 			
 			
 			</div>
