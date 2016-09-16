@@ -41,7 +41,7 @@
 	
 	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
-		VALUES ('$first', '$last', '$phonenumber', '$email', '$address', '$suburb', '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
+		VALUES ('$first', '$last', '$phonenumber', '$email', '$address', '$suburb',  '$postcode', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description')";
 		
 		mysqli_query($db, $sql);
 	?>
@@ -167,16 +167,6 @@
 	</div>
 	
 <script>
-
-$(document).ready(function() {
-  $(window).keydown(function(event){
-    if(event.keyCode == 13) {
-      event.preventDefault();
-      return false;
-    }
-  });
-});
-
   $("#S1Label").css('text-decoration', 'underline');
 
 
@@ -186,13 +176,6 @@ $( "#next" ).click(function() {
 		return false;
 	}
 	
-	if (error < 1) {
-		  $(window).keydown(function(event){
-    if(event.keyCode == 13) {
-      return true;
-    }
-  });
-	}
 	
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
