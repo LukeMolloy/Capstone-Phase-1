@@ -92,7 +92,7 @@
 			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 			
 			<label id="SpacesAvailable">* Spaces Available</label> 
-				<select name="SpacesAvailable">
+			<select name="SpacesAvailable">
 				  <option value="1" selected>1</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
