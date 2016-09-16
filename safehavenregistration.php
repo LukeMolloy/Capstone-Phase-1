@@ -144,6 +144,12 @@ $( "#next" ).click(function() {
 	
 	if (error > 0) {
 		return false;
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
 	}
 
   $("#step1form").css('visibility', 'hidden');
@@ -152,7 +158,6 @@ $( "#next" ).click(function() {
   $("#step2form").css('visibility', 'VISIBLE');
   $("#S2Label").css('text-decoration', 'underline');
     $("#S1Label").css('text-decoration', 'none');
-     $(".loginform").css('overflow-y', 'auto');
 });
 
 
