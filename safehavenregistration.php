@@ -134,7 +134,7 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br /><input name="Register" type="submit" value="Register")/>
+			<label id = "InfantSpacesError"></label> <br /><br /><br />
 			
 			<label id="PetFriendly">* Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="1"> Yes
@@ -165,7 +165,7 @@
 			</select>
 			<label id = "NightsError"></label> <br /><br /><br />
 			
-			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
 			
 			
 			</div>

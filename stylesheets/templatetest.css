@@ -72,7 +72,9 @@ h2 {
 
 }
 
-
+.step2form {
+    overflow-y: auto;
+}
 
 .authorityRegistration {
     padding-left: 50px;
