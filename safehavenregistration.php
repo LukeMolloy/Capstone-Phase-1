@@ -92,10 +92,10 @@
 			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 			
 			<label id="City">* City/Town</label> <input name="City" type="text" />
-			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
+			<label id = "CityError" class="error"></label> <br /><br /><br />
 			
-			<label id="PostCode">* Post Code</label> <input name="PostCode" type="text" />
-			<label id = "PostCodeError" class="error"></label> <br /><br /><br />
+			<label id="State">* State</label> <input name="State" type="text" />
+			<label id = "StateError" class="error"></label> <br /><br /><br />
 			
 			
 			<label id="SpacesAvailable">* Spaces Available</label> 
@@ -165,11 +165,7 @@ $( "#next" ).click(function() {
     		return false;
 		return false;
 	}
-
-	if(event.keyCode == 13) {
-    		event.preventDefault();
-    		return true;
-	}
+	
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
     $("#step2form").css('height', 'auto');
