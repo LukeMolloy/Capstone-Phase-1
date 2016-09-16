@@ -40,8 +40,9 @@
 		$petfriendly = ($_POST['PetFriendly']);
 		$bluecardnumber = ($_POST['BlueCardNumber']);
 		$description = ($_POST['Description']);
-		$gender = ($_POST['Description']);
-		$nights = ($_POST['Description']);
+		$gender = ($_POST['GenderTaken']);
+		$nights = ($_POST['Nights']);
+		$nights = ($_POST['Nights']);
 	
 	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Address, Suburb, PostCode, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description)
@@ -131,7 +132,7 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<label id = "InfantSpacesError"></label> <br /><br /><br />
+			<label id = "InfantSpacesError"></label> <br /><br /><br /><input name="Register" type="submit" value="Register")/>
 			
 			<label id="PetFriendly">* Pet Friendly</label>   
 			<input type="radio" name="PetFriendly" value="1"> Yes
@@ -162,7 +163,7 @@
 			</select>
 			<label id = "NightsError"></label> <br /><br /><br />
 			
-			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;<input name="Register" type="submit" value="Register")/>
+			<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp;
 			
 			
 			</div>
