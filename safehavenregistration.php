@@ -153,9 +153,15 @@ $(document).ready(function() {
 $( "#next" ).click(function() {
 	
 	if (error > 0) {
+		if(event.keyCode == 13) {
+    		event.preventDefault();
+    		return false;
 		return false;
 	}
 
+	if(event.keyCode == 13) {
+    		event.preventDefault();
+    		return true;
   $("#step1form").css('visibility', 'hidden');
   $("#step1form").css('height', '0px');
     $("#step2form").css('height', 'auto');
