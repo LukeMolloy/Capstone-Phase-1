@@ -16,10 +16,10 @@
 	
 <div class="header">
 	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/index.php">Login / Register</a></li>
+ 	<!--	<li><a href="/index.php">Login / Register</a></li>
 		<li><a href="/About.php">About Us</a></li>
 		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
+		<li><a href="/index.php">Home</a></li> -->
 	</ul> 
 </div>
 	<div class="navbar">
@@ -57,25 +57,25 @@
 			
 			<div id="step1form">
 			<label id="FirstName">* First Name</label> <input name="FirstName" type="text" />
-			<label id = "FirstNameError" class="error"></label> <br /><br /><br /><br />
+			<label id = "FirstNameError" class="error"></label> <br /><br /><br />
 			
 			<label id="LastName">* Last Name</label> <input name="LastName" type="text" />
-			<label id = "LastNameError" class="error"></label> <br /><br /><br /><br />
+			<label id = "LastNameError" class="error"></label> <br /><br /><br />
 			
 			<label id="PhoneNumber">* Phone Number</label> <input name="PhoneNumber" type="text" />
-			<label id = "PhoneError" class="error"></label> <br /><br /><br /><br />
+			<label id = "PhoneError" class="error"></label> <br /><br /><br />
 			
 			<label id="Email">* Email</label> <input name="Email" type="email"/>
-			<label id = "EmailError" class="error"></label> <br /><br /><br /><br />
+			<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
 						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
-		<br /><br /><br /><br />
+		<br /><br /><br />
 		
 		<label id="Password">* Password</label> <input name="Password" type="password" />
-			<label id = "PasswordError" class="error"></label> <br /><br /><br /><br />
+			<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
 					<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
-			<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br /><br />
+			<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br />
 			<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 			
 			</div>

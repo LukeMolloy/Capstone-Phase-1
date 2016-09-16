@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <?php
+header("location:safehavenregistration.php");
 //	ob_start();
 	session_start();
 //	$_SESSION['Username'] = $_POST['Username'];
@@ -97,10 +98,10 @@ $(document).ready(function(){
 <br />
 <table class="footertable">
 	<tr>
-		<td class="lightertext">SHOW<br /><hr></td>
+	   <td class="lightertext">SHOW<br /><hr></td>
 		<td class="lightertext">ABOUT<br /><hr></td>
 		<td class="lightertext">HELP<br /><hr></td>
-		<td class="lightertext">CONNECT<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>  
 	</tr>
 	<tr>
 		<td class="darkertext">
