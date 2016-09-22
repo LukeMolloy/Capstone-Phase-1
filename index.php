@@ -122,9 +122,9 @@ $(document).ready(function(){
    $("#authorityform").css('visibility', 'hidden');
   $("#shform").css('visibility', 'VISIBLE');
   $("#shform").css('height', 'auto');
-      $("#loginsafehaven").css('border-bottom', '3px solid grey');
+      $("#loginsafehaven").css('border-bottom', '3px solid lightgrey');
 
-      $("#loginauthority").css('background-color', 'white');
+      $("#loginauthority").css('border-bottom', 'none');
 
 
 });
@@ -136,9 +136,9 @@ $( "#loginauthority" ).click(function() {
    $("#shform").css('visibility', 'hidden');
   $("#authorityform").css('visibility', 'VISIBLE');
 
-      $("#loginauthority").css('background-color', 'grey');
+      $("#loginauthority").css('border-bottom', '3px solid lightgrey');
 
-      $("#loginsafehaven").css('background-color', 'white');
+      $("#loginsafehaven").css('border-bottom', 'none');
   $("#authorityform").css('height', 'auto');
 });   
 	
