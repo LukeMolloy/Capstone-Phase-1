@@ -65,7 +65,7 @@
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+			<input name="Signin" id="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 				</div>
 			

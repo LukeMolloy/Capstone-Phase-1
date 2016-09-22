@@ -61,6 +61,13 @@ h2 {
     
 }
 
+#signin {
+    width: 540px;
+    background-color: white;
+    text-align: center;
+}
+
+
 .loginform {
     padding-top: 10px;
     text-align:center;
