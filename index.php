@@ -35,7 +35,7 @@
 
 	<div class="loginform1">
 	
-		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
+		<h1>SAFE HAVEN OUR WOMEN</h1><br/><hr><br />
 			<div id="loginauthority">
 				Login as Authority
 			</div>
@@ -43,7 +43,7 @@
 			<div id="loginsafehaven">
 				Login as Safe Haven
 			</div> <br /><br />
-		<hr><br />
+		
 		<div id="authorityform">
 		<form method="post" action="checkloginauthority.php">
 			<h3>Login as authority</h3><br />
