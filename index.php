@@ -122,9 +122,8 @@ $(document).ready(function(){
    $("#authorityform").css('visibility', 'hidden');
   $("#shform").css('visibility', 'VISIBLE');
   $("#shform").css('height', 'auto');
-   $("#loginsafehaven").css('color', 'white');
-      $("#loginsafehaven").css('background-color', 'black');
-         $("#loginauthority").css('color', 'black');
+      $("#loginsafehaven").css('background-color', 'grey');
+
       $("#loginauthority").css('background-color', 'white');
 
 
@@ -136,9 +135,9 @@ $( "#loginauthority" ).click(function() {
     $("#shform").css('height', '0px');
    $("#shform").css('visibility', 'hidden');
   $("#authorityform").css('visibility', 'VISIBLE');
-   $("#loginauthority").css('color', 'white');
-      $("#loginauthority").css('background-color', 'black');
-         $("#loginsafehaven").css('color', 'black');
+
+      $("#loginauthority").css('background-color', 'grey');
+
       $("#loginsafehaven").css('background-color', 'white');
   $("#authorityform").css('height', 'auto');
 });   
