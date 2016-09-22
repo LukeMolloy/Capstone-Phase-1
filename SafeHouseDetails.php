@@ -38,6 +38,7 @@
 		 
 </div>
 <body>
+    <h1>Test SH Page</h1>
     <?php
         session_start();
         ob_start();
