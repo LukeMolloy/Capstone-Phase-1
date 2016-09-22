@@ -54,29 +54,16 @@
 	<div class="navbar">
 	</div>
 	<?php
-		/*$first = ($_POST['FirstName']);
-		$last =  ($_POST['LastName']);
-		$email = ($_POST['Email']);
-		$phone = ($_POST['Phone']);
-		$dependants = ($_POST['Dependants']);
-		$pets =  ($_POST['Pets']);
-		$infants = ($_POST['Infants*/
-		
 		if($first == "" || $last == "" || $email == "" || $phone == "" || $dependants == "" || $pets == "" || $infants == ""){
-		
 		}else{
-			/*$sql = "INSERT INTO Client (FirstName, LastName, Email, PhoneNumber, Dependants, Pets, Infants)
-			VALUES ('$first', '$last', '$email', '$phone', '$dependants', '$pets', '$infants')";
 			
-			mysqli_query($db, $sql);*/
-			
-			$_SESSION['FirstName'] = ($_POST['FirstName']);
-			$_SESSION['LastName'] = ($_POST['LastName']);
-			$_SESSION['Email'] = ($_POST['Email']);
-			$_SESSION['Phone'] = ($_POST['Phone']);
-			$_SESSION['Dependants'] = ($_POST['Dependants']);
-			$_SESSION['Pets'] = ($_POST['Pets']);
-			$_SESSION['Infants'] = ($_POST['Infants']);
+			$_SESSION['ClientFirstName'] = ($_POST['FirstName']);
+			$_SESSION['ClientLastName'] = ($_POST['LastName']);
+			$_SESSION['ClientEmail'] = ($_POST['Email']);
+			$_SESSION['ClientPhone'] = ($_POST['Phone']);
+			$_SESSION['ClientDependants'] = ($_POST['Dependants']);
+			$_SESSION['ClientPets'] = ($_POST['Pets']);
+			$_SESSION['ClientInfants'] = ($_POST['Infants']);
 			
 			header('Location: safehaven.php');
 		}

@@ -84,7 +84,7 @@
          <h2>Suggested Safe Haven(s):</h2>
         <br /> <br />
             <?php
-                $client = $_SESSION['Phone'];
+               /* $client = $_SESSION['Phone'];
                 $sql2="SELECT * FROM Client WHERE PhoneNumber = $client;";
             	$result2 = mysqli_query($db, $sql2);
             	
@@ -92,8 +92,11 @@
                	    $userDependants = $row2['Dependants'];
                	    $userPets = $row2['Pets'];
                	    $userInfants = $row2['Infants'];
-               	}
+               	}*/
          
+        		$userDependants = $_SESSION['ClientDependants'];
+               	$userPets = $_SESSION['ClientPets'];
+               	$userInfants = $_SESSION['ClientInfants'];
                	
                	$spaces = $userDependants + 1;
                	
