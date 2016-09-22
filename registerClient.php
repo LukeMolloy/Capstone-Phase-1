@@ -53,25 +53,17 @@
 	</div>
 	<div class="navbar">
 	</div>
-	<?php
+	<?php /*
 		if($first == "" || $last == "" || $email == "" || $phone == "" || $dependants == "" || $pets == "" || $infants == ""){
 		}else{
 			
-			$_SESSION['ClientFirstName'] = ($_POST['FirstName']);
-			$_SESSION['ClientLastName'] = ($_POST['LastName']);
-			$_SESSION['ClientEmail'] = ($_POST['Email']);
-			$_SESSION['ClientPhone'] = ($_POST['Phone']);
-			$_SESSION['ClientDependants'] = ($_POST['Dependants']);
-			$_SESSION['ClientPets'] = ($_POST['Pets']);
-			$_SESSION['ClientInfants'] = ($_POST['Infants']);
 			
-			header('Location: safehaven.php');
 		}
-		
+	*/	
 	?>
 	
 	<div class="loginform">
-		<form name="clientRegistration" method="post">
+		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
 				<div class="instructions">

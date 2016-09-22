@@ -40,7 +40,7 @@
 			
 			<div id="loginsafehaven">
 				Login as Safe Haven
-			</div><br />	
+			</div><br /><br />	
 		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
 		<hr><br />
 		<form method="post" action="checklogin.php">
