@@ -39,7 +39,7 @@
 </div>
 <body>
     <?php
-        $house = $_SESSION['houseemail'];
+        $house = $_SESSION['Username'];
                	    
         $sql="SELECT * FROM House WHERE Email = $house";
         $result = mysqli_query($db, $sql);
@@ -66,7 +66,6 @@
         }
         /*echo "</table>";*/
                     
-                   
     ?> 
 
 </body>
