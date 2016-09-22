@@ -45,14 +45,19 @@
 			</div> <br /><br />
 		
 		<div id="authorityform">
+				<table>
 		<form method="post" action="checkloginauthority.php">
-			<h3>Login as authority</h3><br />
+				
+					
+		<td>
+				<h3>Login as authority</h3><br /></td>
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
-				
+			<td>	
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form></td>
+			</table>
 			</div>
 			
 			<div id="shform">
