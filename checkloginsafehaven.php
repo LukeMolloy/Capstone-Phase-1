@@ -18,7 +18,7 @@
 			
 				$hashpassword = hash("sha256", $password);
 		
-				$sql="SELECT * FROM House WHERE EmailAddress='$myusername' and Password='$hashpassword'";
+				$sql="SELECT * FROM House WHERE Email='$myusername' and Password='$hashpassword'";
 				$result = mysqli_query($db, $sql);
 				$count = mysqli_num_rows($result);
 				
