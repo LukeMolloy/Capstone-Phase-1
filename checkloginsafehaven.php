@@ -29,6 +29,7 @@
 						session_start();
 				$_SESSION['Username']= $_POST['Username'];
          		$_SESSION['loggedin'] = true;
+         		$_SESSION['houseemail'] = $_POST['Username'];
 					header("location:SafeHouseDetails.php");
 				}
 				else {
