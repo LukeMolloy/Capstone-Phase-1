@@ -11,6 +11,13 @@
 
 <body>
     <h1>Test SH Page</h1>
-    
+    <?php
+        session_start();
+        ob_start();
+        
+        $a = $_SESSION['Username'];
+        
+        echo $a;
+    ?>
 
 </body>
