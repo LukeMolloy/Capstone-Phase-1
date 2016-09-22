@@ -118,6 +118,7 @@ $(document).ready(function(){
 
 
 <script>
+      $("#loginauthority").css('border-bottom', '3px solid black');
 	
 	$( "#loginsafehaven" ).click(function() {
     $("#authorityform").css('height', '0px');
