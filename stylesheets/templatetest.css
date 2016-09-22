@@ -62,7 +62,7 @@ h2 {
 }
 
 .signinbutton {
-    width: 200px;
+    width: auto;
     height: 30px;
     border-style: none;
     background-color: white;
