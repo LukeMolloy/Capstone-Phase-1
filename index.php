@@ -42,6 +42,15 @@
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
 			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>-->
+			
+			<div id="loginauthority">
+				Login as Authority
+			</div>
+			
+			<div id="loginsafehaven">
+				Login as Safe Haven
+			</div>
+			
 				</div>
 			<div class="applyform">
 			    <table>
