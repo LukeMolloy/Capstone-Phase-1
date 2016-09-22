@@ -39,6 +39,9 @@
 </div>
 <body>
     <?php
+        session_start();
+        ob_start();
+    
         $house = $_SESSION['Username'];
                	    
         $sql="SELECT * FROM House WHERE Email = $house";
