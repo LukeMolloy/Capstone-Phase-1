@@ -74,7 +74,7 @@ h2 {
 }
 
 #loginauthority {
-    width:  250px;
+    width:  270px;
     height: 30px;
     padding-top: 2px;
     background-color: white;
@@ -82,6 +82,24 @@ h2 {
     opacity: 0.85;
     text-align: center;
     filter: alpha(opacity=85);/* For IE8 and earlier */
+}
+
+
+#shform {
+visibility: hidden;
+   height: 0px;
+}
+
+#loginsafehaven {
+    width:  270px;
+    margin-left: 3px;
+        padding-top: 2px;
+    height: 30px;
+    background-color: white;
+    opacity: 0.85;
+    float: left;
+    filter: alpha(opacity=85);
+    text-align: center;
 }
 
 #loginauthority:hover {
@@ -97,22 +115,6 @@ h2 {
     
 }
 
-#shform {
-visibility: hidden;
-   height: 0px;
-}
-
-#loginsafehaven {
-    width:  250px;
-    margin-left: 3px;
-        padding-top: 2px;
-    height: 30px;
-    background-color: white;
-    opacity: 0.85;
-    float: left;
-    filter: alpha(opacity=85);
-    text-align: center;
-}
 
 #step1form {
     overflow-y: auto;
