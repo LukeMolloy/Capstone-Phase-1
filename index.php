@@ -122,7 +122,7 @@ $(document).ready(function(){
    $("#authorityform").css('visibility', 'hidden');
   $("#shform").css('visibility', 'VISIBLE');
   $("#shform").css('height', 'auto');
-      $("#loginsafehaven").css('background-color', 'grey');
+      $("#loginsafehaven").css('border-bottom', '3px solid grey');
 
       $("#loginauthority").css('background-color', 'white');
 
