@@ -50,11 +50,11 @@
                     
         while($row = $result->fetch_assoc()) {
                         
-            echo "$row['FirstName']";
+            /*echo "$row['FirstName']";
             echo "$row['LastName']";
             echo "$row['PhoneNumber']";
-            echo "$row['Email']";
-            /*echo "
+            echo "$row['Email']";*/
+            echo "
             <tr><td>".$row["FirstName"]."</td>
             <td>".$row["LastName"]."</td>
             <td>".$row["PhoneNumber"]."</td>
@@ -62,9 +62,9 @@
             <td><div id='add'>".$row["Address"]."</div></td>
             <td><div id='city'>".$row["City"]."</div></td>
             </tr>";
-            $description = $row["Description"];*/
+            $description = $row["Description"];
         }
-        /*echo "</table>";*/
+        *echo "</table>";
                     
     ?> 
 
