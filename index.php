@@ -34,25 +34,49 @@
 </div>
 
 	<div class="loginform1">
-		<div id="loginauthority">
+	
+		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
+			<div id="loginauthority">
 				Login as Authority
 			</div>
 			
 			<div id="loginsafehaven">
 				Login as Safe Haven
-			</div><br /><br />	
-		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
+			</div> <br /><br />
 		<hr><br />
-		<form method="post" action="checklogin.php">
+		<div id="authorityform">
+		<form method="post" action="checkloginauthority.php">
+			<h3>Login as authority</h3><br />
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
 			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+			</div>
 			
+			<div id="shform">
+			<form method="post" action="checkloginsafehaven.php">
+			<h3>Login as safe haven</h3><br />
+			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
+				
+				
+			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
+			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
+			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+			</div>
 				</div>
-			<div class="applyform">
+			
+			
+			</center>
+			
+			
+			
+		<!--	<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a> -->
+		    
+			</center>
+</div>
+<!--<div class="applyform">
 			    <table>
 			        <td>
 			           <button class="safehavenyes">Safe Haven Application</button> 
@@ -63,18 +87,8 @@
 			    </table>
 			    <div class="moreinfo"></div>
 			</div>
-			
-			</center>
-			
-			
-			
-		<!--	<a href="/registration.php">Apply as authority</a> | <a href="/safehavenregistration.php">Apply to be a safe haven</a> -->
-		    
-			</center>
-</div>
-
 </body>
-</div>
+</div>-->
 
 
 
@@ -101,7 +115,35 @@ $(document).ready(function(){
 </script>
 
 
+<script>
+	
+	$( "#loginsafehaven" ).click(function() {
+    $("#authorityform").css('height', '0px');
+   $("#authorityform").css('visibility', 'hidden');
+  $("#shform").css('visibility', 'VISIBLE');
+  $("#shform").css('height', 'auto');
+   $("#loginsafehaven").css('color', 'white');
+      $("#loginsafehaven").css('background-color', 'black');
+         $("#loginauthority").css('color', 'black');
+      $("#loginauthority").css('background-color', 'white');
 
+
+});
+
+
+$( "#loginauthority" ).click(function() {
+	
+    $("#shform").css('height', '0px');
+   $("#shform").css('visibility', 'hidden');
+  $("#authorityform").css('visibility', 'VISIBLE');
+   $("#loginauthority").css('color', 'white');
+      $("#loginauthority").css('background-color', 'black');
+         $("#loginsafehaven").css('color', 'black');
+      $("#loginsafehaven").css('background-color', 'white');
+  $("#authorityform").css('height', 'auto');
+});   
+	
+</script>
 
 <footer>
 <br />

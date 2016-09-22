@@ -53,14 +53,6 @@
 	</div>
 	<div class="navbar">
 	</div>
-	<?php /*
-		if($first == "" || $last == "" || $email == "" || $phone == "" || $dependants == "" || $pets == "" || $infants == ""){
-		}else{
-			
-			
-		}
-	*/	
-	?>
 	
 	<div class="loginform">
 		<form name="clientRegistration" method="post" action ="saveclient.php">
