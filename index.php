@@ -35,13 +35,13 @@
 	<div class="loginform1">	
 		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
 		<hr><br />
-		<form method="post" action="checklogin.php">
+		<!--<form method="post" action="checklogin.php">
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
+			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>-->
 				</div>
 			<div class="applyform">
 			    <table>
