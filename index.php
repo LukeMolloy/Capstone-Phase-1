@@ -122,7 +122,7 @@ $(document).ready(function(){
    $("#authorityform").css('visibility', 'hidden');
   $("#shform").css('visibility', 'VISIBLE');
   $("#shform").css('height', 'auto');
-      $("#loginsafehaven").css('border-bottom', '3px solid grey');
+      $("#loginsafehaven").css('border-bottom', '3px solid black');
 
       $("#loginauthority").css('border-bottom', 'none');
 
@@ -136,7 +136,7 @@ $( "#loginauthority" ).click(function() {
    $("#shform").css('visibility', 'hidden');
   $("#authorityform").css('visibility', 'VISIBLE');
 
-      $("#loginauthority").css('border-bottom', '3px solid grey');
+      $("#loginauthority").css('border-bottom', '3px solid black');
 
      $("#loginsafehaven").css('border-bottom', 'none');
   $("#authorityform").css('height', 'auto');
