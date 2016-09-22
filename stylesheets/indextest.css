@@ -30,6 +30,7 @@ article {
 */
 body {
     background-image: url(/images/flowerbackground.jpeg);
+    background-size: 100%;
     background-position: 0px -200px; 
 }
 
