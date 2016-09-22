@@ -32,7 +32,15 @@
 		<li><a href="/Contact.php">CONTACT</a></li>
 	</ul> 
 </div>
-	<div class="loginform1">	
+
+	<div class="loginform1">
+		<div id="loginauthority">
+				Login as Authority
+			</div>
+			
+			<div id="loginsafehaven">
+				Login as Safe Haven
+			</div><br />	
 		<h1>SAFE HAVEN OUR WOMEN</h1><br/>
 		<hr><br />
 		<form method="post" action="checklogin.php">
@@ -42,14 +50,6 @@
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
 			<input name="Signin" type="submit" value="&nbsp Sign In &nbsp"/></form>
-			
-			<div id="loginauthority">
-				Login as Authority
-			</div>
-			
-			<div id="loginsafehaven">
-				Login as Safe Haven
-			</div>
 			
 				</div>
 			<div class="applyform">
