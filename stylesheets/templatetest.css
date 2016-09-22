@@ -61,13 +61,13 @@ h2 {
     
 }
 
-#signin {
+.signinbutton {
     width: 540px;
     background-color: white;
     text-align: center;
 }
 
-#signin:hover {
+.signinbutton:hover {
     background-color: grey;
 }
 
