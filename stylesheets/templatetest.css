@@ -72,7 +72,7 @@ h2 {
 
 }
 
-.loginauthority {
+#loginauthority {
     width:  50px;
     height: 200px;
     background-color: white;
@@ -80,7 +80,7 @@ h2 {
     filter: alpha(opacity=70); /* For IE8 and earlier */
 }
 
-.loginsafehaven {
+#loginsafehaven {
     width:  50px;
     margin-left: 10px;
     height: 200px;
