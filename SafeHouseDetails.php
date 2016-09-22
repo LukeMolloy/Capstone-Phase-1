@@ -2,10 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>SafeHaven.OurWomen</title>
+ 	<link rel="stylesheet" href="stylesheets/indextest.css">
+ 	<link rel="stylesheet" href="stylesheets/templatetest.css">
+	<?php include 'dbLogin.php' ?>
 </head>
-
-
 
 <body>
     <h1>Test SH Page</h1>
