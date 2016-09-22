@@ -17,23 +17,6 @@
 	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
 	$aresult = mysqli_query($db, $asql);
 	$row = mysqli_fetch_row($aresult);
-	//print_r($row);	
-//	if ($row[7] == 1) {
-//		echo "dsssdasfafasfs";
-//	}
-//	else {
-//		echo "no";
-//	}
-	
-	
-	
-		
-	
-		//$_SESSION['Phone'] = $_POST['Phone'];
-		
-		//if($_SESSION['Admin'] == 1) {
-	//		echo "admin";
-   // 	}
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
@@ -71,27 +54,30 @@
 	<div class="navbar">
 	</div>
 	<?php
-		//$userID = ($_POST['UserID']);
-		$first = ($_POST['FirstName']);
+		/*$first = ($_POST['FirstName']);
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
 		$phone = ($_POST['Phone']);
 		$dependants = ($_POST['Dependants']);
 		$pets =  ($_POST['Pets']);
-		$infants = ($_POST['Infants']);
-		
-		
-		
-	
+		$infants = ($_POST['Infants*/
 		
 		if($first == "" || $last == "" || $email == "" || $phone == "" || $dependants == "" || $pets == "" || $infants == ""){
 		
 		}else{
-			$sql = "INSERT INTO Client (FirstName, LastName, Email, PhoneNumber, Dependants, Pets, Infants)
+			/*$sql = "INSERT INTO Client (FirstName, LastName, Email, PhoneNumber, Dependants, Pets, Infants)
 			VALUES ('$first', '$last', '$email', '$phone', '$dependants', '$pets', '$infants')";
 			
-			mysqli_query($db, $sql);
-			$_SESSION['Phone'] = $phone;
+			mysqli_query($db, $sql);*/
+			
+			$_SESSION['FirstName'] = ($_POST['FirstName']);
+			$_SESSION['LastName'] = ($_POST['LastName']);
+			$_SESSION['Email'] = ($_POST['Email']);
+			$_SESSION['Phone'] = ($_POST['Phone']);
+			$_SESSION['Dependants'] = ($_POST['Dependants']);
+			$_SESSION['Pets'] = ($_POST['Pets']);
+			$_SESSION['Infants'] = ($_POST['Infants']);
+			
 			header('Location: safehaven.php');
 		}
 		
