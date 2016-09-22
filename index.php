@@ -35,7 +35,7 @@
 
 	<div class="loginform1">
 	
-		<h1>SAFE HAVEN OUR WOMEN</h1><br/><hr><br />
+		<h1>SAFE HAVEN OUR WOMEN</h1><hr><br />
 			<div id="loginauthority">
 				Login as Authority
 			</div>
