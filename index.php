@@ -25,7 +25,7 @@
     
 	<div class="header">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<label class="title">SAFE HAVEN OUR WOMEN</label>
+	<label class="title">SAFE HAVEN COMMUNITY</label>
  		<li><a href="/safehavenregistration.php">SAFE HAVEN APPLICATION</a></li>
  		 <li><a href="/registration.php">USER APPLICATION</a></li>
 		<li><a href="/About.php">ABOUT</a></li>
@@ -35,7 +35,7 @@
 
 	<div class="loginform1">
 	
-		<h1>SAFE HAVEN OUR WOMEN</h1><hr><br />
+		<h1>SAFE HAVEN COMMUNITY</h1><hr><br />
 			<div id="loginauthority">
 				Login as Authority
 			</div>
