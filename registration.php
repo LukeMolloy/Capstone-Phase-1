@@ -78,8 +78,7 @@ function test_input($data) {
 		VALUES (?, ?, ?, ?)";
 		$stmt = $db->prepare($sql);
 		$stmt->bind_param("ssss", $first, $last, $email, $hashpassword);
-		$stmt->execute();
-		$stmt->fetch();
+	
 		
 //		$sql->bind_param("s", $last);
 //		$sql->bind_param("s", $email);
