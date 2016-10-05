@@ -104,13 +104,13 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "
                         <tr onmouseover='popUp()'><td>".$row["FirstNameDecrypt"]."</td>
-                    	<td>".$row["LastName"]."</td>
-                        <td>".$row["PhoneNumber"]."</td>
-                        <td>".$row["Email"]."</td>
-                        <td>".$row["Address"]."</td>
-                        <td>".$row["Suburb"]."</td>
-                        <td>".$row["City"]."</td>
-                        <td>".$row["State"]."</td>
+                    	<td>".$row["LastNameDecrypt"]."</td>
+                        <td>".$row["PhoneNumberDecrypt"]."</td>
+                        <td>".$row["EmailDecrypt"]."</td>
+                        <td>".$row["AddressDecrypt"]."</td>
+                        <td>".$row["SuburbDecrypt"]."</td>
+                        <td>".$row["CityDecrypt"]."</td>
+                        <td>".$row["StateDecrypt"]."</td>
                         
                         
                         <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
