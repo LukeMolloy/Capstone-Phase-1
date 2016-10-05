@@ -28,7 +28,7 @@
 	$useruser = $_SESSION['Username'];
 
 	
-	$asql="SELECT AES_DECRYPT(Firstname, 'show2016') FROM User WHERE EmailAddress= '$useruser'";
+	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
 	$aresult = mysqli_query($db, $asql);
 	$row = mysqli_fetch_row($aresult);
 	?>
@@ -105,7 +105,7 @@
                	$city = $_SESSION['City'];
                	$state = $_SESSION['State'];
                	
-               	$sql="SELECT * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	$sql="SELECT AES_DECRYPT(Firstname, 'show2016'), * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
                	echo "<table align='center' cellspacing='30'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
                	if($result != NULL){
