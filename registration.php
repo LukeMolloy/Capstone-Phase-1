@@ -76,14 +76,14 @@ function test_input($data) {
 		$sql = $mysqli->prepare("INSERT INTO User Firstname, Lastname, Emailaddress, Password
 		VALUES ?, ?, ?, ?");
 		
-		$sql->bind_param("ss", $first, $last, $email, $hashpassword);
+		$sql->bind_param("s", $first, $last, $email, $hashpassword);
 		
 	//	$sql->bindParam("last", $last);
 	//	$sql->bindParam("email", $email);
 	//	$sql->bindParam("hashpassword", $hashpassword);
 		$sql->execute();		
 		
-		mysqli_query($db, $sql);
+		//mysqli_query($db, $sql);
 
 	
 		
