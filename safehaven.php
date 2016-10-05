@@ -96,7 +96,7 @@
                	$city = $_SESSION['City'];
                	$state = $_SESSION['State'];
                	
-               	$sql="SELECT FirstName, LastName, PhoneNumber, Address, Suburb, Postcode, City, State, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	$sql="SELECT FirstName, LastName, PhoneNumber, Email, Address, Suburb, Postcode, City, State, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
                	echo "<table align='center' cellspacing='30'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
                	if($result != NULL){
