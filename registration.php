@@ -91,8 +91,8 @@ function test_input($data) {
 	
 	
 		$sql->execute();		
-		$sql->close();
-		//mysqli_query($db, $sql);
+	
+		mysqli_query($db, $sql);
 
 	
 		
