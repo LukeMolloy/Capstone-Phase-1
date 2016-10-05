@@ -96,14 +96,14 @@
                	$city = $_SESSION['City'];
                	$state = $_SESSION['State'];
                	
-               	$sql="SELECT * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	$sql="SELECT AES_DECRYPT(Firstname, 'show2016') FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
                	echo "<table align='center' cellspacing='30'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
-                        <tr onmouseover='popUp()'><td>".AES_DECRYPT($row["FirstName"], 'show2016')."</td>
-                        <td>".$row["LastName"]."</td>
+                        <tr onmouseover='popUp()'><td>".$row["FirstName"]."</td>";
+                       /* <td>".$row["LastName"]."</td>
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>
                         <td>".$row["Address"]."</td>
@@ -112,7 +112,7 @@
                         <td>".$row["State"]."</td>
                         
                         
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
+                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";*/
                     }
                     echo "</table>"; 
                	}else{

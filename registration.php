@@ -74,7 +74,7 @@ function test_input($data) {
 }*/
 	
 		$sql = $db->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
-		VALUES (:first, :last, :email, :hashpassword)");
+		VALUES (first, last, email, hashpassword)");
 		
 		$sql->bindParam("first", $first);
 		$sql->bindParam("last", $last);
