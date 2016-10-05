@@ -74,15 +74,16 @@ function test_input($data) {
 }*/
 	
 		if ($sql = $db->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
-		VALUES (first, last, email, hashpassword)"));
+		VALUES (?, ?, ?, ?)")) {
 		
-		$sql->bindParam("first", $first);
-		$sql->bindParam("last", $last);
-		$sql->bindParam("email", $email);
-		$sql->bindParam("hashpassword", $hashpassword);
+		$sql->bindParam("ss", $first, $last, $email, $hashpassword);
+	//	$sql->bindParam("last", $last);
+	//	$sql->bindParam("email", $email);
+	//	$sql->bindParam("hashpassword", $hashpassword);
 		
 		
 		mysqli_query($db, $sql);
+		}
 	?>
 	<?php
 		echo $_SESSION["login_user"] . ".<br>";
