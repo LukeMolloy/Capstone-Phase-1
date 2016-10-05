@@ -28,7 +28,7 @@
 	$useruser = $_SESSION['Username'];
 
 	
-	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
+	$asql="SELECT AES_DECRYPT(Firstname, 'show2016'), * FROM User WHERE EmailAddress= '$useruser'";
 	$aresult = mysqli_query($db, $asql);
 	$row = mysqli_fetch_row($aresult);
 	?>
