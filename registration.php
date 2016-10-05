@@ -75,8 +75,8 @@ function test_input($data) {
 }*/
 	
 		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
-		VALUES (?, ?, ?, ?)");
-		$sql->bind_param("ssss", $first, $last, $email, $hashpassword);
+		VALUES (?, ?, ?)");
+		$sql->bind_param("sss", $first, $last, $email, $hashpassword);
 		$sql->execute();
 		
 //		$sql->bind_param("s", $last);
@@ -90,7 +90,7 @@ function test_input($data) {
 	
 		//$sql->execute();		
 		//$sql->close();
-		mysqli_query($db, $sql);
+	//	mysqli_query($db, $sql);
 
 	
 		
