@@ -73,7 +73,7 @@ function test_input($data) {
   return $data;
 }*/
 	
-		if ($sql = $db->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
+		if ($sql = $mysqli->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
 		VALUES (?, ?, ?, ?)")) {
 		
 		$sql->bindParam("ss", $first, $last, $email, $hashpassword);

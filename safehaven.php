@@ -102,8 +102,8 @@
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
-                        <tr onmouseover='popUp()'><td>".$row["FirstName"]."</td>";
-                       /* <td>".$row["LastName"]."</td>
+                        <tr onmouseover='popUp()'><td>".$row["FirstName"]."</td>
+                    	<td>".$row["LastName"]."</td>
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>
                         <td>".$row["Address"]."</td>
@@ -112,8 +112,8 @@
                         <td>".$row["State"]."</td>
                         
                         
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";*/
-                    }
+                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
+                    } 
                     echo "</table>"; 
                	}else{
                	    echo "No results";
