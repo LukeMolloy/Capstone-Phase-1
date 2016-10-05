@@ -86,7 +86,7 @@ function test_input($data) {
 	//	$sql->bindParam("hashpassword", $hashpassword);
 		$sql->execute();		
 		
-		mysqli_query($db, $sql);
+	//	mysqli_query($db, $sql);
 
 	
 		
