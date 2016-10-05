@@ -48,7 +48,7 @@
 	
 	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description, Gendertaken, Nights)
-		VALUES ('$first', '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$postcode', '$city', '$state', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description', '$gender', '$nights')";
+		VALUES (AES_ENCRYPT('$first', 'show2016'), '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$postcode', '$city', '$state', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description', '$gender', '$nights')";
 		
 		mysqli_query($db, $sql);
 	?>
