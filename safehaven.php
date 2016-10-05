@@ -103,7 +103,7 @@
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
-                        <tr onmouseover='popUp()'><td>".$row["FirstName"]."</td>
+                        <tr onmouseover='popUp()'><td>".$row["FirstNameDecrypt"]."</td>
                     	<td>".$row["LastName"]."</td>
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>
