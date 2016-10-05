@@ -73,7 +73,7 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $db->prepare("INSERT INTO User (Firstname)
+		$sql = $db->prepare("INSERT INTO User (FirstName)
 		VALUES (?)");
 		
 		$sql->bind_param("s", $first);
