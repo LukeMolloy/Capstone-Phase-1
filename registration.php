@@ -88,8 +88,7 @@ function test_input($data) {
 		
 		mysqli_query($db, $sql);
 
-	$sql->execute();		
-		$sql->close();	
+
 		
 	?>
 	<?php
