@@ -84,7 +84,7 @@ function test_input($data) {
 	//	$sql->bindParam("last", $last);
 	//	$sql->bindParam("email", $email);
 	//	$sql->bindParam("hashpassword", $hashpassword);
-	//	$sql->execute();		
+		$sql->execute();		
 		
 		mysqli_query($db, $sql);
 
