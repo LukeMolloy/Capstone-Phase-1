@@ -29,7 +29,7 @@
 
 <body>
 <div class="header">
-		<label class="title">Safe Haven Our Women</label>
+		<label class="title">Safe Haven Our Women </label>
 			<?php
 			if ($row[7] == 1) {
 				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
