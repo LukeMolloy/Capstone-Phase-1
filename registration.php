@@ -23,14 +23,7 @@
 	</div>
 	<?php
 		session_start();
-			$first = ($_POST['FirstName']);
-		$last =  ($_POST['LastName']);
-		$email = ($_POST['Email']);
-		$password = ($_POST['Password']);
-	//	$salt = uniqid(mt_rand(), true);
-	
-//		$hashpassword = hash("sha256", $password.$salt);
-	$hashpassword = hash("sha256", $password);
+		
 	
 /*		if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($first)) {
@@ -77,6 +70,15 @@ function test_input($data) {
 		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress)
 		VALUES (?, ?, ?)");
 		$sql->bind_param("sss", $first, $last, $email);
+		
+			$first = ($_POST['FirstName']);
+		$last =  ($_POST['LastName']);
+		$email = ($_POST['Email']);
+		$password = ($_POST['Password']);
+	//	$salt = uniqid(mt_rand(), true);
+	
+//		$hashpassword = hash("sha256", $password.$salt);
+	$hashpassword = hash("sha256", $password);
 		$sql->execute();
 		$sql->close();
 		
