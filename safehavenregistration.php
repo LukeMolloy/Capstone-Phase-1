@@ -47,6 +47,9 @@
 		$hashpassword = hash("sha256", $password);
 	
 	
+		
+	
+	
 		$sql = "INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State, SpacesAvailable, InfantSpaces, PetFriendly, Bluecard, Description, Gendertaken, Nights)
 		VALUES (AES_ENCRYPT('$first', 'show2016'), '$last', '$phonenumber', '$email', '$hashpassword', '$address', '$suburb', '$postcode', '$city', '$state', '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description', '$gender', '$nights')";
 		
@@ -76,7 +79,7 @@
 			<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
 						<label id="BluecardNumber">Bluecard Number</label> <input name="BluecardNumber" type="text" />
-		<br /><br /><br />
+		<br /><br />
 		
 		<label id="Password">* Password</label> <input name="Password" type="password" />
 			<label id = "PasswordError" class="error"></label> <br /><br /><br />
