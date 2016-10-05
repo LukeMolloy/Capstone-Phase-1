@@ -73,17 +73,18 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $mysqli->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
-		VALUES (?, ?, ?, ?)");
+		$sql = $mysqli->prepare("INSERT INTO User Firstname, Lastname, Emailaddress, Password
+		VALUES ?, ?, ?, ?");
 		
 		$sql->bind_param("ss", $first, $last, $email, $hashpassword);
+		
 	//	$sql->bindParam("last", $last);
 	//	$sql->bindParam("email", $email);
 	//	$sql->bindParam("hashpassword", $hashpassword);
-		
+		$sql->execute();		
 		
 		mysqli_query($db, $sql);
-		$sql->execute();
+
 	
 		
 	?>
