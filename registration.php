@@ -76,10 +76,10 @@ function test_input($data) {
 		$sql = $db->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
 		VALUES (:first, :last, :email, :hashpassword)");
 		
-		$sql->bindParam(':first', $first);
-		$sql->bindParam(':last', $last);
-		$sql->bindParam(':email', $email);
-		$sql->bindParam(':hashpassword', $hashpassword);
+		$sql->bindParam("first", $first);
+		$sql->bindParam("last", $last);
+		$sql->bindParam("email", $email);
+		$sql->bindParam("hashpassword", $hashpassword);
 		
 		
 		mysqli_query($db, $sql);
