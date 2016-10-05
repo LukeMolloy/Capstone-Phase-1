@@ -83,6 +83,7 @@ function test_input($data) {
 		
 		
 		mysqli_query($db, $sql);
+		$sql->close();
 		}
 	?>
 	<?php
