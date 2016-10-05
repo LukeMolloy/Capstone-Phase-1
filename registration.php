@@ -73,7 +73,7 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $mysqli->prepare("INSERT INTO User (FirstName)
+		$sql = $db->prepare("INSERT INTO User (FirstName)
 		VALUES (?)");
 		
 		$sql->bind_param('s', $first);
@@ -88,7 +88,8 @@ function test_input($data) {
 		
 		mysqli_query($db, $sql);
 
-
+	$sql->execute();		
+		$sql->close();	
 		
 	?>
 	<?php
