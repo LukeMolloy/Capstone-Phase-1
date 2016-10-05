@@ -23,6 +23,14 @@
 	</div>
 	<?php
 		session_start();
+			$first = ($_POST['FirstName']);
+		$last =  ($_POST['LastName']);
+		$email = ($_POST['Email']);
+		$password = ($_POST['Password']);
+	//	$salt = uniqid(mt_rand(), true);
+	
+//		$hashpassword = hash("sha256", $password.$salt);
+	$hashpassword = hash("sha256", $password);
 	
 /*		if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($first)) {
@@ -66,10 +74,13 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
-		VALUES (?, ?, ?, ?)");
+		$sql = "INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+		VALUES (?, ?, ?, ?)";
+		$stmt = $db->prepare($sql);
+		$stmt->bind_param("ssss", $first, $last, $email, $hashpassword);
+		$stmt->execute();
+		$stmt->fetch();
 		
-		$sql->bind_param("ssss", $first, $last, $email, $hashpassword);
 //		$sql->bind_param("s", $last);
 //		$sql->bind_param("s", $email);
 	//	$sql->bind_param("s", $hashpassword);
@@ -78,14 +89,7 @@ function test_input($data) {
 	//	$sql->bindParam("email", $email);
 	//	$sql->bindParam("hashpassword", $hashpassword);
 	
-		$first = ($_POST['FirstName']);
-		$last =  ($_POST['LastName']);
-		$email = ($_POST['Email']);
-		$password = ($_POST['Password']);
-	//	$salt = uniqid(mt_rand(), true);
 	
-//		$hashpassword = hash("sha256", $password.$salt);
-	$hashpassword = hash("sha256", $password);
 		$sql->execute();		
 		$sql->close();
 		//mysqli_query($db, $sql);
