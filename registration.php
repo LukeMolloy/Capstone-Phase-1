@@ -74,10 +74,11 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress)
 		VALUES (?, ?, ?)");
-		$sql->bind_param("sss", $first, $last, $email, $hashpassword);
+		$sql->bind_param("sss", $first, $last, $email);
 		$sql->execute();
+		$sql->close();
 		
 //		$sql->bind_param("s", $last);
 //		$sql->bind_param("s", $email);
@@ -90,7 +91,7 @@ function test_input($data) {
 	
 		//$sql->execute();		
 		//$sql->close();
-	//	mysqli_query($db, $sql);
+		//mysqli_query($db, $sql);
 
 	
 		
