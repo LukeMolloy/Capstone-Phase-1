@@ -23,14 +23,7 @@
 	</div>
 	<?php
 		session_start();
-		$first = ($_POST['FirstName']);
-		$last =  ($_POST['LastName']);
-		$email = ($_POST['Email']);
-		$password = ($_POST['Password']);
-	//	$salt = uniqid(mt_rand(), true);
 	
-//		$hashpassword = hash("sha256", $password.$salt);
-	$hashpassword = hash("sha256", $password);
 /*		if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($first)) {
     $nameErr = "Name is required";
@@ -84,6 +77,15 @@ function test_input($data) {
 	//	$sql->bindParam("last", $last);
 	//	$sql->bindParam("email", $email);
 	//	$sql->bindParam("hashpassword", $hashpassword);
+	
+		$first = ($_POST['FirstName']);
+		$last =  ($_POST['LastName']);
+		$email = ($_POST['Email']);
+		$password = ($_POST['Password']);
+	//	$salt = uniqid(mt_rand(), true);
+	
+//		$hashpassword = hash("sha256", $password.$salt);
+	$hashpassword = hash("sha256", $password);
 		$sql->execute();		
 		$sql->close();
 		//mysqli_query($db, $sql);
