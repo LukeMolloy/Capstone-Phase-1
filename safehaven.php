@@ -84,15 +84,6 @@
          <h2>Suggested Safe Haven(s):</h2>
         <br /> <br />
             <?php
-               /* $client = $_SESSION['Phone'];
-                $sql2="SELECT * FROM Client WHERE PhoneNumber = $client;";
-            	$result2 = mysqli_query($db, $sql2);
-            	
-               	while($row2 = $result2->fetch_assoc()) {
-               	    $userDependants = $row2['Dependants'];
-               	    $userPets = $row2['Pets'];
-               	    $userInfants = $row2['Infants'];
-               	}*/
          
         		$userDependants = $_SESSION['ClientDependants'];
                	$userPets = $_SESSION['ClientPets'];
@@ -105,13 +96,13 @@
                	$city = $_SESSION['City'];
                	$state = $_SESSION['State'];
                	
-               	$sql="SELECT AES_DECRYPT(Firstname, 'show2016'), * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
+               	$sql="SELECT * FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
                	$result = mysqli_query($db, $sql);
                	echo "<table align='center' cellspacing='30'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
-                        <tr onmouseover='popUp()'><td>".$row["FirstName"]."</td>
+                        <tr onmouseover='popUp()'><td>".AES_DECRYPT($row["FirstName"], 'show2016')."</td>
                         <td>".$row["LastName"]."</td>
                         <td>".$row["PhoneNumber"]."</td>
                         <td>".$row["Email"]."</td>

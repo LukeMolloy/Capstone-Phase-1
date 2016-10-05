@@ -73,7 +73,7 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $mysqli->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
+		$sql = $db->prepare("INSERT INTO User (Firstname, Lastname, Emailaddress, Password)
 		VALUES (:first, :last, :email, :hashpassword)");
 		
 		$sql->bindParam(':first', $first);
