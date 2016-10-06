@@ -92,7 +92,7 @@
                         <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td></tr>
                         <tr><th>City</th><td>".$row["CityDecrypt"]."</td></tr>
                         <tr><th>State</th><td>".$row["StateDecrypt"]."</td></tr>
-                        </table>
+                        </table>";
                         
                         
                     } 
