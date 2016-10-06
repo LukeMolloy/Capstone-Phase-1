@@ -18,7 +18,7 @@
 			
 				$hashpassword = hash("sha256", $password);
 		
-				$sql="SELECT CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, Password FROM House WHERE EmailDecrypt='$myusername' and Password= '$hashpassword';
+				$sql="SELECT CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, Password FROM House WHERE Password= '$hashpassword';
 				$result = mysqli_query($db, $sql);
 				$count = mysqli_num_rows($result);
 				
@@ -26,9 +26,9 @@
 
 				
 				if($count==1){
-						session_start();
-				$_SESSION['Username']= $_POST['Username'];
-         		$_SESSION['loggedin'] = true;
+					session_start();
+					$_SESSION['Username']= $_POST['Username'];
+         			$_SESSION['loggedin'] = true;
 					header("location:SafeHouseDetails.php");
 				}
 				else {
