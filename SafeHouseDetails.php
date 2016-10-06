@@ -86,7 +86,7 @@
                         echo "<table>
                         <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td></tr><br /><br />
                     	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td></tr><br /><br />
-                        <tr><th>Phone Number>/th><td>".$row["PhoneNumberDecrypt"]."</td></tr><br /><br />
+                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td></tr><br /><br />
                         <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td></tr><br /><br />
                         <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td></tr><br /><br />
                         <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td></tr><br /><br />
