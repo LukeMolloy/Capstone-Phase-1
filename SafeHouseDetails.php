@@ -69,14 +69,13 @@
 			<li><a href="/registerClient.php">Register Client</a></li>
 
 	</div>
-	<div class="navbar">
-		 
-	</div>
+
 	
 <body>
     <div class="loginform">
         <?php
-        echo "Hello " $a;
+        echo "<h1>Hello $a</h1> <br /><br />
+        <h2>Find and edit your details below:</h2>";
         
 
 ?>
