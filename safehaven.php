@@ -113,7 +113,7 @@
                         <td>".$row["StateDecrypt"]."</td>
                         
                         
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button class='dropbtn'>Inspect</button></a></td></tr>";
+                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><div class='dropdown'><button class='dropbtn'>Inspect</button><div class='dropdown-content'><h1>Blah</h1></div></div></a></td></tr>";
                     } 
                     echo "</table>"; 
                	}else{
