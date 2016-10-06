@@ -81,21 +81,21 @@
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	//$sql = "SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE LastName = 'Name'";
                	$result = mysqli_query($db, $sql);
-               	echo "<table align='center' cellspacing='50'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
+               
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
-                        echo "
-                        <tr onmouseover='popUp()'><td>".$row["FirstNameDecrypt"]."</td>
-                    	<td>".$row["LastNameDecrypt"]."</td>
-                        <td>".$row["PhoneNumberDecrypt"]."</td>
-                        <td>".$row["EmailDecrypt"]."</td>
-                        <td>".$row["AddressDecrypt"]."</td>
-                        <td>".$row["SuburbDecrypt"]."</td>
-                        <td>".$row["CityDecrypt"]."</td>
-                        <td>".$row["StateDecrypt"]."</td>
+                        echo "<table align='center' cellspacing='50'>
+                        <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td></tr>
+                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td></tr>
+                        <tr><th>Phone Number>/th><td>".$row["PhoneNumberDecrypt"]."</td></tr>
+                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td></tr>
+                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td></tr>
+                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td></tr>
+                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td></tr>
+                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td></tr>
                         
                         
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
+                        
                     } 
                     echo "</table>"; 
                	}else{
