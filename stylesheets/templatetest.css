@@ -393,6 +393,7 @@ footer {
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: -1;
 }
 
 /* Dropdown Content (Hidden by Default) */
