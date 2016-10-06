@@ -86,64 +86,7 @@
 	
 <body>
     <div class="loginform">
-        <h2 align>Find a safe haven.</h2>
-        <br /> <br />
-        <form method ="post" action ="searchsafehaven.php">
-            
-            <label class="search">      Search By Suburb: </label>
-            <input type="text" name="Suburb" size="30">
-            <label class="search">      Search By Post Code: </label>
-            <input type="intager" name="Postcode" size="30"> 
-            <label class="search">      Search By City: </label>
-            <input type="text" name="City" size="30"> 
-            <label class="search">      Search By State: </label>
-            <input type="text" name="State" size="30"> 
-            <input name="Search" type="submit" value="Search"/>
-        </form>
-        <br /> <br /><hr align="center" width="90%"><br /><br />
- 
- <!--           <article>
-             Place the map here 
-            </article> -->
-         <h2>Suggested Safe Haven(s):</h2>
-        <br /> <br />
-            <?php
-         
-        		$userDependants = $_SESSION['ClientDependants'];
-               	$userPets = $_SESSION['ClientPets'];
-               	$userInfants = $_SESSION['ClientInfants'];
-               	
-               	$spaces = $userDependants + 1;
-               	
-               	$suburb = $_SESSION['Suburb'];
-               	$postcode = $_SESSION['Postcode'];
-               	$city = $_SESSION['City'];
-               	$state = $_SESSION['State'];
-               	
-               	$sql="SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE Suburb LIKE '%$suburb%' AND PostCode LIKE '%$postcode%' AND City LIKE '%$city%' AND State LIKE '%$state%' AND SpacesAvailable >= $spaces AND InfantSpaces >= $userInfants AND PetFriendly >= $userPets";
-               	//$sql = "SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE LastName = 'Name'";
-               	$result = mysqli_query($db, $sql);
-               	echo "<table align='center' cellspacing='30'><tr><th colspan='2'>Safe Haven Owner</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>Suburb</th> <th>City</th> <th>State</th><th></th></tr>";
-               	if($result != NULL){
-               	    while($row = $result->fetch_assoc()) {
-                        echo "
-                        <tr onmouseover='popUp()'><td>".$row["FirstNameDecrypt"]."</td>
-                    	<td>".$row["LastNameDecrypt"]."</td>
-                        <td>".$row["PhoneNumberDecrypt"]."</td>
-                        <td>".$row["EmailDecrypt"]."</td>
-                        <td>".$row["AddressDecrypt"]."</td>
-                        <td>".$row["SuburbDecrypt"]."</td>
-                        <td>".$row["CityDecrypt"]."</td>
-                        <td>".$row["StateDecrypt"]."</td>
-                        
-                        
-                        <td>  <a href='inspectsafehaven.php?id=$row[HouseID]'><button>Inspect</button></a></td></tr>";
-                    } 
-                    echo "</table>"; 
-               	}else{
-               	    echo "No results";
-               	}
-            ?>
+        
 
 </div>
 <!--aaaaa-->
