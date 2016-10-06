@@ -76,7 +76,9 @@
 <body>
     <div class="loginform">
         <?php
-echo $a;
+        echo "Hello " $a;
+        
+
 ?>
 </div>
 
