@@ -18,7 +18,7 @@
 			//CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, Password 
 				$hashpassword = hash("sha256", $password);
 		
-				$sql="SELECT * FROM House WHERE Password= '$hashpassword';
+				$sql="SELECT * FROM House WHERE Password= '$hashpassword'";
 				$result = mysqli_query($db, $sql);
 				$count = mysqli_num_rows($result);
 				
