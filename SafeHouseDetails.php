@@ -84,13 +84,13 @@
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "<table>
-                        <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td></tr>
-                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td></tr>
-                        <tr><th>Phone Number>/th><td>".$row["PhoneNumberDecrypt"]."</td></tr>
-                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td></tr>
-                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td></tr>
-                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td></tr>
-                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td></tr>
+                        <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td></tr><br /><br />
+                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td></tr><br /><br />
+                        <tr><th>Phone Number>/th><td>".$row["PhoneNumberDecrypt"]."</td></tr><br /><br />
+                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td></tr><br /><br />
+                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td></tr><br /><br />
+                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td></tr><br /><br />
+                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td></tr><br /><br />
                         <tr><th>State</th><td>".$row["StateDecrypt"]."</td></tr>
                         </table>";
                         
