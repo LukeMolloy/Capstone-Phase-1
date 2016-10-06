@@ -18,7 +18,7 @@
 			
 				$hashpassword = hash("sha256", $password);
 		
-				$sql="SELECT * FROM House WHERE Email= AES_ENCRYPT('$myusername', 'show2016') and Password= AES_ENCRYPT('$hashpassword', 'show2016')";
+				$sql="SELECT * FROM House WHERE Email= (AES_ENCRYPT('$myusername', 'show2016')) and Password= (AES_ENCRYPT('$hashpassword', 'show2016'))";
 				$result = mysqli_query($db, $sql);
 				$count = mysqli_num_rows($result);
 				
