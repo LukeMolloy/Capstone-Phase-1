@@ -4,7 +4,7 @@
     include 'dbLogin.php';
 
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?)");
-	/*$sql->bind_param("sss", $first, $last, $email);
+	$sql->bind_param("sss", $first, $last, $email);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
@@ -13,7 +13,7 @@
 	//$job = ($_POST['Jobtitle']);
 	//$password = ($_POST['Password']);
 
-	$hashpassword = hash("sha256", $password);
+	/*$hashpassword = hash("sha256", $password);
 	$sql->execute();
 	$sql->close();*/
     
