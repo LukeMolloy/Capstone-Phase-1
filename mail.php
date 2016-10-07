@@ -25,7 +25,7 @@
     $_SESSION['FirstName'] = $_POST['FirstName'];
     $firstNameEntered = $_SESSION['FirstName'];
 
-
+/*
     $email = new SendGrid\Email();
     $email->addTo($emailEntered)
     ->setFrom('noreply@show.com')
@@ -34,6 +34,6 @@
     Your account is requiring validation, and then you may use the system.<br /><br /> Thank you!
    ');
 
-    $sendgrid->send($email);
+    $sendgrid->send($email);*/
 	header("location:index.php");
 ?>
