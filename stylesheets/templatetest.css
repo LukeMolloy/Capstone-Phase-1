@@ -408,7 +408,7 @@ footer {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    z-index: -1; position:relative;
+    z-index: -1; position:absolute;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
