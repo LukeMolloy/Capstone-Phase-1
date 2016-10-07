@@ -3,8 +3,8 @@
     session_start();
     include 'dbLogin.php';
 
-    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?, ?)");
-	$sql->bind_param("ssssis", $first, $last, $email, $hashpassword, $phone, $job);
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?)");
+	$sql->bind_param("ssssi", $first, $last, $email, $hashpassword, $phone);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
@@ -17,7 +17,7 @@
 	$sql->execute();
 	$sql->close();
     
-    require 'vendor/autoload.php';
+   /* require 'vendor/autoload.php';
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     $_SESSION['Email'] = $_POST['Email'];
 	$emailEntered = $_SESSION['Email'];
@@ -25,7 +25,7 @@
     $_SESSION['FirstName'] = $_POST['FirstName'];
     $firstNameEntered = $_SESSION['FirstName'];
 
-/*
+
     $email = new SendGrid\Email();
     $email->addTo($emailEntered)
     ->setFrom('noreply@show.com')
