@@ -84,14 +84,9 @@
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "<table>
-                        <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
+                       
+                        
+                        <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td></tr>
                         </table>";
                         
                         
@@ -141,3 +136,13 @@
 	</tr>
 </table>
 </footer>
+
+
+<!-- <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
+                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editname'></td></tr>-->
