@@ -83,11 +83,11 @@
                	$result = mysqli_query($db, $sql);
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
-                        echo "<form id='shdetails'>
+                        echo "
                         <table>
                         <tr><th>Spaces Available: </th><td id='number'>".$row["Spacesavailable"]."</td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
                         
-                        </table></form>";
+                        </table>";
                         
                         
                     } 
