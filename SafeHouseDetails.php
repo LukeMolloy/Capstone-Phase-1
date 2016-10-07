@@ -87,11 +87,11 @@
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
-                        echo "
+                        echo "<form>
                         <table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                         
-                        </table>";
+                        </table></form>";
                         
                         
                     } 
