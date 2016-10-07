@@ -76,7 +76,7 @@ h2 {
 
 .updatebutton {
     width: auto;
-    height: 30px;
+    height: auto;
     border-style: none;
     background-color: #f2f2f2;
     text-align: center;
