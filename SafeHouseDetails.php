@@ -86,7 +86,7 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "
                         <table>
-                        <tr><th>Spaces Available: </th><td id='number'>1</td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
+                        <tr><th>Spaces Available: </th><td><input type='text' id='number' value='1'></td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
                         
                         </table>";
                         
