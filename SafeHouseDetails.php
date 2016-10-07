@@ -85,8 +85,8 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "<form id='shdetails'>
                         <table>
-                        <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td><td><button class='updatebutton'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
-                        <input name='Update' class='updatebutton' type='submit' value='&nbsp Update &nbsp'/>
+                        <tr><th>Spaces Available: </th><td id='number'>".$row["Spacesavailable"]."</td><td><button class='updatebutton' onclick='increment()'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
+                        
                         </table></form>";
                         
                         
@@ -137,6 +137,13 @@
 </table>
 </footer>
 
+<script>
+
+function increment(){
+    document.getElementById(number).value++;
+}
+
+</script>
 
 <!-- <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
                     	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />

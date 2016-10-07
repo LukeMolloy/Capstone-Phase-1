@@ -2,6 +2,20 @@
 	ob_start();
     session_start();
 
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?, ?)");
+	$sql->bind_param("sss", $first, $last, $email, $password);
+		
+	$first = ($_POST['FirstName']);
+	$last =  ($_POST['LastName']);
+	$email = ($_POST['Email']);
+	$phone = ($_POST['Phonenumber']);
+	$job = ($_POST['Jobtitle']);
+	$password = ($_POST['Password']);
+
+	$hashpassword = hash("sha256", $password);
+	$sql->execute();
+	$sql->close();
+    
     require 'vendor/autoload.php';
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     $_SESSION['Email'] = $_POST['Email'];
@@ -19,6 +33,6 @@
     Your account is requiring validation, and then you may use the system.<br /><br /> Thank you!
    ');
 
-$sendgrid->send($email);
+    $sendgrid->send($email);
 	header("location:index.php");
 ?>
