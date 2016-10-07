@@ -3,8 +3,8 @@
     session_start();
     include 'dbLogin.php';
 
-    /*$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?)");
-	$sql->bind_param("sss", $first, $last, $email);
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?)");
+	/*$sql->bind_param("sss", $first, $last, $email);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
