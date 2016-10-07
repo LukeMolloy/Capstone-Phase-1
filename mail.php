@@ -3,7 +3,7 @@
     session_start();
     include 'dbLogin.php';
 
-    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?)");
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress)	VALUES (?, ?, ?)");
 	$sql->bind_param("sss", 'hey', 'hey', 'hey');
 	/*	
 	$first = "Test";//($_POST['FirstName']);
