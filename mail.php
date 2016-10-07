@@ -12,10 +12,10 @@
 	//$phone = ($_POST['Phonenumber']);
 	//$job = ($_POST['Jobtitle']);
 	//$password = ($_POST['Password']);
-
-	/*$hashpassword = hash("sha256", $password);
+*/
+	$hashpassword = hash("sha256", $password);
 	$sql->execute();
-	$sql->close();*/
+	$sql->close();
     
    /* require 'vendor/autoload.php';
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
