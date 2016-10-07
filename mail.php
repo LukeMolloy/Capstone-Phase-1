@@ -7,9 +7,9 @@
 		VALUES (?, ?, ?)");
 	$sql->bind_param("sss", $first, $last, $email);
 		
-	$first = 'Test';//($_POST['FirstName']);
-	$last =  'test';//($_POST['LastName']);
-	$email = 'test';//($_POST['Email']);
+	$first = ($_POST['FirstName']);
+	$last =  ($_POST['LastName']);
+	$email = ($_POST['Email']);
 	//$phone = ($_POST['Phonenumber']);
 	//$job = ($_POST['Jobtitle']);
 	//$password = ($_POST['Password']);
