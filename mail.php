@@ -3,7 +3,7 @@
     session_start();
 
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?, ?)");
-	$sql->bind_param("ssssis", $first, $last, $email, $password, $phone, $job);
+	$sql->bind_param("ssssis", $first, $last, $email, $hashpassword, $phone, $job);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
