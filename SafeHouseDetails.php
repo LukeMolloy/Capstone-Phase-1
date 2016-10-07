@@ -141,7 +141,9 @@
 <script>
 
 function inc() {
-    document.getElementById(number).value++;
+    $('#number').val( function(i, oldval) {
+        return ++oldval;
+    });
 }
 //a
 </script>
