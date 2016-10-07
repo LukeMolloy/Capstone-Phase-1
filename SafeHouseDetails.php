@@ -81,11 +81,12 @@
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	//$sql = "SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE LastName = 'Name'";
                	$result = mysqli_query($db, $sql);
+               	$spaces = Spacesavailable;
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
                         echo "
                         <table>
-                        <tr><th>Spaces Available: </th><td id='number'>".$row["Spacesavailable"]."</td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
+                        <tr><th>Spaces Available: </th><td id='number'>'$spaces'</td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
                         
                         </table>";
                         
