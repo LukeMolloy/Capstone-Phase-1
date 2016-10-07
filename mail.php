@@ -13,7 +13,7 @@
 	//$job = ($_POST['Jobtitle']);
 	//$password = ($_POST['Password']);
 */
-	$hashpassword = hash("sha256", $password);
+//	$hashpassword = hash("sha256", $password);
 	$sql->execute();
 	$sql->close();
     
