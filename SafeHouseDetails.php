@@ -83,21 +83,11 @@
                	$result = mysqli_query($db, $sql);
                	if($result != NULL){
                	    while($row = $result->fetch_assoc()) {
-                        echo "
-			<form method="post" action="checkloginsafehaven.php">
-			<table>
-			<h3>Enter your details to login as a safe haven owner</h3><br />
-			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-				
-				
-			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
-			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
-			</div>
-                       
-                        
+                        echo "<form id='shdetails'>
+                        <table>
                         <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td></tr>
-                        </table>";
+                        <input name="Update" class="signinbutton" type="submit" value="&nbsp Update &nbsp"/>
+                        </table></form>";
                         
                         
                     } 
