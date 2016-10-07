@@ -6,9 +6,9 @@
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?)");
 	$sql->bind_param("sss", $first, $last, $email);
 		
-	$first = ($_POST['FirstName']);
-	$last =  ($_POST['LastName']);
-	$email = ($_POST['Email']);
+	$first = "Test";//($_POST['FirstName']);
+	$last =  "test";//($_POST['LastName']);
+	$email = "test";//($_POST['Email']);
 	//$phone = ($_POST['Phonenumber']);
 	//$job = ($_POST['Jobtitle']);
 	//$password = ($_POST['Password']);
