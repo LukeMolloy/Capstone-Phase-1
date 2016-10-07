@@ -1,6 +1,7 @@
 <?php
 	ob_start();
     session_start();
+    include 'dbLogin.php';
 
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?, ?, ?, ?)");
 	$sql->bind_param("ssssis", $first, $last, $email, $hashpassword, $phone, $job);

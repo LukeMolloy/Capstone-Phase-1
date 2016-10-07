@@ -139,8 +139,10 @@
 
 <script>
 
-function inc(){
-    document.getElementById(number).value++;
+function inc() {
+    $('#number').val( function(i, oldval) {
+        return ++oldval;
+    });
 }
 
 </script>

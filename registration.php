@@ -24,7 +24,7 @@
 	<?php
 		session_start();
 	
-		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+		/*$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
 		VALUES (?, ?, ?, ?)");
 		$sql->bind_param("sss", $first, $last, $email, $password);
 		
@@ -35,14 +35,14 @@
 
 		$hashpassword = hash("sha256", $password);
 		$sql->execute();
-		$sql->close();
+		$sql->close();*/
 		
 	?>
 	<?php
 		echo $_SESSION["login_user"] . ".<br>";
 	?>
 	<div class="loginform">
-		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post">
+		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="mail.php">
 				<p>
 					<h1>Register as...</h1><br />
 					<h2>Authority or Safe Haven</h2>
