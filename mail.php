@@ -5,7 +5,7 @@
 
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
 		VALUES (?, ?, ?, ?)");
-	$sql->bind_param("sss", $first, $last, $email, $hashpassword);
+	$sql->bind_param("ssss", $first, $last, $email, $hashpassword);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
