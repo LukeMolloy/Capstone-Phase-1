@@ -67,9 +67,9 @@ function test_input($data) {
   return $data;
 }*/
 	
-		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress)
-		VALUES (?, ?, ?)");
-		$sql->bind_param("sss", $first, $last, $email);
+		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+		VALUES (?, ?, ?, ?)");
+		$sql->bind_param("sss", $first, $last, $email, $password);
 		
 		$first = ($_POST['FirstName']);
 		$last =  ($_POST['LastName']);

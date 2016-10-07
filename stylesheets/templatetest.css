@@ -82,6 +82,11 @@ h2 {
     background-color: grey;
 }
 
+.updatebutton:hover {
+    background-color: grey;
+}
+
+
 .loginform {
     padding-top: 10px;
     text-align:center;
