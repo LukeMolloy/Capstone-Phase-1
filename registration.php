@@ -71,14 +71,14 @@ function test_input($data) {
 		VALUES (?, ?, ?)");
 		$sql->bind_param("sss", $first, $last, $email);
 		
-			$first = ($_POST['FirstName']);
+		$first = ($_POST['FirstName']);
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
 		$password = ($_POST['Password']);
 	//	$salt = uniqid(mt_rand(), true);
 	
 //		$hashpassword = hash("sha256", $password.$salt);
-	$hashpassword = hash("sha256", $password);
+		$hashpassword = hash("sha256", $password);
 		$sql->execute();
 		$sql->close();
 		
@@ -102,7 +102,7 @@ function test_input($data) {
 		echo $_SESSION["login_user"] . ".<br>";
 	?>
 	<div class="loginform">
-		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="mail.php">
+		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post">
 				<p>
 					<h1>Register as...</h1><br />
 					<h2>Authority or Safe Haven</h2>
