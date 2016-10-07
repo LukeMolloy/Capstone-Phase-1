@@ -85,7 +85,7 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "<form id='shdetails'>
                         <table>
-                        <tr><th>Spaces Available: </th><td id='number'>".$row["Spacesavailable"]."</td><td><button class='updatebutton' onclick='increment()'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
+                        <tr><th>Spaces Available: </th><td id='number'>".$row["Spacesavailable"]."</td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
                         
                         </table></form>";
                         
@@ -139,7 +139,7 @@
 
 <script>
 
-function increment(){
+function inc(){
     document.getElementById(number).value++;
 }
 
