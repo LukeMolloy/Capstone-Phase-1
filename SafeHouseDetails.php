@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="stylesheets/templatetest.css">
     <link rel="stylesheet" href="stylesheets/popups.css">
 	<div class="navbar">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 	</div>
 	<?php include 'dbLogin.php' ?>
 	
