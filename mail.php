@@ -4,8 +4,8 @@
     include 'dbLogin.php';
 
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)	VALUES (?, ?, ?)");
-	$sql->bind_param("sss", $first, $last, $email);
-		
+	$sql->bind_param("sss", 'hey', 'hey', 'hey');
+	/*	
 	$first = "Test";//($_POST['FirstName']);
 	$last =  "test";//($_POST['LastName']);
 	$email = "test";//($_POST['Email']);
