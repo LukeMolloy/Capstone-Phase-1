@@ -62,10 +62,10 @@
 			<label id="Phonenumber">Phone Number</label> <input name="Phonenumber" type="text" />
 			<label id = "PhoneError"></label> <br /><br /><br /><br />
 			
-			<label id="Jobtitle">Phone Number</label> <input name="Jobtitle" type="text" />
+			<label id="Jobtitle">Job Title</label> <input name="Jobtitle" type="text" />
 			<label id = "JobError"></label> <br /><br /><br /><br />
 			
-			<label id="Information">Phone Number</label> <input name="Information" type="text" />
+			<label id="Information">Extra Information</label> <input name="Information" type="text" />
 			<label id = "InfoError"></label> <br /><br /><br /><br />
 			
 			<label id="Password">Password</label> <input name="Password" type="password" />
