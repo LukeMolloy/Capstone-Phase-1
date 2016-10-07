@@ -88,7 +88,7 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "
                         <table>
-                        <tr><th>Spaces Available: </th><td><input type='text' id='number' value='1'></td><td><button class='updatebutton' onclick='inc();'>&nbsp + &nbsp</button> <button class='updatebutton'>&nbsp - &nbsp</button></td></tr>
+                        <tr><th>Spaces Available: </th><td><input type='text' id='number' value='1'></td><td><button class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                         
                         </table>";
                         
@@ -142,12 +142,18 @@
 
 <script>
 
-function inc() {
+function add() {
     $('#number').val( function(i, oldval) {
         return ++oldval;
     });
 }
-//a
+
+function minus() {
+    $('#number').val( function(i, oldval) {
+        return --oldval;
+    });
+}
+
 </script>
 
 <!-- <tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
