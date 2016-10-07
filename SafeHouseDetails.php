@@ -83,14 +83,17 @@
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	//$sql = "SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE LastName = 'Name'";
                	$result = mysqli_query($db, $sql);
-               	$spaces = Spacesavailable;
+               	
+               		$stmt="UPDATE House SET Spacesavailable='4' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+					mysqli_query($db, $stmt);
+               	
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
                         echo "<form method='post'>
                         <table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
-                        
+                        <input type="submit" value="Submit">
                         </table></form>";
                         
                         
