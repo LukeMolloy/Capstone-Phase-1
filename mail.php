@@ -3,14 +3,14 @@
     session_start();
     include 'dbLogin.php';
 
-    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password, PhoneNumber)
 		VALUES (?, ?, ?, ?)");
-	$sql->bind_param("ssss", $first, $last, $email, $hashpassword);
+	$sql->bind_param("ssssi", $first, $last, $email, $hashpassword, $phone);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
 	$email = ($_POST['Email']);
-	//$phone = ($_POST['Phonenumber']);
+	$phone = ($_POST['Phonenumber']);
 	//$job = ($_POST['Jobtitle']);
 	$password = ($_POST['Password']);
 

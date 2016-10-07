@@ -85,16 +85,16 @@
                	$result = mysqli_query($db, $sql);
                	
                		$stmt="UPDATE House SET Spacesavailable='4' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
-					mysqli_query($db, $stmt);
+					$update = mysqli_query($db, $stmt);
                	
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
-                        echo "<form method='post'>
+                        echo "
                         <table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
-                        <input type="submit" value="Submit">
-                        </table></form>";
+                        <button
+                        </table>";
                         
                         
                     } 
