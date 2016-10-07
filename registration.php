@@ -23,49 +23,6 @@
 	</div>
 	<?php
 		session_start();
-		
-	
-/*		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($first)) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($first);
-  }
-  
-  if (empty($last)) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($last);
-  }
-  
-  if (empty($email)) {
-    $emailErr = "Email is required";
-  } else {
-  	Correctemail("$email");
-    $email = test_input($_POST["email"]);
-  }
-
-  if (empty($password)) {
-    $password = "password is required";
-  } else {
-    $password = test_input($password);
-  }
-}
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-function Correctemail($email){
-	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $emailErr = "Invalid email format"; 
-}
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}*/
 	
 		$sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
 		VALUES (?, ?, ?, ?)");
@@ -75,27 +32,10 @@ function test_input($data) {
 		$last =  ($_POST['LastName']);
 		$email = ($_POST['Email']);
 		$password = ($_POST['Password']);
-	//	$salt = uniqid(mt_rand(), true);
-	
-//		$hashpassword = hash("sha256", $password.$salt);
+
 		$hashpassword = hash("sha256", $password);
 		$sql->execute();
 		$sql->close();
-		
-//		$sql->bind_param("s", $last);
-//		$sql->bind_param("s", $email);
-	//	$sql->bind_param("s", $hashpassword);
-		
-	//	$sql->bindParam("last", $last);
-	//	$sql->bindParam("email", $email);
-	//	$sql->bindParam("hashpassword", $hashpassword);
-	
-	
-		//$sql->execute();		
-		//$sql->close();
-		//mysqli_query($db, $sql);
-
-	
 		
 	?>
 	<?php
@@ -117,6 +57,9 @@ function test_input($data) {
 			<label id = "LastNameError"></label> <br /><br /><br /><br />
 			
 			<label id="Email">Email</label> <input name="Email" type="text" />
+			<label id = "EmailError"></label> <br /><br /><br /><br />
+			
+			<label id="Phonenumber">Phone Number</label> <input name="Phonenumber" type="text" />
 			<label id = "EmailError"></label> <br /><br /><br /><br />
 			
 			<label id="Password">Password</label> <input name="Password" type="password" />

@@ -85,7 +85,7 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "<form id='shdetails'>
                         <table>
-                        <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td><td><input name='Plus' class='updatebutton' type='text' value='&nbsp + &nbsp'/></td>|<td><input name='Plus' class='updatebutton' type='text' value='&nbsp - &nbsp'/></td></tr>
+                        <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td><td><input name='Plus' class='updatebutton' type='text' value='+'/><input name='Minus' class='updatebutton' type='text' value='-'/></td></tr>
                         <input name='Update' class='updatebutton' type='submit' value='&nbsp Update &nbsp'/>
                         </table></form>";
                         
