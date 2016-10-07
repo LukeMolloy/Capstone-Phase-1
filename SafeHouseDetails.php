@@ -86,7 +86,7 @@
                         echo "<form id='shdetails'>
                         <table>
                         <tr><th>Spaces Available: </th><td>".$row["Spacesavailable"]."</td></tr>
-                        <input name="Update" class="signinbutton" type="submit" value="&nbsp Update &nbsp"/>
+                        <input name='Update' class='signinbutton' type='submit' value='&nbsp Update &nbsp'/>
                         </table></form>";
                         
                         
