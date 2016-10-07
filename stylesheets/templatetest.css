@@ -69,18 +69,24 @@ h2 {
     text-align: center;
 }
 
-.updatebutton {
-    width: auto;
-    height: 30px;
-    border-style: none;
-    background-color: #e6e6e6;
-    text-align: center;
-}
-
-
 .signinbutton:hover {
     background-color: grey;
 }
+
+
+.updatebutton {
+    width: auto;
+    height: 30px;
+    padding: 5%;
+    border-style: none;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.updatebutton:hover {
+    background-color: grey;
+
+}
+
 
 
 .loginform {
