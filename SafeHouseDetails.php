@@ -106,9 +106,7 @@
                	    }
                	    	
                	    
-               	    $dom = new DOMDocument();
-					//$dom->loadHTML($html);
-					$nodes = $dom->getElementsByID('number');
+               	   
 				
 
                	     $stmt = "UPDATE House SET Spacesavailable='$title' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
