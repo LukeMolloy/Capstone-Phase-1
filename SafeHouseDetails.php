@@ -84,6 +84,7 @@
         
         $amount="SELECT  Spacesavailable FROM House 
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+        $dodo = mysqli_query($db, $amount);
         
         $stmt = "UPDATE House SET Spacesavailable='$amount' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
              
@@ -104,8 +105,8 @@
                	                        <input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
                	    }
                	    if(isset($_POST['submit'])){
-               	    	$amount = mysqli_query($db, $amount) + 3;
-     
+               	    	
+    						$amount++;
 							$dothis = mysqli_query($db, $stmt);
 						}
                	}
