@@ -55,6 +55,9 @@
 	</div>
 	
 	<div class="loginform">
+		<table>
+			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></td>
+			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
@@ -121,6 +124,8 @@
 			
 			</center>
 		</form>
+		</td>
+		</table>
 	</div>
 </body>
 
