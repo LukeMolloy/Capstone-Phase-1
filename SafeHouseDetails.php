@@ -97,7 +97,7 @@
                         
                         if (isset($_POST['button']))
 							{
- 	$stmt="UPDATE House SET Spacesavailable='4' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+ 	$stmt='UPDATE House SET Spacesavailable='4' WHERE Email = AES_ENCRYPT('$a', 'show2016')';
 					$update = mysqli_query($db, $stmt);
                	}
                	                        </table></form>";
