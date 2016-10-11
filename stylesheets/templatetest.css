@@ -87,6 +87,10 @@ h2 {
 }
 
 
+.leftcontent {
+    float: right;
+}
+
 .rightcontent {
     float: right;
 }
