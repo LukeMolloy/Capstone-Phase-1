@@ -88,10 +88,12 @@ h2 {
 
 
 .leftcontent {
-    float: right;
+     border:1px solid blue;
+    
 }
 
 .rightcontent {
+     border:1px solid blue;
     float: right;
 }
 
