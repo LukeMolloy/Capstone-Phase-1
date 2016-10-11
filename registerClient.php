@@ -65,7 +65,7 @@
 			<br /><br /><hr width="70%"><br /><br />
 			
 			
-			<table cellspacing="10%">
+			<table cellspacing="20">
 				
 			<td valign="top">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
 			<td>
