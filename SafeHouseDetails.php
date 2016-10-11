@@ -105,9 +105,6 @@
                	                        <input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
                	    }
                	    
-               	    if(isset($_POST['add'])){
-						$dothis++;
-					}	
                	    
                	    
                	    
