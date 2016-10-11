@@ -76,8 +76,6 @@
 <body>
     <div class="loginform">
         <?php
-        $dom = new DOMDocument();
-		
         echo "<h1>Hello $a</h1> <br /><br />
         <h2>Find and edit your details below:</h2>";
         
@@ -96,10 +94,10 @@
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
-                        $html = "
+                        echo "
                         <form method='POST'><table>
                         
-                        <tr><th>Spaces Available: </th><td><input type='text' id='anumber' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
+                        <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                     
                         
                         
@@ -108,14 +106,10 @@
                	    }
                	    	
                	    
-               	    $dom->validateOnParse = true; //<!-- this first
-					$dom->loadHTML($html);        //'cause 'load' == 'parse
-					$dom->preserveWhiteSpace = false;
+               	   
+					$title = 3;
 
-					$belement = $dom->getElementById("anumber");
-					
-
-               	     $stmt = "UPDATE House SET Spacesavailable='$belement' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+               	     $stmt = "UPDATE House SET Spacesavailable='$title' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
                	    if(isset($_POST['submit'])){
 							$dothis = mysqli_query($db, $stmt);
