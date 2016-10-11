@@ -65,8 +65,10 @@
 			<br /><br /><hr width="70%"><br /><br />
 			
 			
-			
-			
+			<table style="table-layout:fixed;">
+				
+			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
+			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
@@ -126,10 +128,11 @@
 			
 			</center>
 		</form>
-		
+		</td>
+		</table>
 	</div>
 </body>
-<div class="leftside">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</div>
+
 
 <script>
   $("#S1Label").css('text-decoration', 'underline');
