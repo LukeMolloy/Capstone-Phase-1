@@ -2,6 +2,7 @@
 	ob_start();
     session_start();
     include 'dbLogin.php';
+    require 'vendor/autoload.php';
     
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     //$_SESSION['Email'] = $_POST['Email'];
