@@ -94,9 +94,9 @@
                         echo "
                         <form method='post'><table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
-                        <button type='submit' id='button' name='button'>Update</button>
+                        <input type='submit' value='Submit' name='Submit' id='Submit'>
                         
-                        if(isset($_POST['button'])){
+                        if(isset($_POST['Submit'])){
 							$dothis = mysqli_query($db, $stmt);
 						}
                        
