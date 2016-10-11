@@ -65,7 +65,7 @@
 			<br /><br /><hr width="70%"><br /><br />
 			
 			
-			<table style="table-layout:fixed;">
+			<table cellspacing="10%">
 				
 			<td valign="top">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
 			<td>
