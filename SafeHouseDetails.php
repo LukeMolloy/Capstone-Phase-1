@@ -83,7 +83,7 @@
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
         
     	$number="SELECT Spacesavailable FROM House WHERE Email = AES_ENCRYPT('$a', 'show2016')";
-        $dothis = mysqli_query($db, $number);
+       
         
         $stmt = "UPDATE House SET Spacesavailable='$dothis' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
              
