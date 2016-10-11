@@ -15,7 +15,7 @@
 <div class="wrapper">
 	
 <div class="header">
-	<label class="title"><a href="/index.php">Safe Haven Our Women</a></label>
+	<label class="title" href="/index.php">Safe Haven Our Women</label>
  	<!--	<li><a href="/index.php">Login / Register</a></li>
 		<li><a href="/About.php">About Us</a></li>
 		<li><a href="/Contact.php">Contact Us</a></li>
