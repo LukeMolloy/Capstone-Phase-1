@@ -96,7 +96,7 @@
                         <button type='button' name='button'>Update</button>
                         
                         
-                        if (isset($_POST['button']))
+                        if (isset($_POST["button"]))
 							{
  
 					$update = mysqli_query($db, $stmt);
