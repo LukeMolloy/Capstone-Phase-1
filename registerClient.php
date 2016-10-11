@@ -63,8 +63,6 @@
 				?>
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
-		
-			<div class="leftside">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</div>
 			
 			
 			
@@ -131,7 +129,7 @@
 		
 	</div>
 </body>
-
+<div class="leftside">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</div>
 
 <script>
   $("#S1Label").css('text-decoration', 'underline');
