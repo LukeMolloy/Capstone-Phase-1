@@ -107,7 +107,7 @@
                	    	
                	    
                	   
-				
+					$title = 3;
 
                	     $stmt = "UPDATE House SET Spacesavailable='$title' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
