@@ -13,7 +13,7 @@
 
     $email = new SendGrid\Email();
     $email->addTo($shcemail)
-    ->setFrom($emailEntered)
+    ->setFrom('noreply@hotmail.com')
     ->setSubject('SHC Inquiry')
     ->setHtml('Hi');
 
