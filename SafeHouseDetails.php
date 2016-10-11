@@ -106,8 +106,8 @@
                	    }
                	    	
                	    
-               	   
-					$title = 3;
+               	     $title = $this->doc->getElementsByTagName('number'); 
+					
 
                	     $stmt = "UPDATE House SET Spacesavailable='$title' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
