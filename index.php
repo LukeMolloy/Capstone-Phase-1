@@ -37,11 +37,11 @@
 	
 		<h1>SAFE HAVEN COMMUNITY</h1><hr><br />
 			<div id="loginauthority">
-				Login as Authority
+				Login into Safe Haven Comunity
 			</div>
 			
 			<div id="loginsafehaven">
-				Login as Safe Haven
+				Manage my Safehouse
 			</div> <br /><br />
 		
 		<div id="authorityform">
