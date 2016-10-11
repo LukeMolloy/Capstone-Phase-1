@@ -58,8 +58,7 @@
 		<div class="instructions">
 				<?php
 					$user = $_SESSION['Username'];
-					echo "<br /><h1>Welcome, $user.</h1><br />
-					<h2>Please enter the client's details below to search for a safe haven.</h2>";
+					echo "<br /><h1>Welcome, $user.</h1><br />";
 				?>
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
@@ -67,7 +66,8 @@
 			
 			<table cellspacing="20">
 				
-			<td valign="top">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
+			<td valign="top"><h2>Please enter the client's details to search for a safe haven.<br /><br />
+			These will be used to find applicable safe havens</h2></td>
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
