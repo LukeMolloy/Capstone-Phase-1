@@ -66,7 +66,7 @@
 			
 			<table cellspacing="10">
 				
-			<td valign="top"><h2><br /><br />Please enter the client's details<br /><br /><br /><br />
+			<td valign="top"><h2><br /><br /><br /><br />Please enter the client's details<br /><br /><br /><br />
 			These will be used to find applicable safe havens</h2></td>
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
