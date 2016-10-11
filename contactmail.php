@@ -16,7 +16,7 @@
     $email->addTo($shcemail)
     ->setFrom($emailEntered)
     ->setSubject('SHC Inquiry')
-    ->setHtml($message'<br /> From '$name);
+    ->setHtml($message);
 
     $sendgrid->send($email);
     

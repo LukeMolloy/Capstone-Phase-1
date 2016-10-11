@@ -98,13 +98,13 @@
                         <form method='POST'><table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                        
-                        $amount++;
+                        
                         
                        
                	                        <input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
                	    }
                	    if(isset($_POST['submit'])){
-               	    	
+               	    	$amount = mysqli_query($db, $amount) + 3;
      
 							$dothis = mysqli_query($db, $stmt);
 						}
