@@ -90,17 +90,17 @@
                		
                	    while($row = $result->fetch_assoc()) {
                         echo "
-                        <table>
+                        <form method='post'><table>
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                         <button type='button' name='button'>Update</button>
                         
-                        </table>";
                         
                         if (isset($_POST['button']))
 							{
  	$stmt="UPDATE House SET Spacesavailable='4' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
 					$update = mysqli_query($db, $stmt);
                	}
+               	                        </table></form>";
                	    }
         
 //sdfsd

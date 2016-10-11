@@ -3,9 +3,9 @@
     session_start();
     include 'dbLogin.php';
 
-    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password, PhoneNumber)
+    $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password)
 		VALUES (?, ?, ?, ?)");
-	$sql->bind_param("ssssi", $first, $last, $email, $hashpassword, $phone);
+	$sql->bind_param("ssss", $first, $last, $email, $hashpassword);
 		
 	$first = ($_POST['FirstName']);
 	$last =  ($_POST['LastName']);
