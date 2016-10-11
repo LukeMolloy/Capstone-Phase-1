@@ -87,6 +87,11 @@ h2 {
 }
 
 
+.rightcontent {
+    float: right;
+}
+
+
 
 .loginform {
     padding-top: 10px;

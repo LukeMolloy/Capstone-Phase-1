@@ -63,9 +63,12 @@
 				?>
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
-		<table>
-			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></td>
-			<td>
+		
+			<div class="leftcontent">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></div>
+			
+			
+			
+			<div class="rightcontent">
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
@@ -125,8 +128,7 @@
 			
 			</center>
 		</form>
-		</td>
-		</table>
+		</div>
 	</div>
 </body>
 
