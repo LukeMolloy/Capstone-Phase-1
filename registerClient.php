@@ -64,7 +64,7 @@
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
 		
-			<div id="leftside">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></div>
+			<div class="leftside">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</div>
 			
 			
 			
