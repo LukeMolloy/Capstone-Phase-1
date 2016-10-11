@@ -14,9 +14,9 @@
 
     $email = new SendGrid\Email();
     $email->addTo($shcemail)
-    ->setFrom('noreply@hotmail.com')
+    ->setFrom($emailEntered)
     ->setSubject('SHC Inquiry')
-    ->setHtml('Hi');
+    ->setHtml($message, 'From ', $name);
 
     $sendgrid->send($email);
     
