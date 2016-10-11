@@ -20,7 +20,7 @@
 	<div class="loginform">
 		<center><h1>Contact Us</h1></center>
 	</div>
-	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
 	<div class="row">
 		<label for="name">Your name:</label><br />
 		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
