@@ -82,14 +82,13 @@
         $sql="SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House 
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
         
-        $amount="SELECT  Spacesavailable FROM House 
-        WHERE Email = AES_ENCRYPT('$a', 'show2016')";
-        $dodo = mysqli_query($db, $amount);
+       
         
-        $stmt = "UPDATE House SET Spacesavailable='$amount' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+        $stmt = "UPDATE House SET Spacesavailable='number' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
              
                	//$sql = "SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House WHERE LastName = 'Name'";
                	$result = mysqli_query($db, $sql);
+               	
                	
                	
                	if($result != NULL){
@@ -105,8 +104,6 @@
                	                        <input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
                	    }
                	    if(isset($_POST['submit'])){
-               	    	
-    						$amount++;
 							$dothis = mysqli_query($db, $stmt);
 						}
                	}
