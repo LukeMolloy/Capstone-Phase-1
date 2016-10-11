@@ -67,7 +67,7 @@
 			
 			<table style="table-layout:fixed;">
 				
-			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
+			<td valign="top">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd</td>
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
