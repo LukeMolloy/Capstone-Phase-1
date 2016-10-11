@@ -64,11 +64,11 @@
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
 		
-			<div class="leftcontent">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></div>
+			<div id="leftcontent">asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></div>
 			
 			
 			
-			<div class="rightcontent">
+			<div id="rightcontent">
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
