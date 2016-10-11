@@ -55,13 +55,7 @@
 	</div>
 	
 	<div class="loginform">
-		<table>
-			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></td>
-			<td>
-		<form name="clientRegistration" method="post" action ="saveclient.php">
-			<!--onsubmit="return validateRegistrationForm()-->
-			<center>
-				<div class="instructions">
+		<div class="instructions">
 				<?php
 					$user = $_SESSION['Username'];
 					echo "<br /><h1>Welcome, $user.</h1><br />
@@ -69,6 +63,13 @@
 				?>
 				</div>
 			<br /><br /><hr width="70%"><br /><br />
+		<table>
+			<td>asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br />asdljkasd<br /></td>
+			<td>
+		<form name="clientRegistration" method="post" action ="saveclient.php">
+			<!--onsubmit="return validateRegistrationForm()-->
+			<center>
+				
 			<table align="center">
 				
 			<label id="S1Label"><h2>Step 1</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>Step 2</h2></label><br /><br /><br /><br />
