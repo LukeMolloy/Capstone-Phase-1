@@ -96,7 +96,7 @@
                	    while($row = $result->fetch_assoc()) {
                         echo "
                         <form method='POST'><table>
-                          $html = <<<EOF
+                        
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
                     
                         
