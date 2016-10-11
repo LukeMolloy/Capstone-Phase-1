@@ -5,15 +5,17 @@
     
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     //$_SESSION['Email'] = $_POST['Email'];
+    
+    $shcemail = 'luke.d.a.molloy@icloud.com';
 	$emailEntered = $_POST['email'];
     $name = $_POST['name'];
     $message = $_POST['message'];
 
     $email = new SendGrid\Email();
-    $email->addTo($emailEntered)
-    ->setFrom()
-    ->setSubject()
-    ->setHtml();
+    $email->addTo($shcemail)
+    ->setFrom($emailEntered)
+    ->setSubject('SHC Inquiry')
+    ->setHtml('From ', $name, $message);
 
     $sendgrid->send($email);
     
