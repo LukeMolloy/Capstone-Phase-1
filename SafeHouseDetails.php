@@ -104,13 +104,13 @@
                        
                	                        <input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
                	    }
-               	    	EOF;
+               	    	=
                	    
                	    
                	    $dom = new DOMDocument();
 					$dom->loadHTML($html);
-					$nodes = $dom->getElementsByTagName('number');
-					$title = $nodes->item(0)->nodeValue;
+					$nodes = $dom->getElementsByID('number');
+				
 
                	     $stmt = "UPDATE House SET Spacesavailable='$title' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
