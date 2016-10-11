@@ -68,7 +68,7 @@
 			
 			
 			
-			<div id="rightcontent">
+			
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 			<center>
@@ -128,7 +128,7 @@
 			
 			</center>
 		</form>
-		</div>
+		
 	</div>
 </body>
 
