@@ -17,7 +17,7 @@
 	$state = ($_POST['State']);
 	$postcode = ($_POST['PostCode']);
 	$spaces = ($_POST['SpacesAvailable']);
-	$spacesavailable = settype($spaces, "integer");
+	$spacesavailable = 1;
 	$infantspaces = ($_POST['InfantSpaces']);
 	$petfriendly = ($_POST['PetFriendly']);
     $licensenumber = ($_POST['licensenumber']);
