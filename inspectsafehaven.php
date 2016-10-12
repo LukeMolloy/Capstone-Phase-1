@@ -134,7 +134,6 @@ geocoder.geocode( { 'address': address}, function(results, status) {
    <a href="/safehaven.php"><button>Go back</button></a>
 
 </div>
-</div>
 
 
 

@@ -17,7 +17,6 @@
  	<link rel="stylesheet" href="stylesheets/templatetest.css">
 	<?php include 'dbLogin.php' ?>
 </head>
-<div id="wrapper">
 <body>
     <!----<form method="post" action="mail.php">
     <input name="Signin" type="submit"/>
@@ -32,15 +31,7 @@
 			<li><a href="/index.php">Home</a></li>
 		</ul> 
 	</div>
-    
 
-	<label class="title">SAFE HAVEN COMMUNITY</label>
- 		<li><a href="/safehavenregistration.php">SAFE HAVEN APPLICATION</a></li>
- 		 <li><a href="/registration.php">USER APPLICATION</a></li>
-		<li><a href="/About.php">ABOUT</a></li>
-		<li><a href="/Contact.php">CONTACT</a></li>
-	</ul> 
-</div>
 
 	<div class="loginform1">
 	
