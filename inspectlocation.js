@@ -21,19 +21,23 @@ geocoder.geocode( { 'address': address}, function(results, status) {
   document.querySelector('article').appendChild(mapcanvas);
 
   //var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  var coords = new google.maps.LatLng(latitude, longitude);
   
-  var options = {
-    zoom: 15,
-    center: coords,
-    mapTypeControl: false,
-    navigationControlOptions: {
-    	style: google.maps.NavigationControlStyle.SMALL
-    },
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
-
+  
+  //var options = {
+  //  zoom: 15,
+    //center: coords,
+    //mapTypeControl: false,
+    //navigationControlOptions: {
+    //	style: google.maps.NavigationControlStyle.SMALL
+    //},
+    //mapTypeId: google.maps.MapTypeId.ROADMAP
+  //};
+  function initMap() {
+  var map = new google.maps.Map(document.getElementById("article"), options);
+  var coords = new google.maps.LatLng(latitude, longitude);
+  zoom: 4,
+  center: coords;
+  });
 
   
   var dummymarker = new google.maps.Marker({
@@ -41,9 +45,9 @@ geocoder.geocode( { 'address': address}, function(results, status) {
       map: map,
      // title:"Dummy safehaven!"
   });
-  } 
+  }
 });
-
+}
 
 
 //if (navigator.geolocation) {
