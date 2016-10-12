@@ -111,6 +111,12 @@
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+						<tr><th>Gender Taken: </th><td><input type='text' id='number' name='number' value=".$row["Gendertaken"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+						<tr><th>Pet Friendly: </th><td><input type='text' id='number' name='number' value=".$row["Petfriendly"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+						<tr><th>Length of stay: </th><td><input type='text' id='number' name='number' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+						
+						
+						
 						<br /><hr><br />
 						<table><tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
                     	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
