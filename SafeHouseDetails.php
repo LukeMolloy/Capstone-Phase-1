@@ -138,7 +138,7 @@
 						
 						
 						<br /><hr><br />
-						<table><tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editfirst'></td></tr>
+						<table><tr><th>First Name</th><td><input type='text' name='editfirst' value=".$row["FirstNameDecrypt"]."></td></tr>
                     	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editlast'></td></tr>
                         <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editphone'></td></tr>
                         <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editemail'></td></tr><br />
