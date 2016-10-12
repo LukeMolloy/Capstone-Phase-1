@@ -85,15 +85,15 @@
                     	echo "
                     	<tr>
                     		<td>".$row["FirstNameDecrypt"]."</td>
-                    		<td><div id='add'>".$row["AddressDecrypt"]."</div></td>
-                    		<td><div id='add'>".$row["SuburbDecrypt"]."</div></td>
-                    		<td><div id='city'>".$row["CityDecrypt"]."</div></td> 
-                    		<td><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
+                    		<td><div id='add'>".$row["AddressDecrypt"]."</div></td><br />
+                    		<td><div id='add'>".$row["SuburbDecrypt"]."</div></td><br />
+                    		<td><div id='city'>".$row["CityDecrypt"]."</div></td> <br />
+                    		<td><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td><br />
                     	</tr>";
                         //$description = $row["Description"];
                 	}
                 	echo "</table>";
-					echo "<br /><br /><button>Contact</button><br /> <br /><br />";
+					echo "<br /><br /><button>Place Client</button><br /> <br /><br />";
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
                   // echo "</table>";
             	?> 
