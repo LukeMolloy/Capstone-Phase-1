@@ -21,14 +21,14 @@
 	$sql->close();
 	
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
-    $email = new SendGrid\Email();
-    $email->addTo($email)
+    $emailmsg = new SendGrid\Email();
+    $emailmsg->addTo($email)
     ->setFrom('noreply@shc.com')
     ->setSubject('You have successfully applied to become a user!')
     ->setHtml('<strong>Hello <?php echo $first ?> </strong> <br /> <br />
     Your account is undergoing verification. You will recieve an email when you can use the system.<br /><br /> Thank you!
    ');
 
-    $sendgrid->send($email);
+    $sendgrid->send($emailmsg);
 	header("location:index.php");
 ?>
