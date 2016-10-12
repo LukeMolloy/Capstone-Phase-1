@@ -139,14 +139,14 @@
 						
 						<br /><hr><br />
 						<table><tr><th>First Name</th><td><input type='text' name='editfirst' value=".$row["FirstNameDecrypt"]."></td></tr>
-                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editlast'></td></tr>
-                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editphone'></td></tr>
-                        <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editemail'></td></tr><br />
-                        <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editaddress'></td></tr>
-                        <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editsuburb'></td></tr>
-                        <tr><th>Post Code</th><td>".$row["PostcodeDecrypt"]."</td><td><input type='text' name='editpostcode'></td></tr>
-                        <tr><th>City</th><td>".$row["CityDecrypt"]."</td><td><input type='text' name='editcity'></td></tr>
-                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editstate'></td></tr>
+                    	<tr><th>Last Name</th><td><input type='text' name='editlast' value=".$row["LastNameDecrypt"]."></td></tr>
+                        <tr><th>Phone Number</th><td><input type='text' name='editphone' value=".$row["PhoneNumberDecrypt"]."></td></tr>
+                        <tr><th>Email</th><td><input type='text' name='editemail' value=".$row["EmailDecrypt"]."></td></tr><br />
+                        <tr><th>Address</th><td><input type='text' name='editaddress' value=".$row["AddressDecrypt"]."></td></tr>
+                        <tr><th>Suburb</th><td><input type='text' name='editsuburb' value=".$row["SuburbDecrypt"]."></td></tr>
+                        <tr><th>Post Code</th><td><input type='text' name='editpostcode' value=".$row["PostcodeDecrypt"]."></td></tr>
+                        <tr><th>City</th><td><input type='text' name='editcity' value=".$row["CityDecrypt"]."></td></tr>
+                        <tr><th>State</th><td><input type='text' name='editstate' value=".$row["StateDecrypt"]."></td></tr>
                         <tr><input type='submit' value='Update' name='submit2' class='updatebutton' id='submit2'></tr></table></form>";               
                         
                         
