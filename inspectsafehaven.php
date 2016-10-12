@@ -61,35 +61,17 @@
         
 
         
-         <table align="center" cellpadding = "20">
-        <tr>
-            <th>
-                <h1>Location:</h1>
-                <?php
-			       	echo $phone;
-			    ?>
-            </th>
-            <th>
-                <h1>Safe Haven Information:</h1>
-                
-            </th>
-        </tr>
         
-        <tr>
-            <td>
+        
+        
+        
+   
             <article>
             <!-- Place the map here -->  
             </article>
-        </td>
+    
         
         
-        
-
-        <td>
-        
-        
-
-      
                <?php
                	    
                	    
@@ -135,7 +117,7 @@
            
                   // echo "</table>";
                	?> <br /> <br />
-               	    </td></table>
+               	    
        
     <br /><br />
     
