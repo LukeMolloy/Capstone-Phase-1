@@ -1,4 +1,4 @@
-function success(position) {
+function success() {
   
   
   var geocoder = new google.maps.Geocoder();
@@ -46,11 +46,11 @@ geocoder.geocode( { 'address': address}, function(results, status) {
 
 }
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success);
-} else {
-  error('The map cannot be shown');
-}
+//if (navigator.geolocation) {
+//  navigator.geolocation.getCurrentPosition(success);
+//} else {
+  //error('The map cannot be shown');
+//}
 
 
 /**var geocoder = new google.maps.Geocoder();
