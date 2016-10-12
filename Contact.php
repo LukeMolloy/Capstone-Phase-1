@@ -22,10 +22,10 @@
 	<div class="contactform">
 		<table cellspacing="10">
 				
-		<td valign="top"><br />
+		<td valign="top" width="80"><br />
 			<p></p><p></p><br /><p></p>
 		</td>
-		<td><br /><h2>Enter Your Message below:</h2><br />
+		<td width="80"><br /><h2>Enter Your Message below:</h2><br />
 			<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
 			<div class="row">
 				<label for="name">Your name:</label><br />
