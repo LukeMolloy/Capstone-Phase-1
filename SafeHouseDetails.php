@@ -121,7 +121,7 @@
 							
 						<tr><th>Pet friendly: </th><td colspan='3'>
 							if (".$row["Petfriendly"]." == 0) {
-									".$row["Petfriendly"]." = 'No';
+									".$row["Petfriendly"]." = "No";
 								}
 								
 							if (".$row["Petfriendly"]." == 1) {
