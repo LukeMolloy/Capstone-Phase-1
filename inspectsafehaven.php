@@ -67,9 +67,9 @@
         
         
    
-            <article>
+            <div id="article">
             <!-- Place the map here -->  
-            </article>
+            </div>
     
         
           <td>

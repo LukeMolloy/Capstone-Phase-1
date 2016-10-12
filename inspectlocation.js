@@ -32,12 +32,12 @@ geocoder.geocode( { 'address': address}, function(results, status) {
     //},
     //mapTypeId: google.maps.MapTypeId.ROADMAP
   //};
-  function initMap() {
-  var map = new google.maps.Map(document.getElementById("article"), options);
+  
+  var map = new google.maps.Map(document.getElementById('article');
   var coords = new google.maps.LatLng(latitude, longitude);
   zoom: 4,
   center: coords;
-  });
+  
 
   
   var dummymarker = new google.maps.Marker({
