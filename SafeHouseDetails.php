@@ -111,13 +111,13 @@
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
-						<tr><th>Gender Taken: </th><td>
+						<tr><th>Gender Taken: </th><td colspan='3'>
 							<select name='gendertaken'>
 								  <option value=".$row["Gendertaken"].">".$row["Gendertaken"]."</option>
 								  <option value='Male'>Male</option>
 								  <option value='Female'>Female</option>
 								  <option value='NoPreference'>NoPreference</option>
-							</select><td></td>
+							</select>
 						
 						
 						<tr><th>Pet Friendly: </th><td><input type='text' id='number' name='number' value=".$row["Petfriendly"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
