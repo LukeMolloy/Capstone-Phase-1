@@ -11,7 +11,7 @@
 
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/inspectlocation.js"></script>
-
+<script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
