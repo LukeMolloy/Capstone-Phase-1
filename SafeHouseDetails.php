@@ -110,7 +110,7 @@
                         echo "
                         <form method='POST'><table>
                         
-                        <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
+                        <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>
 						<tr><th>Gender taken: </th><td colspan='3'>
 							<select name='gendertaken'>
 								  <option value=".$row["Gendertaken"].">".$row["Gendertaken"]."</option>
@@ -128,7 +128,8 @@
 							</select></td><td></td><td></td></tr>
 							
 					
-						<tr><th>Length of stay: </th><td><input type='text' id='nights' name='nights' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='addnights();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minusnights();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+						<tr><th>Length of stay: </th><td><input type='text' id='nights' name='nights' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='addnights();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minusnights();'>&nbsp - &nbsp</button></td></tr>
+						<tr><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></tr></table>
 						
 						
 						
