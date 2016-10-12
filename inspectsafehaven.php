@@ -84,11 +84,11 @@
                 	while($row = $result->fetch_assoc()) {
                     	echo "
                     	<tr>
-                    		<td width='60'>".$row["FirstNameDecrypt"]."</td>
-                    		<td width='60'><div id='add'>".$row["AddressDecrypt"]."</div></td>
-                    		<td width='60'><div id='add'>".$row["SuburbDecrypt"]."</div></td>
-                    		<td width='60'><div id='city'>".$row["CityDecrypt"]."</div></td> 
-                    		<td width='60'><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
+                    		<td width='600'>".$row["FirstNameDecrypt"]."</td>
+                    		<td width='600'><div id='add'>".$row["AddressDecrypt"]."</div></td>
+                    		<td width='600'><div id='add'>".$row["SuburbDecrypt"]."</div></td>
+                    		<td width='600'><div id='city'>".$row["CityDecrypt"]."</div></td> 
+                    		<td width='600'><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
                     	</tr>";
                         //$description = $row["Description"];
                 	}
