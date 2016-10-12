@@ -67,7 +67,7 @@
     <div class="loginform">
         <h2 align>Find a safe haven.</h2>
         <br /> <br />
-        <form method ="post">
+        <form method ="post" action ="searchsafehaven.php">
             
             <label class="search">      Search By Suburb: </label>
             <input type="text" name="Suburb" size="30">

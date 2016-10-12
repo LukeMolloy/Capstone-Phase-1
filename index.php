@@ -23,7 +23,7 @@
     </form>----->
     <div class="header">
     	<label class="title">Safe Haven Our Women</label>
-		<ul>
+		
 			<li><a href="/safehavenregistration.php">Safe Haven Application</a></li>
  		 	<li><a href="/registration.php">User Application</a></li>
 			<li><a href="/About.php">About Us</a></li>
@@ -31,7 +31,7 @@
 			<li><a href="/index.php">Home</a></li>
 		</ul> 
 	</div>
-
+    
 
 	<div class="loginform1">
 	
