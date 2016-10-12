@@ -75,7 +75,7 @@
                	    $house = $_GET['id'];
                	   
                	    
-               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt FROM House WHERE HouseID = $house";
+               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt FROM House WHERE HouseID = $house";
                     $result = mysqli_query($db, $sql);
                  
                     if ($result->num_rows > 0) {
