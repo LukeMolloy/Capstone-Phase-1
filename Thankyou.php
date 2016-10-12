@@ -31,16 +31,46 @@
 	<h2>Safe Haven Our Women</h2>
 	
 </body>
-<div class = "content">
+<div class = "loginform">
 	<p>Thank you!<br /><br /> Your details are being updated. We'll send you back to the page soon.</p>
 	<?php
-	header( "refresh:2;url=SafeHouseDetails.php" );
+	header( "refresh:1;url=SafeHouseDetails.php" );
 	?>
 </div>
 </div>
 
 <footer>
-	
+<br />
+<table class="footertable">
+	<tr>
+		<td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
 </footer>
+
 
 </html>
