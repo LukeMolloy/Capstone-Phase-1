@@ -9,7 +9,8 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
 
-  <link rel="stylesheet" href="stylesheets/about.css ">
+  <link rel="stylesheet" href="stylesheets/templatetest.css ">
+    <link rel="stylesheet" href="stylesheets/indextest.css ">
 		<?php include 'dbLogin.php' ?>
 		<script src="validationClient.js"></script>
 </head>
@@ -28,12 +29,12 @@
 		<center><h1></h1></center>
 	<h1>About</h1>
 	<h2>Safe Haven Our Women</h2>
-	<img src="images/aboutImage.gif"></img>
+	
 </body>
 <div class = "content">
 	<p>Thank you!<br /><br /> Your details are being updated. We'll send you back to the page soon.</p>
 	<?php
-	header( "refresh:5;url=SafeHouseDetails.php" );
+	header( "refresh:2;url=SafeHouseDetails.php" );
 	?>
 </div>
 </div>
