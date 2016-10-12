@@ -112,9 +112,9 @@
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
 						<br /><hr><br />
-						<table><tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br />
+						<table><tr><th>First Name</th><td>".$row["FirstNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
+                    	<tr><th>Last Name</th><td>".$row["LastNameDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br />
+                        <tr><th>Phone Number</th><td>".$row["PhoneNumberDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
                         <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br />
                         <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br />
                         <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br />
