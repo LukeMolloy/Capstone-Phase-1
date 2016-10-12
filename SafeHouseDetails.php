@@ -120,16 +120,18 @@
 							</select></td><td></td><td></td></tr>
 							
 						<tr><th>Pet friendly: </th><td colspan='3'>
-							if (".$row["Petfriendly"]." == 0) {
-									".$row["Petfriendly"]." = No;
-								}
-								
-							if (".$row["Petfriendly"]." == 1) {
-									".$row["Petfriendly"]." = Yes;
-								}
+						
 							<select name
 							<select name='petfriendly'>
-								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
+								if (".$row["Petfriendly"]." == 0) {
+									<option value='0'>'No'</option>
+								}
+								
+								if (".$row["Petfriendly"]." == 1) {
+									<option value='1'>'Yes'</option>
+								}
+								
+								
 								  <option value='1'>Yes</option>
 								  <option value='0'>No</option>
 								  
