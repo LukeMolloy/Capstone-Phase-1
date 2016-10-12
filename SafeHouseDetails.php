@@ -77,7 +77,7 @@
     <div class="loginform">
         <?php
         echo "<h1>Hello $a</h1> <br /><br />
-        	<table cellspacing='10'>
+        	<table cellspacing='30'>
         	<td>
         <h2>Find and edit your details below:</h2></td>";
         
