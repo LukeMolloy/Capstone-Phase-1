@@ -10,7 +10,6 @@
 <body>
 <div class="header">
 	<label class="title">Safe Haven Our Women</label>
-		<ul>
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
 			<li><a href="/index.php">Home</a></li>
