@@ -18,7 +18,7 @@
 	</ul> 
 </div>
 </div>
-	<div class="loginform">
+	<div class="contactform">
 		<center><h1>Contact Us</h1></center>
 	</div>
 	<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
