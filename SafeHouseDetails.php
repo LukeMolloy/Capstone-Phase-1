@@ -144,17 +144,16 @@
                         <tr><th>Email</th><td>".$row["EmailDecrypt"]."</td><td><input type='text' name='editemail'></td></tr><br />
                         <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editaddress'></td></tr>
                         <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editsuburb'></td></tr>
+                        <tr><th>Post Code</th><td>".$row["PostcodeDecrypt"]."</td><td><input type='text' name='editpostcode'></td></tr>
                         <tr><th>City</th><td>".$row["CityDecrypt"]."</td><td><input type='text' name='editcity'></td></tr>
-                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editstate'></td></tr></table></form>";               
+                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editstate'></td></tr>
+                        <tr><input type='submit' value='Update' name='submit2' class='updatebutton' id='submit2'></tr></table></form>";               
                         
                         
                        
                	                      
                	    }
                	    	
-               	    
-               	    	FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State
-	(AES_ENCRYPT('$first', 'show2016'), AES_ENCRYPT('$last', 'show2016'), AES_ENCRYPT('$phonenumber', 'show2016'), AES_ENCRYPT('$email', 'show2016'), '$hashpassword', AES_ENCRYPT('$address', 'show2016'), AES_ENCRYPT('$suburb', 'show2016'), AES_ENCRYPT('$postcode', 'show2016'), AES_ENCRYPT('$city', 'show2016'), AES_ENCRYPT('$state', 'show2016')
                	    
                	    
                	   
@@ -168,6 +167,10 @@
 					$phonenumber = $_POST['editphone'];
 					$email = $_POST['editemail'];
 					$address = $_POST['editaddress'];
+					$suburb = $_POST['editsuburb'];
+					$postcode = $_POST['editpostcode'];
+					$city = $_POST['editcity'];
+					$state = $_POST['editstate'];
 
                	     $stmt = "UPDATE House SET Spacesavailable='$newnumber', Gendertaken='$newgender', Petfriendly='$newpet', Nights='$newnights' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	     $secondstmt = "UPDATE House SET FirstName= AES_ENCRYPT('$first', 'show2016'), LastName= AES_ENCRYPT('$last', 'show2016'), PhoneNumber = AES_ENCRYPT('$phonenumber', 'show2016'), Email = AES_ENCRYPT('$email', 'show2016'), Address = AES_ENCRYPT('$address', 'show2016'), Suburb = AES_ENCRYPT('$suburb', 'show2016'), PostCode = AES_ENCRYPT('$postcode', 'show2016'), City = AES_ENCRYPT('$city', 'show2016'), State = AES_ENCRYPT('$state', 'show2016')
@@ -176,6 +179,11 @@
                	    if(isset($_POST['submit'])){
                	    	$
 							$dothis = mysqli_query($db, $stmt);
+						}
+						
+					if(isset($_POST['submit2'])){
+               	    	$
+							$dothisthis = mysqli_query($db, $secondstmt);
 						}
 						
                	}
