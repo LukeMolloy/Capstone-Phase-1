@@ -57,7 +57,7 @@
 	<center><h1>Safe House Inspection</h1></center>
 	<br /><br /><hr width="70%"><br /><br />
     <div class="loginform">
-		<table cellspacing="10">
+		<table>
 			<td>
 				<div id="article">
             		<!-- Place the map here -->  
