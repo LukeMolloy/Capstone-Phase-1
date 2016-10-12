@@ -60,7 +60,7 @@
         
         
         
-    <mapcontainer></mapcontainer>
+   
             <article>
             <!-- Place the map here -->  
             </article>
@@ -79,7 +79,7 @@
                     $result = mysqli_query($db, $sql);
                  
                     if ($result->num_rows > 0) {
-                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th>City</th> <th></th></tr>";
+                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Address</th> <th>City</th> </tr>";
                     }
                     
                     

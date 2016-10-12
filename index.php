@@ -23,8 +23,15 @@
     <input name="Signin" type="submit"/>
     </form>----->
     
-<div class="header">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <label class="title">Safe Haven Our Women</label>
+		<ul>
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/index.php">Home</a></li>
+		</ul> 
+	</div>
+    
+
 	<label class="title">SAFE HAVEN COMMUNITY</label>
  		<li><a href="/safehavenregistration.php">SAFE HAVEN APPLICATION</a></li>
  		 <li><a href="/registration.php">USER APPLICATION</a></li>

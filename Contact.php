@@ -9,14 +9,14 @@
 
 <body>
 <div class="header">
-		<label class="title">Safe Haven Our Women</label>
- 			<li><a href="/login.php">Login / Register</a></li>
+	<label class="title">Safe Haven Our Women</label>
+		<ul>
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
 			<li><a href="/index.php">Home</a></li>
 		</ul> 
 	</div>
-</div>
+	
 	<center><h1>Contact Us</h1></center>
 	<div class="contactform">
 		<table cellspacing="10">
