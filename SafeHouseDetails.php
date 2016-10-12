@@ -111,7 +111,7 @@
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
-						<tr><th>Gender Taken: </th><td colspan='3'>
+						<tr><th>Gender taken: </th><td colspan='3'>
 							<select name='gendertaken'>
 								  <option value=".$row["Gendertaken"].">".$row["Gendertaken"]."</option>
 								  <option value='Male'>Male</option>
@@ -119,7 +119,7 @@
 								  <option value='NoPreference'>NoPreference</option>
 							</select></td><td></td><td></td></tr>
 							
-						<tr><th>Pet Friendly </th><td colspan='3'>
+						<tr><th>Pet friendly: </th><td colspan='3'>
 							<select name='petfriendly'>
 								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
 								  <option value='1'>Yes</option>
@@ -127,10 +127,8 @@
 								  
 							</select></td><td></td><td></td></tr>
 							
-						
-						
-						<tr><th>Pet Friendly: </th><td><input type='text' id='number' name='number' value=".$row["Petfriendly"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
-						<tr><th>Length of stay: </th><td><input type='text' id='number' name='number' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
+					
+						<tr><th>Length of stay: </th><td><input type='text' id='nights' name='nights' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='addnights();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minusnights();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
 						
 						
 						
@@ -216,6 +214,19 @@ function add() {
 
 function minus() {
     $('#number').val( function(i, oldval) {
+        return --oldval;
+    });
+}
+
+
+function addnights() {
+    $('#nights').val( function(i, oldval) {
+        return ++oldval;
+    });
+}
+
+function minusnights() {
+    $('#nights').val( function(i, oldval) {
         return --oldval;
     });
 }
