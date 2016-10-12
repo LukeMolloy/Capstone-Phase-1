@@ -53,7 +53,9 @@
 		</ul> 
 
 	</div>
+	<br /><br />
 	<center><h1>Safe House Inspection</h1></center>
+	<br /><br /><hr width="70%"><br /><br />
     <div class="loginform">
 
 		<div id="article">
