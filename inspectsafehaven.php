@@ -14,6 +14,7 @@
 
 
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <script type="text/javascript" src="/inspectlocation.js"></script>
 <script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
