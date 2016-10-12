@@ -22,10 +22,10 @@
 	<div class="contactform">
 		<table cellspacing="10">
 				
-		<td valign="top"><br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
-			<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p><br /><p>Please fill out every field and add any extra information applicable to the clients situation in the</p><p>extra info section.</p>
+		<td valign="top"><br />
+			<p></p><p></p><br /><p></p>
 		</td>
-		<td>
+		<td><br /><h2>Enter Your Message below:</h2><br />
 			<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
 			<div class="row">
 				<label for="name">Your name:</label><br />
