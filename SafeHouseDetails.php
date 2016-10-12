@@ -111,7 +111,15 @@
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
-						<tr><th>Gender Taken: </th><td><input type='text' id='number' name='number' value=".$row["Gendertaken"]." size='auto' readonly></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
+						<tr><th>Gender Taken: </th><td>
+							<select name='gendertaken'>
+								  <option value=".$row["Gendertaken"]."></option>
+								  <option value='Male'>Male</option>
+								  <option value='Female'>Female</option>
+								  <option value='NoPreference'>NoPreference</option>
+							</select>
+						
+						
 						<tr><th>Pet Friendly: </th><td><input type='text' id='number' name='number' value=".$row["Petfriendly"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
 						<tr><th>Length of stay: </th><td><input type='text' id='number' name='number' value=".$row["Nights"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr></table>
 						
