@@ -72,7 +72,7 @@
                <?php
                	    
                	    
-               	    $house = $_GET['id'];
+               	    $house = $_POST['id'];
                	    
                	    
                	    
