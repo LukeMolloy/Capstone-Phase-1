@@ -10,11 +10,12 @@
 
 <body>
 <div class="header">
-	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/login.php">Login / Register</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<label class="title">SAFE HAVEN COMMUNITY</label>
+ 		<li><a href="/safehavenregistration.php">SAFE HAVEN APPLICATION</a></li>
+ 		 <li><a href="/registration.php">USER APPLICATION</a></li>
+		<li><a href="/About.php">ABOUT</a></li>
+		<li><a href="/Contact.php">CONTACT</a></li>
 	</ul> 
 </div>
 </div>
@@ -39,5 +40,34 @@
 </body>
 
 <footer>
-	<center>Contact Us	|	About</center>
+<br />
+<table class="footertable">
+	<tr>
+	   <td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>  
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
 </footer>
