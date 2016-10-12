@@ -38,7 +38,7 @@
 		$spacesavailable = ($_POST['SpacesAvailable']);
 		$infantspaces = ($_POST['InfantSpaces']);
 		$petfriendly = ($_POST['PetFriendly']);
-		$bluecardnumber = ($_POST['BluecardNumber']);
+		$licensenumber = ($_POST['licensenumber']);
 		$description = ($_POST['Description']);
 		$gender = ($_POST['GenderTaken']);
 		$nights = ($_POST['Nights']);
@@ -57,7 +57,7 @@
 	?>
 	
 	<div class="loginform">
-		<form name="safeHavenRegistration" onsubmit="return validateSecondSafeHavenRegistrationForm()" method="post">
+		<form name="safeHavenRegistration" onsubmit="return validateSecondSafeHavenRegistrationForm()" method="post" action="shregister.php">
 			<center>
 				<p>
 					<h1>Safe Haven Registration</h1><br />
@@ -78,7 +78,7 @@
 			<label id="Email">* Email</label> <input name="Email" type="email"/>
 			<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
-			<label id="BluecardNumber">License Number:</label><input name="licenseNumber" type="text" />
+			<label id="licenseNumber">License Number:</label><input name="licenseNumber" type="text" />
 		<br /><br />
 		
 		<label id="Password">* Password</label> <input name="Password" type="password" />
