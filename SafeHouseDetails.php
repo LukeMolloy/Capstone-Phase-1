@@ -121,18 +121,12 @@
 							
 						<tr><th>Pet friendly: </th><td colspan='3'>
 						
-							<select name
+					
 							<select name='petfriendly'>
-								if (".$row["Petfriendly"]." == 0) {
-									<option value='0'>No</option>
-								}
-								
-								if (".$row["Petfriendly"]." == 1) {
-									<option value='1'>Yes</option>
-								}
 								
 								
-								  <option value='1'>Yes</option>
+								
+								  <option value='1' selected='selected'>Yes</option>
 								  <option value='0'>No</option>
 								  
 							</select></td><td></td><td></td></tr>
