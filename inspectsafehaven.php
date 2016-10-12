@@ -71,7 +71,7 @@
             </article>
     
         
-        
+          <td>
                <?php
                	    
                	    
@@ -120,36 +120,7 @@
                	    
        
     <br /><br />
-    
-//<script type="text/javascript">
-
-var geocoder = new google.maps.Geocoder();
-var address = "28 lorikeet drive thornlands";
-
-geocoder.geocode( { 'address': address}, function(results, status) {
-
-  if (status == google.maps.GeocoderStatus.OK) {
-    var latitude = results[0].geometry.location.lat();
-    var longitude = results[0].geometry.location.lng();
-  } 
-}); 
-</script>
-   <a href="/safehaven.php"><button>Go back</button></a>
-
-</div>
-
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">x</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
+  
 
 
 

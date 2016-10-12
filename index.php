@@ -44,13 +44,10 @@
 				Manage my Safehouse
 			</div> <br /><br />
 		
-		<div id="authorityform">
-		<form method="post" action="checkloginauthority.php">
-				
-					
+			<div id="authorityform">
+			<form method="post" action="checkloginauthority.php">
 			<h3>Enter your details to use the service</h3><br />
 			<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-				
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
@@ -66,7 +63,7 @@
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
 			<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
-				</div>
+	</div>
 			
 			
 			</center>
@@ -93,7 +90,7 @@
 
 
 
-<script>
+<!----<script>
 $(document).ready(function(){
     $(".safehavenyes").click(function(){
         $(".moreinfo").animate({
@@ -113,36 +110,30 @@ $(document).ready(function(){
     
     
 });
-</script>
+</script>---->
 
 
 <script>
-      $("#loginauthority").css('border-bottom', '3px solid black');
+	$("#loginauthority").css('border-bottom', '3px solid black');
 	
 	$( "#loginsafehaven" ).click(function() {
-    $("#authorityform").css('height', '0px');
-   $("#authorityform").css('visibility', 'hidden');
-  $("#shform").css('visibility', 'VISIBLE');
-  $("#shform").css('height', 'auto');
-      $("#loginsafehaven").css('border-bottom', '3px solid black');
-
-      $("#loginauthority").css('border-bottom', 'none');
-
-
-});
+    	$("#authorityform").css('height', '0px');
+		$("#authorityform").css('visibility', 'hidden');
+		$("#shform").css('visibility', 'VISIBLE');
+		$("#shform").css('height', 'auto');
+    	$("#loginsafehaven").css('border-bottom', '3px solid black');
+    	$("#loginauthority").css('border-bottom', 'none');
+	});
 
 
-$( "#loginauthority" ).click(function() {
-	
-    $("#shform").css('height', '0px');
-   $("#shform").css('visibility', 'hidden');
-  $("#authorityform").css('visibility', 'VISIBLE');
-
-      $("#loginauthority").css('border-bottom', '3px solid black');
-
-     $("#loginsafehaven").css('border-bottom', 'none');
-  $("#authorityform").css('height', 'auto');
-});   
+	$( "#loginauthority" ).click(function() {
+    	$("#shform").css('height', '0px');
+		$("#shform").css('visibility', 'hidden');
+		$("#authorityform").css('visibility', 'VISIBLE');
+    	$("#loginauthority").css('border-bottom', '3px solid black');
+    	$("#loginsafehaven").css('border-bottom', 'none');
+		$("#authorityform").css('height', 'auto');
+	});   
 	
 </script>
 
