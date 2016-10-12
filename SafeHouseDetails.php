@@ -152,9 +152,12 @@
                	    	
                	    
                	   
-					$newvalue = $_POST['number'];
+					$newnumber = $_POST['number'];
+					$newgender = $_POST['gendertaken'];
+					$newpet = $_POST['petfriendly'];
+					$newnights = $_POST['nights'];
 
-               	     $stmt = "UPDATE House SET Spacesavailable='$newvalue' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
+               	     $stmt = "UPDATE House SET Spacesavailable='$newnumber', Gendertaken='$newgender', Petfriendly='$newpet', Nights='$newnights' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
                	    if(isset($_POST['submit'])){
                	    	$
