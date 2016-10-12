@@ -77,14 +77,10 @@
     <div class="loginform">
         <?php
         echo "<h1>Hello $a</h1> <br /><br />
-        <br /><br /><br /><br />
+        	<table cellspacing='10'>
+        	<td>
+        <h2>Find and edit your details below:</h2></td>";
         
-        <table cellspacing="10">
-        <td valign="top">
-        <h2>Find and edit your details below:</h2>";
-        </td>
-        
-        <td>
         
         $sql="SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House 
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
@@ -102,7 +98,7 @@
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
-                        echo "
+                        echo "<td>
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>";
@@ -112,7 +108,7 @@
                        
                	                      
                	    }
-               	    	echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
+               	    	echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form></td></table>";
                	    
                	   
 					$newvalue = $_POST['number'];
