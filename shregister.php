@@ -20,7 +20,7 @@
 	$spacesavailable = ($_POST['SpacesAvailable']);
 	$infantspaces = ($_POST['InfantSpaces']);
 	$petfriendly = ($_POST['PetFriendly']);
-    $licensenumber = ($_POST['licensenumber']);
+    $licensenumber = ($_POST['licenseNumber']);
 	$description = ($_POST['Description']);
 	$gender = ($_POST['GenderTaken']);
 	$nights = ($_POST['Nights']);
