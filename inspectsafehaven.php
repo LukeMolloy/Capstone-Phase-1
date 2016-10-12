@@ -61,19 +61,35 @@
         
 
         
+         <table align="center" cellpadding = "20">
+        <tr>
+            <th>
+                <h1>Location:</h1>
+                <?php
+			       	echo $phone;
+			    ?>
+            </th>
+            <th>
+                <h1>Safe Haven Information:</h1>
+                
+            </th>
+        </tr>
         
-        
-        
-        
-   
+        <tr>
+            <td>
             <article>
             <!-- Place the map here -->  
             </article>
-    
+        </td>
+        
         
         
 
         <td>
+        
+        
+
+      
                <?php
                	    
                	    
@@ -119,30 +135,30 @@
            
                   // echo "</table>";
                	?> <br /> <br />
-               	    
+               	    </td></table>
        
     <br /><br />
     
-<script type="text/javascript">
+//<script type="text/javascript">
 
-//var geocoder = new google.maps.Geocoder();
-//var address = "28 lorikeet drive thornlands";
+var geocoder = new google.maps.Geocoder();
+var address = "28 lorikeet drive thornlands";
 
-//geocoder.geocode( { 'address': address}, function(results, status) {
-//
-  //if (status == google.maps.GeocoderStatus.OK) {
-//    var latitude = results[0].geometry.location.lat();
-  //  var longitude = results[0].geometry.location.lng();
-  //} 
-//}); 
+geocoder.geocode( { 'address': address}, function(results, status) {
+
+  if (status == google.maps.GeocoderStatus.OK) {
+    var latitude = results[0].geometry.location.lat();
+    var longitude = results[0].geometry.location.lng();
+  } 
+}); 
 </script>
    <a href="/safehaven.php"><button>Go back</button></a>
 
 </div>
-</div>
 
 
-<!-- The Modal 
+
+<!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->

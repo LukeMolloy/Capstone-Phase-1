@@ -49,7 +49,7 @@
 				
 					
 			<h3>Enter your details to use the service</h3><br />
-			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
+			<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
@@ -60,8 +60,7 @@
 			<div id="shform">
 			<form method="post" action="checkloginsafehaven.php">
 			<h3>Enter your details to login as a safe haven owner</h3><br />
-			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-				
+			<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
 			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
