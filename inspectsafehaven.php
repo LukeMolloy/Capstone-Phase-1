@@ -89,9 +89,9 @@
                     while($row = $result->fetch_assoc()) {
                         
                         echo "
-                        <tr><td>".$row["FirstName"]."</td>
-                        <td>".$row["LastName"]."</td>
-                        <td>".$row["PhoneNumber"]."</td>
+                        <tr><td>".$row["Firstname"]."</td>
+                        <td>".$row["Lastname"]."</td>
+                        <td>".$row["Phonenumber"]."</td>
                         <td>".$row["Email"]."</td>
                         <td><div id='add'>".$row["Address"]."</div></td>
                         <td><div id='city'>".$row["City"]."</div></td>

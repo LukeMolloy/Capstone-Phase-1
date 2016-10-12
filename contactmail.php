@@ -15,8 +15,8 @@
     $email = new SendGrid\Email();
     $email->addTo($shcemail)
     ->setFrom($emailEntered)
-    ->setSubject('SHC Inquiry')
-    ->setHtml($message);
+    ->setSubject('Safe Haven Comunity Inquiry')
+    ->setHtml('<?php echo $message ?><strong>From <?php echo $name ?></strong>');
 
     $sendgrid->send($email);
     
