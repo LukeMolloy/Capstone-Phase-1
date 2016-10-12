@@ -67,13 +67,14 @@
         		<?php
             		$house = $_GET['id'];
             	
-               		$sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt FROM House WHERE HouseID = $house";
+               		$sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Lastname, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt FROM House WHERE HouseID = $house";
                 	$result = mysqli_query($db, $sql);
                  
                 	if ($result->num_rows > 0) {
                 		echo "<table cellpadding='10px'>
                 			<tr>
                 				<th>First Name</th>
+                				<th>Last Name</th>
                 				<th>Address</th>
                 				<th>Suburb</th>
                 				<th>City</th>
@@ -84,11 +85,12 @@
                 	while($row = $result->fetch_assoc()) {
                     	echo "
                     	<tr>
-                    		<td width='600'>".$row["FirstNameDecrypt"]."</td>
-                    		<td width='600'><div id='add'>".$row["AddressDecrypt"]."</div></td>
-                    		<td width='600'><div id='add'>".$row["SuburbDecrypt"]."</div></td>
-                    		<td width='600'><div id='city'>".$row["CityDecrypt"]."</div></td> 
-                    		<td width='600'><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
+                    		<td width='300'>".$row["FirstNameDecrypt"]."</td>
+                    		<td width='300'>".$row["LastNameDecrypt"]."</td>
+                    		<td width='300'><div id='add'>".$row["AddressDecrypt"]."</div></td>
+                    		<td width='300'><div id='add'>".$row["SuburbDecrypt"]."</div></td>
+                    		<td width='300'><div id='city'>".$row["CityDecrypt"]."</div></td> 
+                    		<td width='300'><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
                     	</tr>";
                         //$description = $row["Description"];
                 	}
