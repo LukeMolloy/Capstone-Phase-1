@@ -173,17 +173,19 @@
 					$state = $_POST['editstate'];
 
                	     $stmt = "UPDATE House SET Spacesavailable='$newnumber', Gendertaken='$newgender', Petfriendly='$newpet', Nights='$newnights' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
-               	     $secondstmt = "UPDATE House SET Authorised = '1', Firstname= AES_ENCRYPT('$first', 'show2016'), Lastname= AES_ENCRYPT('$last', 'show2016'), Phonenumber = AES_ENCRYPT('$phonenumber', 'show2016'), Email = AES_ENCRYPT('$email', 'show2016'), Address = AES_ENCRYPT('$address', 'show2016'), Suburb = AES_ENCRYPT('$suburb', 'show2016'), Postcode = AES_ENCRYPT('$postcode', 'show2016'), City = AES_ENCRYPT('$city', 'show2016'), State = AES_ENCRYPT('$state', 'show2016')
+               	     $secondstmt = "UPDATE House SET Authorised = '0', Firstname= AES_ENCRYPT('$first', 'show2016'), Lastname= AES_ENCRYPT('$last', 'show2016'), Phonenumber = AES_ENCRYPT('$phonenumber', 'show2016'), Email = AES_ENCRYPT('$email', 'show2016'), Address = AES_ENCRYPT('$address', 'show2016'), Suburb = AES_ENCRYPT('$suburb', 'show2016'), Postcode = AES_ENCRYPT('$postcode', 'show2016'), City = AES_ENCRYPT('$city', 'show2016'), State = AES_ENCRYPT('$state', 'show2016')
                	     WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
                	    if(isset($_POST['submit'])){
                	    	$
 							$dothis = mysqli_query($db, $stmt);
+							header('Location: Thankyou.php'); 
 						}
 						
 					if(isset($_POST['submit2'])){
                	    	$
 							$dothisthis = mysqli_query($db, $secondstmt);
+								header('Location: Thankyou.php'); 
 						}
 						
                	}

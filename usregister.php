@@ -2,7 +2,8 @@
 	ob_start();
     session_start();
     include 'dbLogin.php';
-
+	require 'vendor/autoload.php';
+	
     $sql = $db->prepare("INSERT INTO User (FirstName, LastName, EmailAddress, Password, PhoneNumber, JobTitle, Information)
 		VALUES (?, ?, ?, ?, ?, ?, ?)");
 	$sql->bind_param("sssssss", $first, $last, $email, $hashpassword, $phone, $job, $info);
@@ -18,8 +19,7 @@
 	$hashpassword = hash("sha256", $password);
 	$sql->execute();
 	$sql->close();
-    
-	require 'vendor/autoload.php';
+	
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     $email = new SendGrid\Email();
     $email->addTo($email)
