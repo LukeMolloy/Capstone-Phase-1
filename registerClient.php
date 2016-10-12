@@ -66,8 +66,8 @@
 			
 			<table cellspacing="10">
 				
-			<td valign="top"><h2><br /><br /><br /><br />Please enter the client's details<br /><br /><br /><br />
-			These will be used to find applicable safe havens</h2></td>
+			<td valign="top"><br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
+			<p>These details will help narrow down the list of safe houses to those applicable to the client. These details will also be sent to the safehouse that the client ends up being placed in.</p></td>
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
