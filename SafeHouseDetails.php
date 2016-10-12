@@ -128,8 +128,9 @@
                	    	$
 							$dothis = mysqli_query($db, $stmt);
 						}
-						echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
+						
                	}
+               	echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form>";
         
 //sdfsd
 ?>
