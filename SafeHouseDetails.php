@@ -77,7 +77,7 @@
     <div class="loginform">
         <?php
         echo "<h1>Hello $a</h1> <br /><br />
-        	<table cellspacing='30'>
+        	<table cellspacing='100'>
         	<td>
         <h2>Find and edit your details below:</h2></td>";
         
@@ -98,7 +98,7 @@
                	if($result != NULL){
                		
                	    while($row = $result->fetch_assoc()) {
-                        echo "<td>
+                        echo "<td valign='top'>
                         <form method='POST'><table>
                         
                         <tr><th>Spaces Available: </th><td><input type='text' id='number' name='number' value=".$row["Spacesavailable"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td></tr>";
