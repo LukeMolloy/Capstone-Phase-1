@@ -67,18 +67,28 @@
         		<?php
             		$house = $_GET['id'];
             	
-               		$sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt FROM House WHERE HouseID = $house";
+               		$sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt FROM House WHERE HouseID = $house";
                 	$result = mysqli_query($db, $sql);
                  
                 	if ($result->num_rows > 0) {
-                		echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Address</th> <th>City</th> </tr>";
+                		echo "<table cellpadding='10px'>
+                			<tr>
+                				<th>First Name</th>
+                				<th>Address</th>
+                				<th>Suburb</th>
+                				<th>City</th>
+                				<th>Phone Number</th>
+                			</tr>";
                 	}
 
                 	while($row = $result->fetch_assoc()) {
                     	echo "
-                    	<tr><td>".$row["FirstNameDecrypt"]."</td>
-                    	<td><div id='add'>".$row["AddressDecrypt"]."</div></td>
-                    	<td><div id='city'>".$row["CityDecrypt"]."</div></td> 
+                    	<tr>
+                    		<td>".$row["FirstNameDecrypt"]."</td>
+                    		<td><div id='add'>".$row["AddressDecrypt"]."</div></td>
+                    		<td><div id='add'>".$row["SuburbDecrypt"]."</div></td>
+                    		<td><div id='city'>".$row["CityDecrypt"]."</div></td> 
+                    		<td><div id='add'>".$row["PhoneNumberDecrypt"]."</div></td>
                     	</tr>";
                         //$description = $row["Description"];
                 	}
