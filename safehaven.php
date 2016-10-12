@@ -50,13 +50,14 @@
 	    		echo "<li><a href='logout.php'>Logout</a></li>";
 			}
 			else {
-				echo "<li><a href='login.php'>Login</a></li>";
+				echo "<li><a href='index.php'>Login</a></li>";
 			}
 			
-			?>
+		?>
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
-			<li><a href="/registerClient.php">Register Client</a></li>
+			<li><a href="/index.php">Home</a></li>
+		</ul> 
 
 	</div>
 	<div class="navbar">

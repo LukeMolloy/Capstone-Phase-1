@@ -39,7 +39,7 @@ geocoder.geocode( { 'address': address}, function(results, status) {
   var dummymarker = new google.maps.Marker({
       position: coords,
       map: map,
-      title:"Dummy safehaven!"
+     // title:"Dummy safehaven!"
   });
   } 
 });

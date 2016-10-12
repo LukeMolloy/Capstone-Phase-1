@@ -34,13 +34,14 @@
 	    		echo "<li><a href='logout.php'>Logout</a></li>";
 			}
 			else {
-				echo "<li><a href='login.php'>Login</a></li>";
+				echo "<li><a href='index.php'>Login</a></li>";
 			}
 			
-			?>
+		?>
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
-			<li><a href="/registerClient.php">Register Client</a></li>
+			<li><a href="/index.php">Home</a></li>
+		</ul> 
 
 	</div>
 		<div class="navbar">
@@ -114,22 +115,22 @@
            
                   // echo "</table>";
                	?> <br /> <br />
-               	    <img src="images/inclusions1.jpg">
+               	    
        
     <br /><br />
     
 <script type="text/javascript">
 
-var geocoder = new google.maps.Geocoder();
-var address = "28 lorikeet drive thornlands";
+//var geocoder = new google.maps.Geocoder();
+//var address = "28 lorikeet drive thornlands";
 
-geocoder.geocode( { 'address': address}, function(results, status) {
-
-  if (status == google.maps.GeocoderStatus.OK) {
-    var latitude = results[0].geometry.location.lat();
-    var longitude = results[0].geometry.location.lng();
-  } 
-}); 
+//geocoder.geocode( { 'address': address}, function(results, status) {
+//
+  //if (status == google.maps.GeocoderStatus.OK) {
+//    var latitude = results[0].geometry.location.lat();
+  //  var longitude = results[0].geometry.location.lng();
+  //} 
+//}); 
 </script>
    <a href="/safehaven.php"><button>Go back</button></a>
 

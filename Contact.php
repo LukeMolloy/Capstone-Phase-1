@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="header">
+	<div class="header">
 	<label class="title">Safe Haven Our Women</label>
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
