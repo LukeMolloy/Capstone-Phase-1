@@ -55,7 +55,7 @@
 	</div>
 	
 	<div class="loginform">
-		<h2>Thank you!</h2><br /><br /><br />
+		<br /><br /><br /><br /><h1>Thank you!</h1><br /><br /><br />
 		Your details are being updated. We'll redirect you shortly.
 		 <?php
 	header( "refresh:2;url=SafeHouseDetails.php" );
