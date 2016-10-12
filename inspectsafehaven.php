@@ -135,7 +135,7 @@
    <a href="/safehaven.php"><button>Go back</button></a>
 
 </div>
-
+</div>
 
 
 <!-- The Modal -->
