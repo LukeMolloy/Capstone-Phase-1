@@ -121,12 +121,10 @@
 							
 						<tr><th>Pet friendly: </th><td colspan='3'>
 						
-					
+							<select name
 							<select name='petfriendly'>
-								
-								
-								
-								  <option value='1' selected='selected'>Yes</option>
+								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
+								  <option value='1'>Yes</option>
 								  <option value='0'>No</option>
 								  
 							</select></td><td></td><td></td></tr>
