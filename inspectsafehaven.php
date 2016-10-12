@@ -77,9 +77,7 @@
                	     $sql="SELECT CAST(AES_DECRYPT(FirstName, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(LastName, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(PhoneNumber, 'show2016') AS CHAR(50)) PhoneNumberDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt, CAST(AES_DECRYPT(Address, 'show2016') AS CHAR(50)) AddressDecrypt, CAST(AES_DECRYPT(Suburb, 'show2016') AS CHAR(50)) SuburbDecrypt, CAST(AES_DECRYPT(Postcode, 'show2016') AS CHAR(50)) PostcodeDecrypt, CAST(AES_DECRYPT(City, 'show2016') AS CHAR(50)) CityDecrypt, CAST(AES_DECRYPT(State, 'show2016') AS CHAR(50)) StateDecrypt, Spacesavailable, Petfriendly, Gendertaken, Authorised, Nights FROM House 
         WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
-               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Lastname, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(Phonenumber, 'show2016') AS CHAR(50)) PhoneDecrypt, 
-               	    
-               	    FROM House WHERE HouseID = $house";
+               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Lastname, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(Phonenumber, 'show2016') AS CHAR(50)) PhoneDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt FROM House WHERE HouseID = $house";
                     $result = mysqli_query($db, $sql);
                  
                     if ($result->num_rows > 0) {
@@ -97,7 +95,7 @@
                         <td>".$row["Phonenumber"]."</td>
                         <td>".$row["Email"]."</td>
                         <td><div id='add'>".$row["Address"]."</div></td>
-                        <td><div id='city'>".$row["City"]."</div></td>
+                        <td><div id='city'>".$row["City"]."</div></td> 
                         </tr>";
                         //$description = $row["Description"];
                     }
