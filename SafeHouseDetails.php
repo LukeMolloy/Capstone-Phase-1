@@ -84,7 +84,7 @@
     		<td valign="top">
     			<h2>Find and edit your details below:</h2>
     			</td>
-    			<td>
+    			<td valign="top">
     			
     			<?php 
         
