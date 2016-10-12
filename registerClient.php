@@ -67,7 +67,7 @@
 			<table cellspacing="10">
 				
 			<td valign="top"><br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
-			<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p></td>
+			<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p><br /><p>Please fill out every field and add any extra information applicable to the clients situation in the extra info section.</p></td>
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
