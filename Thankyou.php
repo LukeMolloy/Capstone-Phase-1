@@ -60,7 +60,7 @@
 		 <?php
 	header( "refresh:2;url=SafeHouseDetails.php" );
 	?>
-	</div>
+	</div></div>
 </body>
 
 <footer>

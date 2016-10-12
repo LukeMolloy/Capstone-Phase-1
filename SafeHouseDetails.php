@@ -154,9 +154,7 @@
                	                      
                	    }
                	    	
-               	    <?php
-	header( "refresh:2;url=SafeHouseDetails.php" );
-	?>
+               	    
                	    
                	   
 					$newnumber = $_POST['number'];
