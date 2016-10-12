@@ -108,7 +108,7 @@
                        
                	                      
                	    }
-               	    	echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form></td></table>";
+               	    
                	    
                	   
 					$newvalue = $_POST['number'];
@@ -120,7 +120,7 @@
 							$dothis = mysqli_query($db, $stmt);
 						}
                	}
-        
+        	echo "<input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></table></form></td></table>";
 //sdfsd
 ?>
 </div>
