@@ -5,6 +5,10 @@
 <?php
 	ob_start();
 	session_start();
+	
+	if (!isset($_SESSION['loggedin']) && !$_SESSION['loggedin'] == true) {
+	    header("Location: index.php");
+	}
 ?>	
 
 
@@ -16,7 +20,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
   <link rel="stylesheet" href="stylesheets/templatetest.css">
-  <link rel="stylesheet" href="stylesheets/indextest.css">
+  
     <link rel="stylesheet" href="stylesheets/popups.css">
 	<div class="navbar">
 	</div>
@@ -138,14 +142,14 @@
 </div>
 
 
-<!-- The Modal -->
+<!-- The Modal 
 <div id="myModal" class="modal">
 
-  <!-- Modal content
+  <!-- Modal content -->
   <div class="modal-content">
     <span class="close">x</span>
     <p>Some text in the Modal..</p>
-  </div> -->
+  </div>
 
 </div>
 
