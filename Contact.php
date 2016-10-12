@@ -42,6 +42,7 @@
 			<input id="submit_button" type="submit" value="Send email" />
 			</form>
 		</td>
+		</table>
 	</div>	
 </body>
 
