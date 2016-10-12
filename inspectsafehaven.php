@@ -72,7 +72,7 @@
                <?php
                	    
                	    
-               	    $house = $_POST['id'];
+               	    $house = $_GET['id'];
                	   
                	    
                	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt FROM House WHERE HouseID = $house";
