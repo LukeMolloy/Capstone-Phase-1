@@ -122,8 +122,8 @@
 						<tr><th>Pet Friendly </th><td colspan='3'>
 							<select name='petfriendly'>
 								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
-								  <option value='MaleYes'>Yes</option>
-								  <option value='No'>No</option>
+								  <option value='1'>Yes</option>
+								  <option value='0'>No</option>
 								  
 							</select></td><td></td><td></td></tr>
 							
