@@ -96,14 +96,14 @@
                         <td><div id='add'>".$row["Address"]."</div></td>
                         <td><div id='city'>".$row["City"]."</div></td>
                         </tr>";
-                        $description = $row["Description"];
+                        //$description = $row["Description"];
                     }
                     echo "</table>";
                     
-                    echo "<br /><br /><button>Contact</button><br /> <br /><br />
+                    echo "<br /><br /><button>Contact</button><br /> <br /><br />";
                     
-                    <b>Description:</b><br /><br />
-                    $description";
+                  
+                    
                     
                 
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
