@@ -11,20 +11,14 @@
 </head>
 
 <body>
-	
-<div class="wrapper">
-	
-<div class="header">
+	<div class="header">
 	<label class="title">Safe Haven Our Women</label>
- 	<!--	<li><a href="/index.php">Login / Register</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li> -->
-	</ul> 
-</div>
-	<div class="navbar">
-		
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/index.php">Home</a></li>
+		</ul> 
 	</div>
+
 	<div class="loginform">
 		<form name="safeHavenRegistration" onsubmit="return validateSecondSafeHavenRegistrationForm()" method="post" action="shregister.php">
 			<center>
