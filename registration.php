@@ -42,7 +42,7 @@
 		echo $_SESSION["login_user"] . ".<br>";
 	?>
 	<div class="loginform">
-		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="mail.php">
+		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="usregister.php">
 				<p>
 					<h1>Register as...</h1><br />
 					<h2>Authority or Safe Haven</h2>

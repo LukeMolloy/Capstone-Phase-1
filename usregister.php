@@ -19,23 +19,16 @@
 	$sql->execute();
 	$sql->close();
     
-   /* require 'vendor/autoload.php';
+	require 'vendor/autoload.php';
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
-    $_SESSION['Email'] = $_POST['Email'];
-	$emailEntered = $_SESSION['Email'];
-	
-    $_SESSION['FirstName'] = $_POST['FirstName'];
-    $firstNameEntered = $_SESSION['FirstName'];
-
-
     $email = new SendGrid\Email();
-    $email->addTo($emailEntered)
-    ->setFrom('noreply@show.com')
-    ->setSubject('Thank you for registering!')
-    ->setHtml('<strong>Hello <?php echo $firstNameEntered ?> </strong> <br /> <br />
-    Your account is requiring validation, and then you may use the system.<br /><br /> Thank you!
+    $email->addTo($email)
+    ->setFrom('noreply@shc.com')
+    ->setSubject('You have successfully applied to become a user!')
+    ->setHtml('<strong>Hello <?php echo $first ?> </strong> <br /> <br />
+    Your account is undergoing verification. You will recieve an email when you can use the system.<br /><br /> Thank you!
    ');
 
-    $sendgrid->send($email);*/
+    $sendgrid->send($email);
 	header("location:index.php");
 ?>
