@@ -48,7 +48,7 @@
 		<form method="post" action="checkloginauthority.php">
 				
 					
-			<h3>Enter your details to login as authority</h3><br />
+			<h3>Enter your details to use the service</h3><br />
 			<php? $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 				
