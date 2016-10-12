@@ -71,7 +71,7 @@
 			<td>
 		<form name="clientRegistration" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
-			<center>
+		
 				
 			<table align="center">
 				
