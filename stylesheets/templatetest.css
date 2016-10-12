@@ -75,7 +75,7 @@ h2 {
 
 
 .updatebutton {
-    position:fixed;
+    position:relative;
     width: auto;
     height: auto;
     border-style: none;

@@ -4,7 +4,7 @@
     include 'dbLogin.php';
 
     $sql = $db->prepare("INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State)
-	VALUES (AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'))");
+	VALUES (AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), ?, AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'))");
 	$sql->bind_param("ssssssssss", $first, $last, $phonenumber, $email, $hashpassword, $address, $suburb, $postcode, $city, $state);
     //, $phonenumber, $email, $hashpassword, $address, $suburb, $postcode, $city, $state, $spacesavailable, $infantspaces, $petfriendly, $licenseNumber, $description, $gender, $nights
     $first = ($_POST['FirstName']);
