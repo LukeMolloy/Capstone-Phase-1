@@ -90,8 +90,8 @@
                         echo "
                         <tr><td>".$row["FirstNameDecrypt"]."</td>
                        
-                        <td><div id='add'>".$row["Address"]."</div></td>
-                        <td><div id='city'>".$row["City"]."</div></td> 
+                        <td><div id='add'>".$row["AddressDecrypt"]."</div></td>
+                        <td><div id='city'>".$row["CityDecrypt"]."</div></td> 
                         </tr>";
                         //$description = $row["Description"];
                     }
