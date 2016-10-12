@@ -2,6 +2,7 @@
     ob_start();
     session_start();
     include 'dbLogin.php';
+    require 'vendor/autoload.php';
 
     $sql = $db->prepare("INSERT INTO House (FirstName, LastName, PhoneNumber, Email, Password, Address, Suburb, PostCode, City, State, SpacesAvailable, InfantSpaces, PetFriendly, LicenseNumber, Description, GenderTaken, Nights)
 	VALUES (AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), ?, AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), AES_ENCRYPT(?, 'show2016'), ?, ?, ?, AES_ENCRYPT(?, 'show2016'), ?, ?, ?)");
@@ -30,7 +31,6 @@
 	$sql->execute();
 	$sql->close();
 	
-	require 'vendor/autoload.php';
     $sendgrid = new SendGrid('app55568313@heroku.com', 'zukzurbh9121');
     $email = new SendGrid\Email();
     $email->addTo($email)
