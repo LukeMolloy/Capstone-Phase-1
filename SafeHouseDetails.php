@@ -79,7 +79,7 @@
         <?php
         echo "<h1>Hello $a</h1> <br /><br />";
         ?>
-        
+        <hr width="70%"><br /><br />
         <table cellspacing="100">
     		<td valign="top">
     			<h2>Find and edit your details below:</h2>
