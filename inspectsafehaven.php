@@ -106,7 +106,7 @@
                     
                     
                 
-                        echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
+                        //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
                     
                        
                         
@@ -115,11 +115,10 @@
                       
                       
            
-                   echo "</table>";
+                  // echo "</table>";
                	?> <br /> <br />
                	    <img src="images/inclusions1.jpg">
-        </td>
-    </table>
+       
     <br /><br />
     
 
