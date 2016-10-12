@@ -19,13 +19,13 @@
 </div>
 </div>
 	<center><h1>Contact Us</h1></center>
-	<table cellspacing="10">
+	<div class="contactform">
+		<table cellspacing="10">
 				
-	<td valign="top"><br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
-		<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p><br /><p>Please fill out every field and add any extra information applicable to the clients situation in the</p><p>extra info section.</p>
-	</td>
-	<td>
-		<div class="contactform">
+		<td valign="top"><br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
+			<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p><br /><p>Please fill out every field and add any extra information applicable to the clients situation in the</p><p>extra info section.</p>
+		</td>
+		<td>
 			<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
 			<div class="row">
 				<label for="name">Your name:</label><br />
@@ -40,9 +40,9 @@
 				<textarea id="message" class="input" name="message" rows="14" cols="60"></textarea><br />
 			</div>
 			<input id="submit_button" type="submit" value="Send email" />
-			</form>	
-		</div>
-	</td>
+			</form>
+		</td>
+	</div>	
 </body>
 
 <footer>
