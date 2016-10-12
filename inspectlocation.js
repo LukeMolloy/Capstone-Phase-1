@@ -44,7 +44,7 @@ geocoder.geocode( { 'address': address}, function(results, status) {
   } 
 });
 
-}
+
 
 //if (navigator.geolocation) {
 //  navigator.geolocation.getCurrentPosition(success);
