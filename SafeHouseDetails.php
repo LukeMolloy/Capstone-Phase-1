@@ -123,13 +123,8 @@
 						
 							<select name
 							<select name='petfriendly'>
-							if (".$row["Petfriendly"]." == 0) {
-								<option value='0'>'No'</option>
-							}
-							else {
-								<option value='1'>'Yes'</option>
-							}
-								
+							
+								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
 								  <option value='1'>Yes</option>
 								  <option value='0'>No</option>
 								  
