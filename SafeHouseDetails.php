@@ -173,7 +173,7 @@
 					$state = $_POST['editstate'];
 
                	     $stmt = "UPDATE House SET Spacesavailable='$newnumber', Gendertaken='$newgender', Petfriendly='$newpet', Nights='$newnights' WHERE Email = AES_ENCRYPT('$a', 'show2016')";
-               	     $secondstmt = "UPDATE House SET Firstname= AES_ENCRYPT('$first', 'show2016'), Lastname= AES_ENCRYPT('$last', 'show2016'), PhoneNumber = AES_ENCRYPT('$phonenumber', 'show2016'), Email = AES_ENCRYPT('$email', 'show2016'), Address = AES_ENCRYPT('$address', 'show2016'), Suburb = AES_ENCRYPT('$suburb', 'show2016'), PostCode = AES_ENCRYPT('$postcode', 'show2016'), City = AES_ENCRYPT('$city', 'show2016'), State = AES_ENCRYPT('$state', 'show2016')
+               	     $secondstmt = "UPDATE House SET Firstname= AES_ENCRYPT('$first', 'show2016'), Lastname= AES_ENCRYPT('$last', 'show2016')
                	     WHERE Email = AES_ENCRYPT('$a', 'show2016')";
                	    
                	    if(isset($_POST['submit'])){
@@ -268,4 +268,8 @@ function minusnights() {
                         <tr><th>Address</th><td>".$row["AddressDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
                         <tr><th>Suburb</th><td>".$row["SuburbDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
                         <tr><th>City</th><td>".$row["CityDecrypt"]."</td><td><input type='text' name='editname'></td></tr><br /><br />
-                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editname'></td></tr>-->
+                        <tr><th>State</th><td>".$row["StateDecrypt"]."</td><td><input type='text' name='editname'></td></tr>
+                        
+                        PhoneNumber = AES_ENCRYPT('$phonenumber', 'show2016'), Email = AES_ENCRYPT('$email', 'show2016'), Address = AES_ENCRYPT('$address', 'show2016'), Suburb = AES_ENCRYPT('$suburb', 'show2016'), PostCode = AES_ENCRYPT('$postcode', 'show2016'), City = AES_ENCRYPT('$city', 'show2016'), State = AES_ENCRYPT('$state', 'show2016')
+                        
+                        -->
