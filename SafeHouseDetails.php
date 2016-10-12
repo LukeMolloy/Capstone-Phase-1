@@ -117,7 +117,16 @@
 								  <option value='Male'>Male</option>
 								  <option value='Female'>Female</option>
 								  <option value='NoPreference'>NoPreference</option>
-							</select></td><td></td><td></td>
+							</select></td><td></td><td></td></tr>
+							
+						<tr><th>Pet Friendly </th><td colspan='3'>
+							<select name='petfriendly'>
+								  <option value=".$row["Petfriendly"].">".$row["Petfriendly"]."</option>
+								  <option value='MaleYes'>Yes</option>
+								  <option value='No'>No</option>
+								  
+							</select></td><td></td><td></td></tr>
+							
 						
 						
 						<tr><th>Pet Friendly: </th><td><input type='text' id='number' name='number' value=".$row["Petfriendly"]." size='2' readonly></td><td><button type='button' class='updatebutton' onclick='add();'>&nbsp + &nbsp</button> <button class='updatebutton' type='button' onclick='minus();'>&nbsp - &nbsp</button></td><td><input type='submit' value='Update' name='submit' class='updatebutton' id='submit'></td></tr>
