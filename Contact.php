@@ -22,17 +22,17 @@
 	<div class="contactform">
 		<table cellspacing="10">
 				
-		<td valign="top" width="80"><br />
+		<td valign="top" width="800"><br />
 			<p>Feel free to ask any questions about the service using the form to the right.</p><p>We will try and get back to you as soon as possible!</p><br /><p></p>
 		</td>
-		<td width="80"><br /><h2>Enter Your Message below:</h2><br /><br /><br />
+		<td width="800"><br /><h2>Enter Your Message below:</h2><br /><br /><br />
 			<form id="contact_form" action="contactmail.php" method="POST" enctype="multipart/form-data">
 			<div class="row">
 				<label for="name" align="left">Your name:</label><br />
 				<input id="name" class="input" name="name" type="text" value="" size="30" /><br /><br />
 			</div>
 			<div class="row">
-				<label for="email" align="left">Your email:</label><br />
+				<label for="email">Your email:</label><br />
 				<input id="email" class="input" name="email" type="text" value="" size="30" /><br /><br />
 			</div>
 			<div class="row">
