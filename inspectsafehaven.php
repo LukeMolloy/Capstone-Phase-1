@@ -57,16 +57,21 @@
         
 
         
-
+        
+        
+        
+        
+   
+            <article>
+            <!-- Place the map here -->  
+            </article>
     
         
         
 
         <td>
                <?php
-               	    echo "<article>
-            
-            </article>";
+               	    
                	    
                	    $house = $_GET['id'];
                	   
