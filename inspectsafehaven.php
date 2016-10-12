@@ -75,7 +75,7 @@
                	    $house = $_POST['id'];
                	   
                	    
-               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt, CAST(AES_DECRYPT(Lastname, 'show2016') AS CHAR(50)) LastNameDecrypt, CAST(AES_DECRYPT(Phonenumber, 'show2016') AS CHAR(50)) PhoneDecrypt, CAST(AES_DECRYPT(Email, 'show2016') AS CHAR(50)) EmailDecrypt FROM House WHERE HouseID = $house";
+               	    $sql="SELECT CAST(AES_DECRYPT(Firstname, 'show2016') AS CHAR(50)) FirstNameDecrypt FROM House WHERE HouseID = $house";
                     $result = mysqli_query($db, $sql);
                  
                     if ($result->num_rows > 0) {
@@ -88,10 +88,8 @@
                     while($row = $result->fetch_assoc()) {
                         
                         echo "
-                        <tr><td>".$row["FirstNameDecryptame"]."</td>
-                        <td>".$row["LastNameDecryptame"]."</td>
-                        <td>".$row["PhoneNumberDecryptumber"]."</td>
-                        <td>".$row["EmailDecrypt"]."</td>
+                        <tr><td>".$row["FirstNameDecrypt"]."</td>
+                       
                         <td><div id='add'>".$row["Address"]."</div></td>
                         <td><div id='city'>".$row["City"]."</div></td> 
                         </tr>";
