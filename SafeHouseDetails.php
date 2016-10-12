@@ -82,7 +82,7 @@
         <hr width="70%"><br />
         <table cellspacing="100">
     		<td valign="top">
-    			<h2>Update your details quickly:  </h2><br /><br />
+    			<h2>Update your details quickly:  </h2><br /><br /><br /><br /><br /><br />
     			<h2>Update details which will require reauthorisation</h2>
     			</td>
     			<td valign="top">
