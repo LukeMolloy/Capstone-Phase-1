@@ -2,33 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<?php
-		session_start();
-		
-	?>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>SafeHaven.OurWomen</title>
-
-  <link rel="stylesheet" href="stylesheets/about.css ">
-		<?php include 'dbLogin.php' ?>
-		<script src="validationClient.js"></script>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>SafeHaven.Community</title>
+	<link rel="stylesheet" href="stylesheets/templatetest.css">
+	<?php include 'dbLogin.php' ?>
 </head>
 
 <body>
-<div class="header">
-	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/login.php">Login / Register</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
-	</ul> 
-</div>
+	<div class="header">
+		<label class="title">Safe Haven Our Women</label>
+ 			<li><a href="/login.php">Login / Register</a></li>
+			<li><a href="/About.php">About Us</a></li>
+			<li><a href="/Contact.php">Contact Us</a></li>
+			<li><a href="/index.php">Home</a></li>
+		</ul> 
+	</div>
 	
 	<div class="loginform">
-		<center><h1></h1></center>
-	<h1>About</h1>
-	<h2>Safe Haven Our Women</h2>
-	<img src="images/aboutImage.gif"></img>
+		<center><h1>About Safe Haven Community</h1></center>
+		<center><img src="images/aboutImage.gif"></img></center>
 </body>
 <div class = "content">
 	<p>The SH.OW  project aims to help solve the problem of domestic violence in our society by providing a much needed service to sufferers of domestic violence. </p>
