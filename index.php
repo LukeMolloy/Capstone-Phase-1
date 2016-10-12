@@ -45,23 +45,23 @@
 			</div> <br /><br />
 		
 			<div id="authorityform">
-			<form method="post" action="checkloginauthority.php">
-			<h3>Enter your details to use the service</h3><br />
-			<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
-				
-			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
-			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
+				<form method="post" action="checkloginauthority.php">
+				<h3>Enter your details to use the service</h3><br />
+				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
+					
+				<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
+				<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
+				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 			
 			<div id="shform">
-			<form method="post" action="checkloginsafehaven.php">
-			<h3>Enter your details to login as a safe haven owner</h3><br />
-			<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
+				<form method="post" action="checkloginsafehaven.php">
+				<h3>Enter your details to login as a safe haven owner</h3><br />
+				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
-			<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
-			<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
-			<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
+				<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
+				<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
+				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 	</div>
 			
