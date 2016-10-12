@@ -2,42 +2,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<?php include 'dbLogin.php' ?>
 	<?php
-		session_start();
-		
+	session_start();
+	
+		if (!isset($_SESSION['loggedin']) && !$_SESSION['loggedin'] == true) {
+	    		header("Location: login.php");
+			}
+	
+	
+	$useruser = $_SESSION['Username'];
+
+	
+	$asql="SELECT * FROM User WHERE EmailAddress= '$useruser'";
+	$aresult = mysqli_query($db, $asql);
+	$row = mysqli_fetch_row($aresult);
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  <link rel="stylesheet" href="stylesheets/templatetest.css ">
-    <link rel="stylesheet" href="stylesheets/indextest.css ">
-		<?php include 'dbLogin.php' ?>
+  <link rel="stylesheet" href="stylesheets/templatetest.css">
+		
 		<script src="validationClient.js"></script>
 </head>
 
 <body>
 <div class="header">
-	<label class="title">Safe Haven Our Women</label>
- 		<li><a href="/login.php">Login / Register</a></li>
-		<li><a href="/About.php">About Us</a></li>
-		<li><a href="/Contact.php">Contact Us</a></li>
-		<li><a href="/index.php">Home</a></li>
-	</ul> 
-</div>
+		<label class="title">Safe Haven Our Women </label>
+			<?php
+			if ($row[7] == 1) {
+				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
+			}
+			
+			session_start();
+			if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+	    		echo "<li><a href='logout.php'>Logout</a></li>";
+			}
+			else {
+				echo "<li><a href='login.php'>Login</a></li>";
+			}
+			
+			?>
+			
+			<li><a href="/About.php">ABOUT US</a></li>
+			<li><a href="/Contact.php">CONTACT US</a></li>
+
+ 
+		
+	</div>
+	<div class="navbar">
+	</div>
 	
 	<div class="loginform">
-		<center><h1></h1></center>
-	<h1>About</h1>
-	<h2>Safe Haven Our Women</h2>
-	
-</body>
-<div class = "loginform">
-	<p>Thank you!<br /><br /> Your details are being updated. We'll send you back to the page soon.</p>
-	<?php
-	header( "refresh:1;url=SafeHouseDetails.php" );
+		<h2>Thank you!</h2><br /><br /><br />
+		Your details are being updated. We'll redirect you shortly.
+		 <?php
+	header( "refresh:2;url=SafeHouseDetails.php" );
 	?>
-</div>
-</div>
+	</div>
+</body>
 
 <footer>
 <br />
@@ -71,6 +95,5 @@
 	</tr>
 </table>
 </footer>
-
 
 </html>
