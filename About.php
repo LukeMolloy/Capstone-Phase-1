@@ -21,15 +21,45 @@
 	<div class="loginform">
 		<center><h1>About Safe Haven Community</h1></center>
 		<center><img src="images/aboutImage.gif"></img></center>
+		
+		<div class = "content">
+			<p>The SH.OW  project aims to help solve the problem of domestic violence in our society by providing a much needed service to sufferers of domestic violence. </p>
+			<p>This service is the ability for people who deal with domestic violence victims to find them safe temporary accommodation in an area of their choosing at a moment’s notice.  </p>
+		</div>
+	</div>
 </body>
-<div class = "content">
-	<p>The SH.OW  project aims to help solve the problem of domestic violence in our society by providing a much needed service to sufferers of domestic violence. </p>
-	<p>This service is the ability for people who deal with domestic violence victims to find them safe temporary accommodation in an area of their choosing at a moment’s notice.  </p>
-</div>
-</div>
 
 <footer>
-	
+<br />
+<table class="footertable">
+	<tr>
+	   <td class="lightertext">SHOW<br /><hr></td>
+		<td class="lightertext">ABOUT<br /><hr></td>
+		<td class="lightertext">HELP<br /><hr></td>
+		<td class="lightertext">CONNECT<br /><hr></td>  
+	</tr>
+	<tr>
+		<td class="darkertext">
+			<br />Home<br />
+			User Registration<br />
+			Safe Haven Registration
+		</td>
+		<td class="darkertext">
+			<br />About Us<br />
+			Company Site
+		</td>
+		
+		<td class="darkertext">
+			<br />Contact Us<br />
+			Instructions
+		</td>
+		
+		<td class="darkertext">
+		<br />	Facebook<br />
+			Twitter
+		</td>
+	</tr>
+</table>
 </footer>
 
 </html>
