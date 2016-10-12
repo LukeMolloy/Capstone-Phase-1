@@ -83,7 +83,7 @@
         <table cellspacing="100">
     		<td valign="top">
     			<tr><h2>Update your details quickly:  </h2></tr>
-    			<tr><h2>Update details which will require<br /> reauthorisation</h2></tr>
+    			<tr><h2>Update details which will require reauthorisation</h2></tr>
     			</td>
     			<td valign="top">
     			
