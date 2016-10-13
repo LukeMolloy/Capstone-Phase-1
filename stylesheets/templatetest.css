@@ -104,6 +104,20 @@ h2 {
 
 }
 
+.loginform3 {
+    padding-top: 10px;
+    text-align:center;
+
+    width: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+     overflow-y: scroll;
+
+
+}
+
+
 #loginauthority {
     width:  270px;
     height: 30px;

@@ -19,7 +19,7 @@
 		</ul> 
 	</div>
 
-	<div class="loginform">
+	<div class="loginform3">
 		<form name="safeHavenRegistration" onsubmit="return validateSecondSafeHavenRegistrationForm()" method="post" action="shregister.php">
 			<center>
 				<p>
