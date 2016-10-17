@@ -35,8 +35,8 @@
 						<p>First of all thank you for showing interest in becoming a Safe House.</p>
 						<br />
 						<p>The information you enter will be stored in our database for use in the Safe Haven Comunity service.</p>
-						<br />
-						<p>All of your information will be encrypted and stored safely to ensure maximum security for you and anyone who you might take in.</p>
+						<p>All of your information will be encrypted and stored safely to ensure maximum security for you and </p>
+						<p>anyone who you might take in.</p>
 					</td>
 					<td>
 						<div id="step1form">
