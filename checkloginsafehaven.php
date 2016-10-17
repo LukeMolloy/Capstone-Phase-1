@@ -25,7 +25,7 @@
 				
 
 				
-				if($count>=1){
+				if($count==1){
 					session_start();
 					$_SESSION['Username']= $_POST['username'];
          			$_SESSION['loggedin'] = true;
