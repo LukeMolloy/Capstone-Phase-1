@@ -28,8 +28,15 @@
 			<table cellspacing="10">
 				<label id="S1Label"><h2>Personal Details</h2> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label id="S2Label"><h2>House Details</h2></label><br /><br /><hr width="70%"><br /><br />
 					<td valign="top">
-						<br /><h2>Please enter the client's details</h2><br /><br /><br /><br />
-						<p>These details will help narrow down the list of safe houses to those applicable to the client.</p><p>They will also be sent to the safehouse that the client ends up being placed in.</p><br /><p>Please fill out every field and add any extra information applicable to the clients situation in the</p><p>extra info section.</p>
+						<br />
+						<div id="shrDescription">
+						<h2>Please Enter Your Details</h2>
+						<br /><br /><br /><br />
+						<p>First of all thank you for showing interest in becoming a Safe House.</p>
+						<br />
+						<p>The information you enter will be stored in our database for use in the Safe Haven Comunity service.</p>
+						<br />
+						<p>All of your information will be encrypted and stored safely to ensure maximum security for you and anyone who you might take in.</p>
 					</td>
 					<td>
 						<div id="step1form">
