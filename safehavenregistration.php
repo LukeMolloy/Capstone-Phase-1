@@ -165,6 +165,7 @@
 				  					<option value="13">13</option>
 				  					<option value="14">14</option>
 								</select>
+							</div>
 							<label id = "NightsError"></label> <br /><br /><br />
 			
 							<div class="tooltip">
