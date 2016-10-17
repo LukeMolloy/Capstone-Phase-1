@@ -58,8 +58,8 @@
 							<br /><br />
 		
 							<label id="Password">* Password</label> <input name="Password" type="password" />
-							<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  								<span class="popuptext" id="myPopup">A Simple Popup!</span>
+							<div class="tooltip">Hover over me
+  								<span class="tooltiptext">Tooltip text</span>
 							</div>
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
