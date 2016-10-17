@@ -57,10 +57,10 @@
 							<label id="licenseNumber">License Number:</label><input name="licenseNumber" type="text" />
 							<br /><br />
 		
-							<label id="Password">* Password</label> <input name="Password" type="password" />
-							<div class="tooltip">Hover over me
-  								<span class="tooltiptext">Tooltip text</span>
+							<div class="tooltip">Password
+  								<span class="tooltiptext">Your password needs to be a minimum of six characters</span>
 							</div>
+							<input name="Password" type="password" />
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
 							<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
