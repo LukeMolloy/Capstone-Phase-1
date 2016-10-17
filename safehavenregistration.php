@@ -174,7 +174,7 @@
 			
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Add a short description of yourself and your house here. This information will be seen by domestic violence victims seeking shelter.</span>
-								<textarea name="Description" rows = "10" cols="80"></textarea>
+								<textarea name="Description" rows = "10" cols="60"></textarea>
 							</div>
 							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
