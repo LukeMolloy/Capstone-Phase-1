@@ -7,8 +7,8 @@
 <?php 
 	ob_start();
 				
-				$myusername=$_POST['Username'];
-				$password=$_POST['Password']; 
+				$myusername=$_POST['username'];
+				$password=$_POST['password']; 
 				
 				//VALUES (AES_ENCRYPT('$first', 'show2016'), AES_ENCRYPT('$last', 'show2016'), AES_ENCRYPT('$phonenumber', 'show2016'), AES_ENCRYPT('$email', 'show2016'), '$hashpassword', AES_ENCRYPT('$address', 'show2016'), AES_ENCRYPT('$suburb', 'show2016'), AES_ENCRYPT('$postcode', 'show2016'), AES_ENCRYPT('$city', 'show2016'), AES_ENCRYPT('$state', 'show2016'), '$spacesavailable', '$infantspaces', '$petfriendly', '$bluecardnumber', '$description', '$gender', '$nights')";				
 
@@ -27,7 +27,7 @@
 				
 				if($count>=1){
 					session_start();
-					$_SESSION['Username']= $_POST['Username'];
+					$_SESSION['Username']= $_POST['username'];
          			$_SESSION['loggedin'] = true;
 					header("location:SafeHouseDetails.php");
 				}
