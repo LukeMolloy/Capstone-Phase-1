@@ -48,10 +48,18 @@
 							<label id="LastName">* Last Name</label> <input name="LastName" type="text" />
 							<label id = "LastNameError" class="error"></label> <br /><br /><br />
 			
-							<label id="PhoneNumber">* Phone Number</label> <input name="PhoneNumber" type="text" />
+							<label id="PhoneNumber">* Phone Number</label>
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This will be the first point of call when someone needs shelter in your home</span>
+								<input name="PhoneNumber" type="text" />
+							</div>
 							<label id = "PhoneError" class="error"></label> <br /><br /><br />
 			
-							<label id="Email">* Email</label> <input name="Email" type="email"/>
+							<label id="Email">Email: </label> 
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">Please use an email you will check regularly.</span>
+								<input name="Email" type="email"/>
+							</div>
 							<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
 							<label id="licenseNumber">License Number:</label><input name="licenseNumber" type="text" />
