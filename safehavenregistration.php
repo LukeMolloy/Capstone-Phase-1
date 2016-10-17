@@ -62,7 +62,11 @@
 							</div>
 							<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
-							<label id="licenseNumber">License Number:</label><input name="licenseNumber" type="text" />
+							<label id="licenseNumber">License Number:</label>
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">Your license number is used to verify your identity and address</span>
+								<input name="licenseNumber" type="text" />
+							</div>
 							<br /><br /><br />
 							
 							<label id="licenseNumber">Password: </label>
