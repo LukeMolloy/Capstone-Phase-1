@@ -13,7 +13,7 @@
 
 <body>
 	<div class="header">
-	<label class="title">Safe Haven Our Women</label>
+	<label class="title">Safe Haven Community</label>
 			<!----
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
