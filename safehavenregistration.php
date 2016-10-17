@@ -59,8 +59,8 @@
 		
 							<div class="tooltip">Password
   								<span class="tooltiptext">Your password needs to be a minimum of six characters</span>
+  								<input name="Password" type="password" />
 							</div>
-							<input name="Password" type="password" />
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
 							<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
