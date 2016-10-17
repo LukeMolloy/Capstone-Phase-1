@@ -487,8 +487,8 @@ footer {
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
-    bottom: 100%;
-    left: 125%;
+    bottom: 0%;
+    left: 150%;
     margin-left: -60px;
 
     /* Fade in tooltip */
