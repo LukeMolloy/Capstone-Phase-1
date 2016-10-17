@@ -57,6 +57,10 @@
 							<br /><br />
 		
 							<label id="Password">* Password</label> <input name="Password" type="password" />
+							<a href="#password" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">?</a>
+							<div data-role="popup" id="password">
+  								<p>This is a simple popup.</p>
+							</div>
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
 							<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
