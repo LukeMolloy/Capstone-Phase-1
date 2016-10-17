@@ -38,9 +38,11 @@
 						<br /><br /><br /><br />
 						<p>First of all thank you for showing interest in becoming a Safe House.</p>
 						<br />
-						<p>The information you enter will be stored in our database for use in the Safe Haven Comunity service.</p>
-						<p>All of your information will be encrypted and stored safely to ensure maximum security for you and </p>
-						<p>anyone who you might take in.</p>
+						<p>
+						The information you enter will be stored in our database for use in the 
+						Safe Haven Comunity service. All of your information will be encrypted and store
+						d safely to ensure maximum security for you and anyone who you might take in.
+						</p>
 					</td>
 					<td width="35%">
 					<center>
@@ -83,6 +85,8 @@
 							<label id="ConfirmPassword">Confirm Password: </label> <input name="ConfirmPassword" type="password" />
 							<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br />
 							<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
+							<br />
+							<br />
 						</div>
 						<div id="step2form" width="30%">
 						
@@ -174,7 +178,7 @@
 			
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Add a short description of yourself and your house here. This information will be seen by domestic violence victims seeking shelter.</span>
-								<textarea name="Description" rows = "10" cols="60"></textarea>
+								<textarea name="Description" rows = "10" cols="50"></textarea>
 							</div>
 							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
