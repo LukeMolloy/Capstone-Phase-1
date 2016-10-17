@@ -142,31 +142,36 @@
 			
 							<label id="PetFriendly">Pet Friendly: </label>   
 							<div class="tooltip">
-  								<span class="tooltiptext tooltip-right">This is the number of people you can house at any given time.</span>
+  								<span class="tooltiptext tooltip-right">Some domestic violence victims flee their homes with a pet.</span>
 								<input type="radio" name="PetFriendly" value="1"> Yes
 								<input type="radio" name="PetFriendly" value="0" checked> No
 							</div>
 							<label id = "PetFriendlyError"></label> <br /><br /><br />
 			
-							<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
-							<label id = "DescriptionError"></label> <br /><br /> <br />
-			
 							<label id="Nights">Length of Stay: </label> 
-							<select name="Nights">
-				  				<option value="3" selected>1</option>
-				  				<option value="4">4</option>
-				  				<option value="5">5</option>
-				  				<option value="6">6</option>
-				  				<option value="7">7</option>
-				  				<option value="8">8</option>
-				  				<option value="9">9</option>
-				  				<option value="10">10</option>
-				  				<option value="11">11</option>
-				  				<option value="12">12</option>
-				  				<option value="13">13</option>
-				  				<option value="14">14</option>
-							</select>
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This is the average number of nights you are willing to shelter someone.</span>
+								<select name="Nights">
+				  					<option value="3" selected>1</option>
+				  					<option value="4">4</option>
+				  					<option value="5">5</option>
+				  					<option value="6">6</option>
+				  					<option value="7">7</option>
+				  					<option value="8">8</option>
+				  					<option value="9">9</option>
+				  					<option value="10">10</option>
+				  					<option value="11">11</option>
+				  					<option value="12">12</option>
+				  					<option value="13">13</option>
+				  					<option value="14">14</option>
+								</select>
 							<label id = "NightsError"></label> <br /><br /><br />
+			
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">Add a short description of yourself and your house here. This information will be seen by domestic violence victims seeking shelter.</span>
+								<textarea name="Description" rows = "10" cols = "100">Add a description of the house here.</textarea>
+							</div>
+							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
 							<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp; <input name="Register" type="submit" value="Register")/>
 		
