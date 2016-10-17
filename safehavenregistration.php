@@ -76,66 +76,82 @@
 							</div>
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
-							<label id="ConfirmPassword">* Confirm Password</label> <input name="ConfirmPassword" type="password" />
+							<label id="ConfirmPassword">Confirm Password: </label> <input name="ConfirmPassword" type="password" />
 							<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br />
 							<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 						</div>
 						<div id="step2form">
 
-							<label id="Address">* Address</label> <input name="Address" type="text" />
+							<label id="Address">Address: </label> <input name="Address" type="text" />
 							<label id = "AddressError" class="error"></label> <br /><br /><br />
 			
-							<label id="Suburb">* Suburb</label> <input name="Suburb" type="text" />
+							<label id="Suburb">Suburb: </label> <input name="Suburb" type="text" />
 							<label id = "SuburbError" class="error"></label> <br /><br /><br />
 			
-							<label id="PostCode">* Post Code</label> <input name="PostCode" type="text" />
+							<label id="PostCode">Post Code: </label> <input name="PostCode" type="text" />
 							<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 				
-							<label id="City">* City/Town</label> <input name="City" type="text" />
+							<label id="City">City/Town: </label> <input name="City" type="text" />
 							<label id = "CityError" class="error"></label> <br /><br /><br />
 			
-							<label id="State">* State</label> <input name="State" type="text" />
+							<label id="State">State: </label> <input name="State" type="text" />
 							<label id = "StateError" class="error"></label> <br /><br /><br />
 			
-							<label id="SpacesAvailable">* Spaces Available</label> 
-							<select name="SpacesAvailable">
-					  			<option value="1" selected>1</option>
-				  				<option value="2">2</option>
-				  				<option value="3">3</option>
-				  				<option value="4">4</option>
-				  				<option value="5">5+</option>
+							<label id="SpacesAvailable">Spaces Available: </label> 
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This is the number of people you can house at any given time.</span>
+								<select name="SpacesAvailable">
+					  				<option value="1" selected>1</option>
+				  					<option value="2">2</option>
+				  					<option value="3">3</option>
+				  					<option value="4">4</option>
+				  					<option value="5">5</option>
+				  					<option value="6">6</option>
+				  					<option value="7">7</option>
+				  					<option value="8">8</option>
+				  					<option value="9">9</option>
+				  					<option value="10">10</option>
+								</select>
+							</div>
+							<label id = "SpacesAvailableError"></label> <br /><br /><br />
+			
+							<label id="GenderTaken">Gender Taken: </label> 
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This is the gender of domestic violence victim you are willing to shelter.</span>
+									<select name="GenderTaken">
+				 	 					<option value="Male">Male</option>
+				  						<option value="Female">Female</option>
+				  						<option value="No Preference" selected>No Preference</option>
+							</div>
 							</select>
 							<label id = "SpacesAvailableError"></label> <br /><br /><br />
 			
-							<label id="GenderTaken">* Gender Taken</label> 
-							<select name="GenderTaken">
-				 	 			<option value="Male">Male</option>
-				  				<option value="Female">Female</option>
-				  				<option value="No Preference" selected>No Preference</option>
-
-							</select>
-							<label id = "SpacesAvailableError"></label> <br /><br /><br />
-			
-							<label id="InfantSpaces">* Infant Spaces</label> 
-							<select name="InfantSpaces">
-				  				<option value="0" selected>0</option>
-				  				<option value="1">1</option>
-				  				<option value="2">2</option>
-				  				<option value="3">3</option>
-				  				<option value="4">4</option>
-				  				<option value="5+">5+</option>
-							</select>
+							<label id="InfantSpaces">Infant Spaces: </label> 
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This is the number of infants (Children below the age of 3) you can house. Take into account what facilities you have available for babies.</span>
+									<select name="InfantSpaces">
+				  						<option value="0" selected>0</option>
+				  						<option value="1">1</option>
+				  						<option value="2">2</option>
+				  						<option value="3">3</option>
+				  						<option value="4">4</option>
+				  						<option value="5">5</option>
+									</select>
+							</div>
 							<label id = "InfantSpacesError"></label> <br /><br /><br />
 			
-							<label id="PetFriendly">* Pet Friendly</label>   
-							<input type="radio" name="PetFriendly" value="1"> Yes
-							<input type="radio" name="PetFriendly" value="0" checked> No
+							<label id="PetFriendly">Pet Friendly: </label>   
+							<div class="tooltip">
+  								<span class="tooltiptext tooltip-right">This is the number of people you can house at any given time.</span>
+								<input type="radio" name="PetFriendly" value="1"> Yes
+								<input type="radio" name="PetFriendly" value="0" checked> No
+							</div>
 							<label id = "PetFriendlyError"></label> <br /><br /><br />
 			
 							<textarea name="Description" rows = "5" cols = "100">Add a description of the house here.</textarea>
 							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
-							<label id="Nights">* Length of Stay</label> 
+							<label id="Nights">Length of Stay: </label> 
 							<select name="Nights">
 				  				<option value="3" selected>1</option>
 				  				<option value="4">4</option>
