@@ -39,6 +39,7 @@
 						<p>anyone who you might take in.</p>
 					</td>
 					<td>
+						<br />
 						<div id="step1form">
 							<label id="FirstName">* First Name</label> <input name="FirstName" type="text" />
 							<label id = "FirstNameError" class="error"></label> <br /><br /><br />
