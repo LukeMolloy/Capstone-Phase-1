@@ -488,7 +488,7 @@ footer {
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 100%;
+    left: 125%;
     margin-left: -60px;
 
     /* Fade in tooltip */
