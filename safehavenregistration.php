@@ -40,6 +40,7 @@
 						<div id="shrDescription">
 						<h2>Please Enter Your Details</h2>
 						<br />
+						<br />
 						<p>First of all thank you for showing interest in becoming a Safe House.</p>
 						<br />
 						<p>
