@@ -45,7 +45,7 @@
 					<td width="35%">
 					<center>
 						<br />
-						<div id="step1form">
+						<div id="step1form" width="30%">
 							<label id="FirstName">First Name: </label> <input name="FirstName" type="text" />
 							<label id = "FirstNameError" class="error"></label> <br /><br /><br />
 			
@@ -84,7 +84,7 @@
 							<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br />
 							<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 						</div>
-						<div id="step2form">
+						<div id="step2form" width="30%">
 						
 							<label id="Address">Address: </label> <input name="Address" type="text" />
 							<label id = "AddressError" class="error"></label> <br /><br /><br />
