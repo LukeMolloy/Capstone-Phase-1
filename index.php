@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <?php
-//header("location:safehavenregistration.php");
+	header("location:safehavenregistration.php");
 //	ob_start();
 	session_start();
 //	$_SESSION['Username'] = $_POST['Username'];
