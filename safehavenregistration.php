@@ -26,9 +26,12 @@
 				<p>
 					<h1>Safe Haven Registration</h1><br />
 				</p>
-			<table cellspacing="10">
-				<label id="S1Label"><h2>Personal Details</h2> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label id="S2Label"><h2>House Details</h2></label><br /><br /><hr width="70%"><br /><br />
-					<td valign="top">
+			<table width="70%">
+				<label id="S1Label"><h2>Personal Details</h2> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label id="S2Label"><h2>House Details</h2></label>
+				<br /><br />
+				<hr width="70%">
+				<br /><br />
+					<td width="35%">
 						<br />
 						<div id="shrDescription">
 						<h2>Please Enter Your Details</h2>
@@ -39,7 +42,7 @@
 						<p>All of your information will be encrypted and stored safely to ensure maximum security for you and </p>
 						<p>anyone who you might take in.</p>
 					</td>
-					<td>
+					<td width="35%">
 						<br />
 						<div id="step1form">
 							<label id="FirstName">First Name: </label> <input name="FirstName" type="text" />
