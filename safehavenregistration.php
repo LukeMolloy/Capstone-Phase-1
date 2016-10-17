@@ -122,8 +122,8 @@
 				 	 					<option value="Male">Male</option>
 				  						<option value="Female">Female</option>
 				  						<option value="No Preference" selected>No Preference</option>
+				  					</select>
 							</div>
-							</select>
 							<label id = "SpacesAvailableError"></label> <br /><br /><br />
 			
 							<label id="InfantSpaces">Infant Spaces: </label> 
