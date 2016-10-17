@@ -31,7 +31,7 @@
 				<br /><br />
 				<hr width="70%">
 				<br /><br />
-					<td width="35%">
+					<td align="top" width="35%">
 						<br />
 						<div id="shrDescription">
 						<h2>Please Enter Your Details</h2>
@@ -174,7 +174,7 @@
 			
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Add a short description of yourself and your house here. This information will be seen by domestic violence victims seeking shelter.</span>
-								<textarea name="Description" rows = "10" width="30%">Add a description of the house here.</textarea>
+								<textarea name="Description" rows = "10" columns="80"></textarea>
 							</div>
 							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
