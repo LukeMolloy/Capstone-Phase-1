@@ -56,8 +56,9 @@
 						
 							<label id="licenseNumber">License Number:</label><input name="licenseNumber" type="text" />
 							<br /><br />
-		
-							<div class="tooltip">Password
+							
+							<label id="licenseNumber">Password: </label>
+							<div class="tooltip">
   								<span class="tooltiptext">Your password needs to be a minimum of six characters</span>
   								<input name="Password" type="password" />
 							</div>
