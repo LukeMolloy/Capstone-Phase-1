@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="stylesheets/templatetest.css">
 		<?php include 'dbLogin.php' ?>
 		<script src="validationSafeHaven.js"></script>
+		<script src="popupsSH.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
@@ -57,9 +58,8 @@
 							<br /><br />
 		
 							<label id="Password">* Password</label> <input name="Password" type="password" />
-							<a href="#password" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">?</a>
-							<div data-role="popup" id="password">
-  								<p>This is a simple popup.</p>
+							<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  								<span class="popuptext" id="myPopup">A Simple Popup!</span>
 							</div>
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
