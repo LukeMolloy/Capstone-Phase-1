@@ -233,7 +233,7 @@ $("#step2form").css('visibility', 'hidden');
 
 </body>
 </div>
-<!----
+
 <footer>
 <br />
 
@@ -267,6 +267,6 @@ $("#step2form").css('visibility', 'hidden');
 	</tr>
 </table>
 </footer>
------->
+
 
 </html>
