@@ -133,8 +133,8 @@
 					</td>
 				</center>
 			</form>
-		</div>
-	
+		</table>
+	</div>
 <script>
   $("#S1Label").css('text-decoration', 'underline');
 
