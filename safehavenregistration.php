@@ -172,9 +172,10 @@ $("#step2form").css('visibility', 'hidden');
 
 </body>
 </div>
+<!----
 <footer>
 <br />
-<!----
+
 <table class="footertable">
 	<tr>
 		<td class="lightertext">SHOW<br /><hr></td>
@@ -203,8 +204,8 @@ $("#step2form").css('visibility', 'hidden');
 			Twitter
 		</td>
 	</tr>
-</table>------>
+</table>
 </footer>
-
+------>
 
 </html>
