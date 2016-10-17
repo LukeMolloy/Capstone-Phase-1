@@ -14,9 +14,11 @@
 <body>
 	<div class="header">
 	<label class="title">Safe Haven Our Women</label>
+			<!----
 			<li><a href="/About.php">About Us</a></li>
 			<li><a href="/Contact.php">Contact Us</a></li>
 			<li><a href="/index.php">Home</a></li>
+			---->
 		</ul> 
 	</div>
 
@@ -40,8 +42,8 @@
 						<br />
 						<p>
 						The information you enter will be stored in our database for use in the 
-						Safe Haven Comunity service. All of your information will be encrypted and store
-						d safely to ensure maximum security for you and anyone who you might take in.
+						Safe Haven Comunity service. All of your information will be encrypted and stored 
+						safely to ensure maximum security for you and anyone who you might take in.
 						</p>
 					</td>
 					<td width="35%">
