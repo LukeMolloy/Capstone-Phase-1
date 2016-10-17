@@ -31,7 +31,7 @@
 				<br /><br />
 				<hr width="70%">
 				<br /><br />
-					<td align="top" width="35%">
+					<td valign="top" width="35%">
 						<br />
 						<div id="shrDescription">
 						<h2>Please Enter Your Details</h2>
