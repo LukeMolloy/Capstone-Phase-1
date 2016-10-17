@@ -30,12 +30,12 @@
 					<h1>Safe Haven Registration</h1><br />
 				</p>
 				<br />
-				<table width="70%">
+				<table width="80%">
 				<label id="S1Label"><h2>Personal Details</h2> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label id="S2Label"><h2>House Details</h2></label>
 				<br /><br />
-				<hr width="70%">
+				<hr width="80%">
 				<br /><br />
-					<td valign="top" width="35%">
+					<td valign="top" width="40%">
 						<br />
 						<div id="shrDescription">
 						<h2>Please Enter Your Details</h2>
@@ -48,7 +48,7 @@
 						safely to ensure maximum security for you and anyone who you might take in.
 						</p>
 					</td>
-					<td width="35%">
+					<td width="40%">
 					<center>
 						<br />
 						<div id="step1form" width="30%">
@@ -92,7 +92,7 @@
 							<br />
 							<br />
 						</div>
-						<div id="step2form" width="30%">
+						<div id="step2form" width="40%">
 						
 							<label id="Address">Address: </label> <input name="Address" type="text" />
 							<label id = "AddressError" class="error"></label> <br /><br /><br />
