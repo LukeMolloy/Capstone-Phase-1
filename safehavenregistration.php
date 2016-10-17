@@ -29,9 +29,10 @@
 				<p>
 					<h1>Safe Haven Registration</h1><br />
 				</p>
-			<table width="70%">
+				<br /><br />
+				<table width="70%">
 				<label id="S1Label"><h2>Personal Details</h2> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label id="S2Label"><h2>House Details</h2></label>
-				<br /><br /><br />
+				<br /><br />
 				<hr width="70%">
 				<br /><br />
 					<td valign="top" width="35%">
