@@ -175,7 +175,8 @@
 							<label id = "DescriptionError"></label> <br /><br /> <br />
 			
 							<button id="back" type="button">Back</button> &emsp;&emsp;&emsp;&emsp; <input name="Register" type="submit" value="Register")/>
-		
+							<br />
+							<br />
 						</div>
 					</td>
 				</center>
