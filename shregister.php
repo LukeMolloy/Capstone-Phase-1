@@ -47,5 +47,5 @@
 
     $sendgrid->send($emailmsg);
 	
-	header("location:index.php");
+	header("location:Thankyou1.php");
 ?>
