@@ -27,13 +27,8 @@
 	
 	<div class="loginform">
 		<br /><br /><br /><br /><h1>Thank you!</h1><br /><br /><br />
-		Your details have been added!. We'll redirect you shortly.
+		Your details have been added!
 	</div></div>
 </body>
-
-<footer>
-<br />
-
-</footer>
 
 </html>
