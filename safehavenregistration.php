@@ -91,9 +91,9 @@
   								<span class="tooltiptext tooltip-right">Your license number is used to verify your identity and address</span>
 								<input name="licenseNumber" type="text" />
 							</div>
-							<br /><br /><br />
+							<label id = "LicenseError" class="error"></label> <br /><br /><br />
 							
-							<label id="licenseNumber">Password: </label>
+							<label id="password">Password: </label>
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Your password needs to be a minimum of six characters</span>
   								<input name="Password" type="password" />
@@ -176,9 +176,9 @@
 			
 							<label id="Nights">Length of Stay: </label> 
 							<div class="tooltip">
-  								<span class="tooltiptext tooltip-right">This is the average number of nights you are willing to shelter someone.</span>
+  								<span class="tooltiptext tooltip-right">This is the average number of nights you are willing to shelter someone. (Minimum 3 nights)</span>
 								<select name="Nights">
-				  					<option value="3" selected>1</option>
+				  					<option value="3" selected>3</option>
 				  					<option value="4">4</option>
 				  					<option value="5">5</option>
 				  					<option value="6">6</option>

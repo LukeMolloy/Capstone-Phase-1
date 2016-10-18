@@ -5,6 +5,7 @@ function validateFirstSafeHavenRegistrationForm (){
     var first = clientForm.elements.FirstName.value; 
     var last = clientForm.elements.LastName.value; 
     var email = clientForm.elements.Email.value; 
+    var license = clientForm.elements.licenseNumber.value; 
     var phone = clientForm.elements.PhoneNumber.value;
     var password = clientForm.elements.Password.value;
     var confirmpassword = clientForm.elements.ConfirmPassword.value;
@@ -25,12 +26,12 @@ function validateFirstSafeHavenRegistrationForm (){
     checkConfirmPassword();
 
     
-    if (first == "" || last == "" || email == "" || phone == "" || password == "" || confirmpassword == "" || password != confirmpassword){
+    if (first == "" || last == "" || email == "" || license == "" || phone == "" || password == "" || confirmpassword == "" || password != confirmpassword){
         error = 1;
         return false;
         
     }
-    if (first != "" || last != "" || email != "" || phone != "" || password == "" || confirmpassword == ""){
+    if (first != "" || last != "" || email != "" || license != "" || phone != "" || password == "" || confirmpassword == ""){
         error = 0;
         return true;
 
@@ -143,6 +144,26 @@ function checkEmail() {
    
     if (!valid.test(email)) {
         window.document.getElementById("EmailError").innerHTML = "Please enter a valid email";
+        return false;
+    }
+    
+
+    
+    else {
+        window.document.getElementById("EmailError").innerHTML = "";
+    }    
+}
+
+function checkLicense() {
+    var clientForm = document.forms["safeHavenRegistration"];
+    var license = clientForm.elements.licenseNumber.value;      
+     if (license == "") {
+        window.document.getElementById("LicenseError").innerHTML = "Please enter a license number";
+        return false;
+    }
+   
+    if (isNaN(license)) {
+        window.document.getElementById("LicenseError").innerHTML = "Please enter a valid license number";
         return false;
     }
     
