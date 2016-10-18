@@ -170,7 +170,7 @@ function checkLicense() {
 
     
     else {
-        window.document.getElementById("EmailError").innerHTML = "";
+        window.document.getElementById("LicenseError").innerHTML = "";
     }    
 }
 
