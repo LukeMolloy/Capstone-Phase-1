@@ -36,7 +36,7 @@
     $emailmsg->addTo($email)
     ->setFrom('noreply@shc.com')
     ->setSubject("You have successfully applied to become a safehouse!')
-    ->setHtml('<strong>Hello $first</strong> <br /> <br />
+    ->setHtml('<strong>Hello $first,</strong> <br /> <br />
     Thank you for entering your information into the Safe Haven Community system. We really appreciate 
     your involvement in this early testing phase of the system.
     <br /><br />
