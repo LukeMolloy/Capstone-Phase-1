@@ -44,10 +44,23 @@
 						<p>First of all thank you for showing interest in becoming a Safe House.</p>
 						<br />
 						<p>
+						As a safehouse your information will be added to the registry of safehouses to be used in 
+						the Safe Haven Community system. This may involve providing temporary shelter and hospitality
+						to a person fleeing their home due to domestic violence.
+						</p>
+						<br />
+						<p>
+						Once in the system you, as a safehouse owner, will be able to log in and manage your safehouse.
+						This will involve changing your details and preferences as well as indicating wether you are currently
+						avilable to provide a safe haven.
+						</p>
+						<br />
+						<p>
 						The information you enter will be stored in our database for use in the 
 						Safe Haven Comunity service. All of your information will be encrypted and stored 
 						safely to ensure maximum security for you and anyone who you might take in.
 						</p>
+						<br />
 					</td>
 					<td width="40%">
 					<center>
