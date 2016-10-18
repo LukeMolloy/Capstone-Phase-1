@@ -65,7 +65,7 @@
 					<td width="40%">
 					<center>
 						<br />
-						<div id="step1form" width="30%">
+						<div id="step1form" width="40%">
 							<label id="FirstName">First Name: </label> <input name="FirstName" type="text" />
 							<label id = "FirstNameError" class="error"></label> <br /><br /><br />
 			
@@ -83,9 +83,8 @@
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Please use an email you will check regularly.</span>
 								<input name="Email" type="email"/>
-								<label id = "EmailError" class="error"></label>
 							</div>
-							 <br /><br /><br />
+							<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
 							<label id="licenseNumber">License Number:</label>
 							<div class="tooltip">
