@@ -82,10 +82,10 @@
 							<label id="Email">Email: </label> 
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Please use an email you will check regularly.</span>
-								
+								<input name="Email" type="email"/>
+								<label id = "EmailError" class="error"></label>
 							</div>
-							<input name="Email" type="email"/>
-							<label id = "EmailError" class="error"></label> <br /><br /><br />
+							 <br /><br /><br />
 						
 							<label id="licenseNumber">License Number:</label>
 							<div class="tooltip">
