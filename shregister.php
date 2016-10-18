@@ -35,7 +35,7 @@
     $emailmsg = new SendGrid\Email();
     $emailmsg->addTo($email)
     ->setFrom('noreply@shc.com')
-    ->setSubject('You have successfully applied to become a safehouse!')
+    ->setSubject("You have successfully applied to become a safehouse!')
     ->setHtml('<strong>Hello $first</strong> <br /> <br />
     Thank you for entering your information into the Safe Haven Community system. We really appreciate 
     your involvement in this early testing phase of the system.
@@ -43,7 +43,7 @@
     If all goes well we would like to include your information in the final release of the service.
     When this phase arives you will be informed.
     <br /><br /> Thank you!
-   ');
+   ");
 
     $sendgrid->send($emailmsg);
 	
