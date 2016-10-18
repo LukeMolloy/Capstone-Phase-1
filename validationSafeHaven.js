@@ -19,6 +19,8 @@ function validateFirstSafeHavenRegistrationForm (){
 
     checkEmail();
     
+    checkLicense();
+    
     checkPhone();
     
     checkPassword();
