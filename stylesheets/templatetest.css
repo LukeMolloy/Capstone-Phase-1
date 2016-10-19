@@ -181,7 +181,6 @@ visibility: hidden;
 
 .error {
     color: red;
-    position: fixed;
     padding-left: 10px;
 }
 
