@@ -10,7 +10,7 @@
 	    header("Location: index.php");
 	}
 ?>	
-	<script type="text/javascript" src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBuKN3nuKPKwDvmIEtQ7kNqDwwJfp1Dk5U></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 	
 	<script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
@@ -57,7 +57,7 @@
 
 <div id="mapholder"></div>
 
-<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
 
 <script>
 var x = document.getElementById("demo");
