@@ -119,7 +119,7 @@ h2 {
 
 
 #loginauthority {
-    width:  270px;
+    width:  200px;
     height: 30px;
     padding-top: 2px;
     background-color: white;
@@ -136,13 +136,13 @@ visibility: hidden;
 }
 
 #loginsafehaven {
-    width:  270px;
+    width:  200px;
     margin-left: 3px;
         padding-top: 2px;
     height: 30px;
     background-color: white;
     opacity: 0.85;
-    float: left;
+    float: right;
     filter: alpha(opacity=85);
     text-align: center;
 }
