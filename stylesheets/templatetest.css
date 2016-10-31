@@ -19,10 +19,6 @@ input:-webkit-autofill {
     color: #2a2a2a !important;
 }
 
-html {
-    overflow: hidden;
-    font-family: "Calibri";
-}
 
 body {
     /*background-color: lightgrey;*/
@@ -35,7 +31,7 @@ body {
     list-style-type: none;
     padding-right: 20px;
     padding: 0;
-    height: 10px;
+
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -512,4 +508,11 @@ footer {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+html {
+    overflow: hidden;
+    font-family: "Calibri";
+    font-size: small;
+    
 }
