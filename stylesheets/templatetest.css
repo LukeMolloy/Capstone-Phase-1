@@ -35,7 +35,7 @@ body {
     list-style-type: none;
     padding-right: 20px;
     padding: 0;
-    overflow: hidden;
+    
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +111,6 @@ h2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-   //  overflow-y: scroll;
 
 
 }
@@ -161,13 +160,13 @@ visibility: hidden;
 
 
 #step1form {
-    overflow-y: auto;
+
    
 }
 
 
 #step2form {
-    overflow-y: auto;
+
 }
 
 .authorityRegistration {
@@ -188,7 +187,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
     margin-left: auto;
     margin-right: auto;
     width: 611.55px;
