@@ -48,7 +48,7 @@
 		
 			<div id="authorityform">
 				<form method="post" action="checkloginauthority.php">
-				<h3>Enter your details to use the service</h3><br />
+				<br /><h3>Enter your details to use the service</h3><br />
 				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 					
 				<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
