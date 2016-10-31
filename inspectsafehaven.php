@@ -14,11 +14,7 @@
 
 
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaZsnI_p-Agdp22m3U9OqEjXvOBHF301g&callback=initMap"
-	async defer>
-	</script>
-	<script type="text/javascript" src="/inspectlocation.js"></script>
+   
 	<script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
