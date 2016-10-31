@@ -10,8 +10,8 @@
 	    header("Location: index.php");
 	}
 ?>	
-
-
+	<script type="text/javascript" src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBuKN3nuKPKwDvmIEtQ7kNqDwwJfp1Dk5U></script>
+	
 	<script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
