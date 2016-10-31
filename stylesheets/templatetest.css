@@ -142,7 +142,7 @@ visibility: hidden;
     height: 20px;
     background-color: white;
     opacity: 0.85;
-
+    float: right;
     filter: alpha(opacity=85);
     text-align: center;
 }
