@@ -10,17 +10,12 @@
 	    header("Location: index.php");
 	}
 ?>	
-
-
-
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
    
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title>SafeHaven.OurWomen</title>
 	<link rel="stylesheet" href="stylesheets/templatetest.css">
   
-    <link rel="stylesheet" href="stylesheets/popups.css">
 	<div class="navbar">
 	</div>
 	<?php include 'dbLogin.php' ?>
