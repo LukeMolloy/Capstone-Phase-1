@@ -5,6 +5,7 @@
     <?php
 	    ob_start();
     ?>	
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="/location.js"></script>
     <script type="text/javascript" src="/popups.js"></script>
@@ -81,7 +82,7 @@
             <input name="Search" type="submit" value="Search"/>
         </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
- 
+ <div id="map" style="width:100%;height:500px"></div>
  <!--           <article>
              Place the map here 
             </article> -->
@@ -126,6 +127,16 @@
             ?>
 
 </div>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
 <!--aaaaa-->
 
 <!-- The Modal -->
