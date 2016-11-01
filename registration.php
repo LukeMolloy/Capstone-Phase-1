@@ -34,12 +34,11 @@
 
 		$hashpassword = hash("sha256", $password);
 		$sql->execute();
-		$sql->close();*/
+		$sql->close();
+				echo $_SESSION["login_user"] . ".<br>";*/
 		
 	?>
-	<?php
-		echo $_SESSION["login_user"] . ".<br>";
-	?>
+
 	<div class="loginform">
 		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="usregister.php">
 				<p>
