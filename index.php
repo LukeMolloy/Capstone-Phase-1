@@ -51,8 +51,8 @@
 				<h3>Login to place someone into a safe haven</h3><br />
 				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 					
-				<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
-				<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
+				<input name="Username" type="text"/><br /><br />
+				<input name="Password" type="password"/><br /><br />
 				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 			
@@ -61,8 +61,8 @@
 				<h3>Enter your details to login as a safe haven owner</h3><br />
 				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
-				<label id="username">Email</label> &nbsp; <input name="Username" type="text"/><br /><br />
-				<label id="password">Password</label> &nbsp; <input name="Password" type="password"/><br /><br />
+				<input name="Username" type="text"/><br /><br />
+				<input name="Password" type="password"/><br /><br />
 				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 	</div>
