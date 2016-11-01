@@ -65,7 +65,7 @@
 				<input name="Username" type="text" placeholder="Email"/><br />
 				<input name="Password" type="password" placeholder="Password"/>
 				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/>
-				<button type="button" class="applyuser">User Application</button><button type="button" class="applysh">Safehouse Application</button></form>
+				<a href="/registration.php">User Application</a> <a href="/safehavenregistration.php">Safehouse Application</a></form>
 			</div>
 	</div>
 			
