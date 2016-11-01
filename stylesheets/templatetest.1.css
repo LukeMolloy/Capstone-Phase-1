@@ -397,13 +397,12 @@ footer {
 
 .footertable {
       border-spacing: 100px 0;
-       border-left: thick solid #ff0000;
        text-align: left;
 }
 
     
 .darkertext {
-    color: #A1A1A1;
+    color: #a5a573;
     text-align: left;
 }
 
