@@ -59,7 +59,7 @@
 
               	while($row = $result->fetch_assoc()) {
               		echo "<td width='50%' align='left'>";
-                   	echo "<strong>Name: </strong>".$row["FirstNameDecrypt"]."<p> </p>".$row["LastNameDecrypt"];
+                   	echo "<strong>Name: </strong><p>".$row["FirstNameDecrypt"]." ".$row["LastNameDecrypt"]."</p>";
                     echo "<br />";
                     echo "<strong>Address: </strong>".$row["AddressDecrypt"];
                     echo "<br />";
