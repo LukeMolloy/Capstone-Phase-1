@@ -10,6 +10,47 @@
 	    header("Location: index.php");
 	}
 ?>	
+<?php
+
+function lookup($string){
+  $quotaguard_env = getenv("QUOTAGUARD_URL");
+  $quotaguard = parse_url($quotaguard_env);
+
+  $proxyUrl       = $quotaguard['host'].":".$quotaguard['port'];
+  $proxyAuth       = $quotaguard['user'].":".$quotaguard['pass'];
+
+   $string = str_replace (" ", "+", urlencode($string));
+   $details_url = "http://maps.googleapis.com/maps/api/geocode/json?address=".$string."&sensor=false";
+
+   $ch = curl_init();
+   curl_setopt($ch, CURLOPT_URL, $details_url);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+   curl_setopt($ch, CURLOPT_PROXY, $proxyUrl);
+   curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC);
+   curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyAuth);
+   $response = json_decode(curl_exec($ch), true);
+
+   // If Status Code is ZERO_RESULTS, OVER_QUERY_LIMIT, REQUEST_DENIED or INVALID_REQUEST
+   if ($response['status'] != 'OK') {
+    return null;
+   }
+
+   print_r($response);
+   $geometry = $response['results'][0]['geometry'];
+
+    $longitude = $geometry['location']['lng'];
+    $latitude = $geometry['location']['lat'];
+
+    $array = array(
+        'latitude' => $latitude,
+        'longitude' => $longitude,
+        'location_type' => $geometry['location_type'],
+    );
+
+    return $array;
+
+}
+?>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 	
 	<script type="text/javascript" src="/popups.js"></script>
