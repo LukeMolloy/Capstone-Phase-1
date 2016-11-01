@@ -183,7 +183,7 @@ visibility: hidden;
 
 .applyuser {
     width: 170px;
-    margin-top: 5px;
+    margin-top: 10px;
     height: 20px;
     float: left;
     border-style: none;
@@ -197,7 +197,7 @@ visibility: hidden;
 
 .applysh {
     width: 170px;
-        margin-top: 5px;
+        margin-top: 10px;
     height: 20px;
     float: right;
     border-style: none;
