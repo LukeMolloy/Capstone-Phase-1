@@ -58,7 +58,7 @@
                	$result = mysqli_query($db, $sql);
 
               	while($row = $result->fetch_assoc()) {
-              		echo "<td width='50%'>";
+              		echo "<td width='50%' align='left'>";
                    	echo "<strong>Name: </strong>".$row["FirstNameDecrypt"]."<p> </p>".$row["LastNameDecrypt"];
                     echo "<br />";
                     echo "<strong>Address: </strong>".$row["AddressDecrypt"];
