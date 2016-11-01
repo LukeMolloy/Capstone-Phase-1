@@ -31,7 +31,7 @@
 	<div class="header">
 		<label class="title">Safe Haven Our Women </label>
 			<?php
-			if ($row[9] == 1) {
+			if ($row[8] == 1) {
 				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
 			}
 			
