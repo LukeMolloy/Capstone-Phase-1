@@ -154,15 +154,15 @@ $(document).ready(function(){
 		<td class="darkertext">
 			<br />Home<br />
 			<a href="/registration.php">User Registration</a><br />
-			Safe Haven Registration
+			<a href="/safehavenregistration.php">Safe Haven Registration</a>
 		</td>
 		<td class="darkertext">
-			<br />About Us<br />
+			<br /><a href="/About.php">About Us</a><br />
 			Company Site
 		</td>
 		
 		<td class="darkertext">
-			<br />Contact Us<br />
+			<br /><a href="Contact.php">Contact Us</a><br />
 			Instructions
 		</td>
 		
