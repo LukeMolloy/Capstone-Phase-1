@@ -39,7 +39,7 @@
 	
 		<h1>SAFE HAVEN COMMUNITY</h1><hr><br />
 			<div id="loginauthority">
-				Login into Safe Haven Comunity
+				Login into SHC
 			</div>
 			
 			<div id="loginsafehaven">
