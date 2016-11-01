@@ -50,8 +50,6 @@
 			<li><a href="/index.php">Home</a></li>
 		</ul> 
 	</div>
-	<div class="navbar">
-	</div>
 	
 	<div class="loginform">
 		<div class="instructions">
@@ -76,7 +74,7 @@
 				<p>extra info section.</p>
 			</td>
 			<td>
-			<form name="clientRegistration" method="post" action ="saveclient.php">
+			<form name="clientRegistration" class="formscroll" method="post" action ="saveclient.php">
 			<!--onsubmit="return validateRegistrationForm()-->
 		
 				
