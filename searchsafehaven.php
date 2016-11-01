@@ -8,16 +8,18 @@ session_start();
 
 <?php 
     ob_start();
-    $suburb = $_POST['Suburb'];
+    
+    
+    $suburb = $_POST['AES_ENCRYPT('$first', 'Suburb')'];
     $_SESSION['Suburb']=$suburb;
     
-    $postcode = $_POST['Postcode'];
+    $postcode = $_POST['AES_ENCRYPT('$first', 'Postcode')'];
     $_SESSION['Postcode']=$postcode;    
     
-    $city = $_POST['City'];
+    $city = $_POST['AES_ENCRYPT('$first', 'City')'];
     $_SESSION['City']=$city;
     
-    $state = $_POST['State'];
+    $state = $_POST['AES_ENCRYPT('$first', 'State')'];
     $_SESSION['State']=$state;
     
     header("location:safehaven.php");
