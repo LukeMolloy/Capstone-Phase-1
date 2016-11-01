@@ -58,14 +58,19 @@
                	$result = mysqli_query($db, $sql);
 
               	while($row = $result->fetch_assoc()) {
-              		echo "<td>";
+              		echo "<td width='250'>";
                    	echo "<strong>Name: </strong>".$row["FirstNameDecrypt"]."<p> </p>".$row["LastNameDecrypt"];
+                    echo "<br />";
                     echo "<strong>Address: </strong>".$row["AddressDecrypt"];
+                    echo "<br />";
                     echo "<strong>Suburb: </strong>".$row["SuburbDecrypt"];
+                    echo "<br />";
                     echo "<strong>City: </strong>".$row["CityDecrypt"];
+                    echo "<br />";
                     echo "<strong>Phone Number: </strong>".$row["CityDecrypt"];
+                    echo "<br />";
                     echo "</td>";
-                    echo "<td>";
+                    echo "<td width='250'>";
                     echo "<strong>Description: </strong>".$row["Description"];
                     echo "</td>";
                	}
