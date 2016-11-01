@@ -197,7 +197,8 @@ visibility: hidden;
 
 .applysh {
     width: 200px;
-        margin-top: 2px;
+        margin-top: 5px;
+        margin-left: 2px;
     height: 20px;
     float: right;
     border-style: none;
