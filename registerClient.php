@@ -104,10 +104,10 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<br /><br /><br /><br />
+			<br /><br />
 			
 			<label id="Pets">Pets: </label>
-			<input type="radio" name="Pets" value="0" checked="checked"> No  &nbsp&nbsp <input type="radio" name="Pets" value="1" selected> Yes<br><br /><br /><br /><br />
+			<input type="radio" name="Pets" value="0" checked="checked"> No  &nbsp&nbsp <input type="radio" name="Pets" value="1" selected> Yes<br><br /><br />
 			
 			
 			<label id="Infants">Infants: </label> 
@@ -119,7 +119,7 @@
 				  <option value="4">4</option>
 				  <option value="5+">5+</option>
 			</select>
-			<br /><br /><br /><br />
+			<br /><br />
 			
 			 <textarea name="Extra" rows="10" cols="100">
 				Add any extra information here.
