@@ -81,10 +81,7 @@
             <input name="Search" type="submit" value="Search"/>
         </form>
         <br /> <br /><hr align="center" width="90%"><br /><br />
- 
- <!--           <article>
-             Place the map here 
-            </article> -->
+
          <h2>Suggested Safe Haven(s):</h2>
         <br /> <br />
             <?php

@@ -110,13 +110,14 @@ function lookup($string){
                     echo "<br />";
                     echo "<strong>Phone Number: </strong>".$row["CityDecrypt"];
                     echo "<br />";
+                    echo "<br /><br /><button>Place Client</button><br /> <br /><br />";
                     echo "</td>";
                     echo "<td width='50%' align='left'>";
                     echo "<strong>Description: </strong><p >".$row["Description"];
                     echo "<img src='images/home.jpg' alt='House' style='width:100%'";
                     echo "</p></td>";
                	}
-				echo "<br /><br /><button>Place Client</button><br /> <br /><br />";
+			
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
                   // echo "</table>";
            	?> 
