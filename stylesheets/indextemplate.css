@@ -169,8 +169,8 @@ visibility: hidden;
 }
 
 .signinbutton {
-    width: auto;
-    height: 20px;
+    width: 150px;
+    height: 30px;
     float: left;
     border-style: none;
     background-color: white;
