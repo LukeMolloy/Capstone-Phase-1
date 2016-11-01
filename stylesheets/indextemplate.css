@@ -33,11 +33,13 @@ article {
     height: 50%;
 }
 
-input[type="text"], password, textarea {
+input[type="text"] {
 
   background-color: white;
   width: 100%;
-  border-radius: 1px;
+  height: 30px;
+  border-radius: 2px;
+  border-color:grey;
   box-sizing: border-box;
 }
 
@@ -45,7 +47,9 @@ input[type="password"] {
 
   background-color: white;
   width: 100%;
-  border-radius: 1px;
+  height: 30px;
+  border-radius: 2px;
+  border-color:grey;
   box-sizing: border-box;
 }
 
