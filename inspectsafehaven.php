@@ -50,7 +50,7 @@
 	<center><h1>Safe House Inspection</h1></center>
 	<br /><br /><hr width="70%"><br /><br />
     <div class="loginform">
-		<table>
+		<table width='70%'>
        		<?php
            		$house = $_GET['id'];
            	
@@ -58,7 +58,7 @@
                	$result = mysqli_query($db, $sql);
 
               	while($row = $result->fetch_assoc()) {
-              		echo "<td width='35%'>";
+              		echo "<td width='25%'>";
                    	echo "<strong>Name: </strong>".$row["FirstNameDecrypt"]."<p> </p>".$row["LastNameDecrypt"];
                     echo "<br />";
                     echo "<strong>Address: </strong>".$row["AddressDecrypt"];
@@ -70,7 +70,7 @@
                     echo "<strong>Phone Number: </strong>".$row["CityDecrypt"];
                     echo "<br />";
                     echo "</td>";
-                    echo "<td width='35%'>";
+                    echo "<td width='25%'>";
                     echo "<strong>Description: </strong>".$row["Description"];
                     echo "</td>";
                	}
