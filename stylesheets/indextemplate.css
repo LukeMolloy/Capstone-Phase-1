@@ -1,0 +1,532 @@
+/*dy {
+	background-color:#666666;
+	padding: 0px;
+	marfont-family: sans-serif;
+	width: 100%;
+}	*/
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+input[type="text"], textarea {
+
+  background-color: white;
+  width: 100%;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+
+input:-webkit-autofill {
+    color: #2a2a2a !important;
+}
+
+html {
+    /*overflow: hidden;*/
+    font-family: "Calibri";
+    font-size: small;
+}
+
+body {
+    /*background-color: lightgrey;*/
+    background-color: white;
+
+}
+
+.header {
+    background: #333; /* For browsers that do not support gradients */
+    list-style-type: none;
+    padding-right: 20px;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    text-align: center;
+}
+
+#step2form {
+   visibility: hidden;
+   height: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    font-stretch: ultra-expanded; 
+}
+
+h2 {
+    display:inline;
+    text-align: center;
+    
+}
+
+.signinbutton {
+    width: auto;
+    height: 30px;
+    border-style: none;
+    background-color: white;
+    text-align: center;
+}
+
+.signinbutton:hover {
+    background-color: grey;
+}
+
+
+.updatebutton {
+    position:relative;
+    width: auto;
+    height: auto;
+    border-style: none;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.updatebutton:hover {
+    background-color: grey;
+
+}
+
+
+
+
+
+.loginform {
+    padding-top: 10px;
+    text-align:center;
+
+    width: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.loginform1 {
+    text-align:left;
+    margin-top: 12%;
+    width: 30%;
+    padding: 30px;
+    margin-left: 20px;
+    opacity: 0.70;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+
+    height: 30%;
+}
+
+.loginform3 {
+    padding-top: 10px;
+    text-align:center;
+
+    width: 100%;
+    height:50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+
+
+}
+
+
+#loginauthority {
+    width:  227px;
+    height: 20px;
+    padding-top: 2px;
+    background-color: white;
+    float: left;
+    opacity: 0.85;
+    text-align: center;
+    filter: alpha(opacity=85);/* For IE8 and earlier */
+}
+
+
+#shform {
+visibility: hidden;
+   height: 0px;
+}
+
+#loginsafehaven {
+    width:  227px;
+    margin-left: 1px;
+        padding-top: 2px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.85;
+    float: right;
+    filter: alpha(opacity=85);
+    text-align: center;
+}
+
+#loginauthority:hover {
+    background-color: grey;
+    opacity: 0.85;
+    filter: alpha(opacity=85);/* For IE8 and earlier */
+}
+
+#loginsafehaven:hover {
+    background-color: grey;
+    opacity: 0.85;
+    filter: alpha(opacity=85);/* For IE8 and earlier */
+    
+}
+
+
+#step1form {
+    overflow-y: auto;
+   
+}
+
+
+#step2form {
+    overflow-y: auto;
+}
+
+.authorityRegistration {
+    padding-left: 50px;
+}
+
+#map-canvas {
+   width: 400px;
+   height: 400px;
+}
+
+.error {
+    color: red;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 611.55px;
+}
+
+li {
+    float: right;
+    color: white;
+}
+
+.title {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    font-size: small;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+/* Overlay when Modal is open */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/* Modal box or Popup box */
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:80px;
+	background: #FFF;
+}
+
+
+/* User Login Form */
+.user_login  {
+    display:  none;
+}
+
+.user_login label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+}
+
+.user_login input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+hr {
+margin: auto;
+background:#505050;
+}
+
+
+.user_login input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_login .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+
+.forgot_password  {
+    display: block;
+     margin:  20px 0 10px;
+     clear:  both;
+     overflow:  hidden;
+     text-decoration:  none;
+     color: #ED6347;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the list */
+ul.tab {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+footer {
+    background-color: black;
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+.footertable {
+      border-spacing: 100px 0;
+          text-align: left;
+}
+
+    
+.darkertext {
+    color: #A1A1A1;
+    text-align: left;
+}
+
+.lightertext {
+    color: #E9E9E9;
+    text-align: left;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+/* Dropdown Content (Hidden by Default) 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: -1; 
+    position:absolute;
+    float: left;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#leftside {
+     color:red; 
+     background-color: red;
+     width: 400px;
+}
+
+.contactform {
+    padding-top: 10px;
+    text-align:center;
+
+    width: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

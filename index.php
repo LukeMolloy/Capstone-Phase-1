@@ -15,8 +15,8 @@
 <title>SafeHaven.Community</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
- 	<link rel="stylesheet" href="stylesheets/indextest.css">
- 	<link rel="stylesheet" href="stylesheets/templatetest.css">
+ 	<!--<link rel="stylesheet" href="stylesheets/indextest.css">-->
+ 	<link rel="stylesheet" href="stylesheets/indextemplate.css">
 	<?php include 'dbLogin.php' ?>
 </head>
 <body>
