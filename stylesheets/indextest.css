@@ -52,7 +52,7 @@ article {
     height: 30%;
 }
 
-.applyform {
+/*.applyform {
 
     height: auto;
     width: 30%;
@@ -60,9 +60,9 @@ article {
     margin-left:130px;
     margin-top: 10px;
         opacity: 0.70;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+    filter: alpha(opacity=70); 
     word-wrap: break-word;
-}
+}*/
 
 /*
 .navbar {
@@ -119,13 +119,3 @@ li a {
 li a:hover {
     background-color: #111;
 }*/
-
-
-footer {
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    height: 0px;
-    background: #f0f0f0;
-    width: 100%;
-}
