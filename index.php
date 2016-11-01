@@ -62,7 +62,7 @@
 				<?php $sql = "SELECT LastName FROM `User` WHERE UserID = 1\n". " LIMIT 0, 30 "; ?>
 				
 				<input name="Username" type="text" placeholder="Email"/><br />
-				<input name="Password" type="password" placeholder="Password"/><br />
+				<input name="Password" type="password" placeholder="Password"/>
 				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
 			</div>
 	</div>
