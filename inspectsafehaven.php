@@ -72,6 +72,7 @@
                     echo "</td>";
                     echo "<td width='50%' align='left'>";
                     echo "<strong>Description: </strong><p >".$row["Description"];
+                    echo "<img src='images/home.jpg' alt='House' style='width:50%'";
                     echo "</p></td>";
                	}
 				echo "<br /><br /><button>Place Client</button><br /> <br /><br />";
