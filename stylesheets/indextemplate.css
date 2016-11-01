@@ -42,6 +42,14 @@ input[type="text"], password, textarea {
   box-sizing: border-box;
 }
 
+input[type="password"] {
+
+  background-color: white;
+  width: 100%;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
 
 input:-webkit-autofill {
     color: #2a2a2a !important;
