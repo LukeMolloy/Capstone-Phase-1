@@ -526,8 +526,3 @@ footer {
     visibility: visible;
     opacity: 1;
 }
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
