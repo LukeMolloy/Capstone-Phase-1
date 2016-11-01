@@ -384,11 +384,11 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 
 
 footer {
-    background-color: #ebebe0;
+    background-color: #cdcdb1;
     position: absolute;
     margin-top: 0;
     bottom: 0;
-    height: 20%;
+    height: 30%;
     width: 100%;
     text-align: left;
 }
