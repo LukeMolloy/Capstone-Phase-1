@@ -64,7 +64,8 @@
 				
 				<input name="Username" type="text" placeholder="Email"/><br />
 				<input name="Password" type="password" placeholder="Password"/>
-				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/></form>
+				<input name="Signin" class="signinbutton" type="submit" value="&nbsp Sign In &nbsp"/>
+				<button type="button" class="applyuser">User Application</button><button type="button" class="applysh">Safehouse Application</button></form>
 			</div>
 	</div>
 			
