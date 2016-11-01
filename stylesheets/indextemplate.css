@@ -127,7 +127,7 @@ h2 {
 .loginform1 {
     text-align:left;
     margin-top: 12%;
-    width: 200px;
+    width: 300px;
     padding: 30px;
     margin-left: 200px;
     opacity: 0.70;
@@ -182,7 +182,7 @@ visibility: hidden;
 }
 
 .applybutton {
-    width: 150px;
+    width: 140px;
     height: 20px;
     float: right;
     border-style: none;
@@ -195,7 +195,7 @@ visibility: hidden;
 }
 
 #loginsafehaven {
-    width:  150px;
+    width:  140px;
     margin-left: 1px;
         padding-top: 2px;
     height: 20px;
