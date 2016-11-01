@@ -98,18 +98,6 @@ h2 {
     
 }
 
-.signinbutton {
-    width: auto;
-    height: 30px;
-    border-style: none;
-    background-color: white;
-    text-align: center;
-}
-
-.signinbutton:hover {
-    background-color: grey;
-}
-
 
 .updatebutton {
     position:relative;
@@ -181,6 +169,32 @@ h2 {
 #shform {
 visibility: hidden;
    height: 0px;
+}
+
+.signinbutton {
+    width: 100%;
+    height: 20px;
+    float: left;
+    border-style: none;
+    background-color: white;
+    text-align: center;
+}
+
+.signinbutton:hover {
+    background-color: grey;
+}
+
+.applybutton {
+    width: 227px;
+    height: 20px;
+    float: right;
+    border-style: none;
+    background-color: white;
+    text-align: center;
+}
+
+.applybutton:hover {
+    background-color: grey;
 }
 
 #loginsafehaven {
