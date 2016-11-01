@@ -91,7 +91,7 @@ article {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 35px;
     font-stretch: ultra-expanded; 
 }
 
@@ -131,7 +131,7 @@ h2 {
 .loginform1 {
     text-align:left;
     margin-top: 12%;
-    width: 300px;
+    width: 400px;
     padding: 30px;
     margin-left: 200px;
     opacity: 0.70;
