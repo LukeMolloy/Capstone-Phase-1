@@ -238,7 +238,7 @@
                         echo "<table><tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone Number</th><th>Credentials</th><th>Admin</th></tr>";
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
-                            echo "<tr><td>".$row["FirstName"]."</td><td>".$row["LastName"]."</td><td>".$row["EmailAddress"]."</td><td>".$row["PhoneNumber"]."</td><td>".$row["Credentials"]."</td><td>".$row["Admin"]."</td><td><button type='button'>Make Admin</td></tr>";
+                            echo "<tr><td>".$row["FirstName"]."</td><td>".$row["LastName"]."</td><td>".$row["EmailAddress"]."</td><td>".$row["PhoneNumber"]."</td><td>".$row["Credentials"]."</td><td>".$row["Admin"]."</td><td><button type='button' name='makeadmin'>Make Admin</button></td></tr>";
                         }
                         echo "</table>";
                     } else {

@@ -31,7 +31,7 @@
 <div class="header">
 		<label class="title">Safe Haven Our Women </label>
 			<?php
-			if ($row[7] == 1) {
+			if ($row[8] == 1) {
 				echo "<li><a href='adminpanel.php'>Admin Panel</a></li>";
 			}
 			
@@ -56,9 +56,9 @@
 	
 	<div class="loginform">
 		<br /><br /><br /><br /><h1>Thank you!</h1><br /><br /><br />
-		Your details are being updated. We'll redirect you shortly.
+		The details are being updated. We'll redirect you shortly.
 		 <?php
-	header( "refresh:2;url=SafeHouseDetails.php" );
+	header( "refresh:2;url=adminpanel.php" );
 	?>
 	</div></div>
 </body>
