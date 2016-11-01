@@ -70,9 +70,9 @@
                     echo "<strong>Phone Number: </strong>".$row["CityDecrypt"];
                     echo "<br />";
                     echo "</td>";
-                    echo "<td width='50%'>";
-                    echo "<strong>Description: </strong>".$row["Description"];
-                    echo "</td>";
+                    echo "<td width='50%' align='left'>";
+                    echo "<strong>Description: </strong><p >".$row["Description"];
+                    echo "</p></td>";
                	}
 				echo "<br /><br /><button>Place Client</button><br /> <br /><br />";
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
