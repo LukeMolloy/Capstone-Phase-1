@@ -153,7 +153,7 @@ $(document).ready(function(){
 	<tr>
 		<td class="darkertext">
 			<br />Home<br />
-			User Registration<br />
+			<a href="/registration.php">User Registration</a><br />
 			Safe Haven Registration
 		</td>
 		<td class="darkertext">
