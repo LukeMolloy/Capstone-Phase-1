@@ -10,6 +10,30 @@
     margin: 0px
 }
 
+body {
+    background-image: url(/images/flowerbackground.jpeg);
+    background-size: 100%;
+    background-position: 0px -200px; 
+}
+
+
+
+article {
+    text-align: center;
+}
+
+.loginform1 {
+    text-align:left;
+    margin-top: 12%;
+    width: 30%;
+    padding: 30px;
+    margin-left: 20px;
+    opacity: 0.70;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+
+    height: 30%;
+}
+
 input[type="text"], textarea {
 
   background-color: white;
