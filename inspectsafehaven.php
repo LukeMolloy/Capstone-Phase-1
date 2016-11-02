@@ -48,8 +48,8 @@
 	</div>
 	<br /><br />
 	<center><h1>Safe House Inspection</h1></center>
-	<br /><br /><hr width="70%"><br /><br />
-	<br /><button>Click here to place client in the home</button><br />
+	<br /><br /><hr width="70%"><br />
+	<center><br /><button>Click here to place client in the home</button><br /></center>
     <div class="loginform">
 		<table width='70%'>
        		<?php
