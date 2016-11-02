@@ -69,7 +69,7 @@
                     echo "<br />";
                     echo "<strong>Phone Number: </strong>".$row["PhoneNumberDecrypt"];
                     echo "<br />";
-                    echo "<br /><button>Place Client</button><br />";
+                    echo "<br /><button>Click here to place client in the home</button><br />";
                      echo "<div style='width:400px;max-width:100%;overflow:hidden;height:300px;color:red;'><div id='gmap_display' style='height:100%; width:100%;max-width:100%;'><iframe style='height:100%;width:100%;border:0;' frameborder='0' src='https://www.google.com/maps/embed/v1/place?q=".$row["AddressDecrypt"]." ".$row["SuburbDecrypt"]." ".$row["CityDecrypt"]."&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU'></iframe></div><a class='embed-map-html' rel='nofollow' href='https://www.interserver-coupons.com' id='get-data-for-map'>https://www.interserver-coupons.com</a><style>#gmap_display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src='https://www.interserver-coupons.com/google-maps-authorization.js?id=f621b912-406a-9c5b-4a73-43d220a6035f&c=embed-map-html&u=1478059496' defer='defer' async='async'></script>";
                    	
                     echo "</td>";
