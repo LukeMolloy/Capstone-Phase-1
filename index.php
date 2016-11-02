@@ -11,6 +11,9 @@
 //?>	
 
 <head>
+	
+	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd4s12YPZmYZNQwaPTHF0Dcx8ZClsMVqg&callback=initMap"
+  type="text/javascript"></script>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.Community</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
