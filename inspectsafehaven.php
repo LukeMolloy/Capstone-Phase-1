@@ -137,7 +137,7 @@ function myMap() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
 
 <footer>
 <br />
