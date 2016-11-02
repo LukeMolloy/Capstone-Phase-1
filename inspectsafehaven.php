@@ -75,13 +75,10 @@
                     echo "<strong>Description: </strong><p >".$row["Description"];
                     echo "<img src='images/home.jpg' alt='House' style='width:100%'";
                     echo "</p></td>";
-                  
-               	}
-               	
-               	while($row = $result->fetch_assoc()) {
-                    echo "<div style='width:300px;max-width:100%;overflow:hidden;height:200px;color:red;'><div id='gmap_display' style='height:100%; width:100%;max-width:100%;'><iframe style='height:100%;width:100%;border:0;' frameborder='0' src='https://www.google.com/maps/embed/v1/place?q=".$row["AddressDecrypt"]." ".$row["SuburbDecrypt"]." ".$row["CityDecrypt"]."&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU'></iframe></div><a class='embed-map-html' rel='nofollow' href='https://www.interserver-coupons.com' id='get-data-for-map'>https://www.interserver-coupons.com</a><style>#gmap_display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src='https://www.interserver-coupons.com/google-maps-authorization.js?id=f621b912-406a-9c5b-4a73-43d220a6035f&c=embed-map-html&u=1478059496' defer='defer' async='async'></script>";
+                  echo "<div style='width:300px;max-width:100%;overflow:hidden;height:200px;color:red;'><div id='gmap_display' style='height:100%; width:100%;max-width:100%;'><iframe style='height:100%;width:100%;border:0;' frameborder='0' src='https://www.google.com/maps/embed/v1/place?q=".$row["AddressDecrypt"]." ".$row["SuburbDecrypt"]." ".$row["CityDecrypt"]."&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU'></iframe></div><a class='embed-map-html' rel='nofollow' href='https://www.interserver-coupons.com' id='get-data-for-map'>https://www.interserver-coupons.com</a><style>#gmap_display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src='https://www.interserver-coupons.com/google-maps-authorization.js?id=f621b912-406a-9c5b-4a73-43d220a6035f&c=embed-map-html&u=1478059496' defer='defer' async='async'></script>";
 
                	}
+             
 		
                         //echo "<table cellpadding='10px'><tr><th>First Name</th> <th>Last Name</th> <th>PhoneNumber</th> <th>Email</th> <th>Address</th> <th></th></tr>";
                   // echo "</table>";
@@ -91,49 +88,6 @@
 </body>
 <div id="map" style="width:100%;height:500px"></div>
 
-
-
-<?php
-
-function lookup($string){
-  $quotaguard_env = getenv("QUOTAGUARD_URL");
-  $quotaguard = parse_url($quotaguard_env);
-
-  $proxyUrl       = $quotaguard['host'].":".$quotaguard['port'];
-  $proxyAuth       = $quotaguard['user'].":".$quotaguard['pass'];
-
-   $string = str_replace (" ", "+", urlencode($string));
-   $details_url = "http://maps.googleapis.com/maps/api/geocode/json?address=".$string."&sensor=false";
-
-   $ch = curl_init();
-   curl_setopt($ch, CURLOPT_URL, $details_url);
-   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-   curl_setopt($ch, CURLOPT_PROXY, $proxyUrl);
-   curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC);
-   curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyAuth);
-   $response = json_decode(curl_exec($ch), true);
-
-   // If Status Code is ZERO_RESULTS, OVER_QUERY_LIMIT, REQUEST_DENIED or INVALID_REQUEST
-   if ($response['status'] != 'OK') {
-    return null;
-   }
-
-   print_r($response);
-   $geometry = $response['results'][0]['geometry'];
-
-    $longitude = $geometry['location']['lng'];
-    $latitude = $geometry['location']['lat'];
-
-    $array = array(
-        'latitude' => $latitude,
-        'longitude' => $longitude,
-        'location_type' => $geometry['location_type'],
-    );
-
-    return $array;
-
-}
-?>
 
 
 <footer>
