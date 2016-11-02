@@ -11,9 +11,7 @@
 	}
 ?>	
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd4s12YPZmYZNQwaPTHF0Dcx8ZClsMVqg&callback=initMap"
-  type="text/javascript"></script>
-	
+
 	<script type="text/javascript" src="/popups.js"></script>
     <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -87,10 +85,9 @@
 </body>
 <div id="map" style="width:100%;height:500px"></div>
 
-<div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:500px;width:600px;">
-	<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-	<a class="google-map-code" href="http://premium-wordpress-themes.org" id="get-map-data">premium wordpress themes</a></div>
-	</div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>Company Name</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<div style="width:500px;max-width:100%;overflow:hidden;height:500px;color:red;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=28+lorikeet+drive+thornlands&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-html" rel="nofollow" href="https://www.interserver-coupons.com" id="get-data-for-map">https://www.interserver-coupons.com</a><style>#gmap_display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=f621b912-406a-9c5b-4a73-43d220a6035f&c=embed-map-html&u=1478059496" defer="defer" async="async"></script>
+
+
 <?php
 
 function lookup($string){
