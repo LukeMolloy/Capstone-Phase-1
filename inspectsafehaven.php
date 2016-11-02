@@ -10,47 +10,7 @@
 	    header("Location: index.php");
 	}
 ?>	
-<?php
 
-function lookup($string){
-  $quotaguard_env = getenv("QUOTAGUARD_URL");
-  $quotaguard = parse_url($quotaguard_env);
-
-  $proxyUrl       = $quotaguard['host'].":".$quotaguard['port'];
-  $proxyAuth       = $quotaguard['user'].":".$quotaguard['pass'];
-
-   $string = str_replace (" ", "+", urlencode($string));
-   $details_url = "http://maps.googleapis.com/maps/api/geocode/json?address=".$string."&sensor=false";
-
-   $ch = curl_init();
-   curl_setopt($ch, CURLOPT_URL, $details_url);
-   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-   curl_setopt($ch, CURLOPT_PROXY, $proxyUrl);
-   curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC);
-   curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyAuth);
-   $response = json_decode(curl_exec($ch), true);
-
-   // If Status Code is ZERO_RESULTS, OVER_QUERY_LIMIT, REQUEST_DENIED or INVALID_REQUEST
-   if ($response['status'] != 'OK') {
-    return null;
-   }
-
-   print_r($response);
-   $geometry = $response['results'][0]['geometry'];
-
-    $longitude = $geometry['location']['lng'];
-    $latitude = $geometry['location']['lat'];
-
-    $array = array(
-        'latitude' => $latitude,
-        'longitude' => $longitude,
-        'location_type' => $geometry['location_type'],
-    );
-
-    return $array;
-
-}
-?>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd4s12YPZmYZNQwaPTHF0Dcx8ZClsMVqg&callback=initMap"
   type="text/javascript"></script>
 	
@@ -127,16 +87,48 @@ function lookup($string){
 </body>
 <div id="map" style="width:100%;height:500px"></div>
 
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2),
-    zoom: 10
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+<div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:500px;width:600px;"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://premium-wordpress-themes.org" id="get-map-data">premium wordpress themes</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>Company Name</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<?php
+
+function lookup($string){
+  $quotaguard_env = getenv("QUOTAGUARD_URL");
+  $quotaguard = parse_url($quotaguard_env);
+
+  $proxyUrl       = $quotaguard['host'].":".$quotaguard['port'];
+  $proxyAuth       = $quotaguard['user'].":".$quotaguard['pass'];
+
+   $string = str_replace (" ", "+", urlencode($string));
+   $details_url = "http://maps.googleapis.com/maps/api/geocode/json?address=".$string."&sensor=false";
+
+   $ch = curl_init();
+   curl_setopt($ch, CURLOPT_URL, $details_url);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+   curl_setopt($ch, CURLOPT_PROXY, $proxyUrl);
+   curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC);
+   curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyAuth);
+   $response = json_decode(curl_exec($ch), true);
+
+   // If Status Code is ZERO_RESULTS, OVER_QUERY_LIMIT, REQUEST_DENIED or INVALID_REQUEST
+   if ($response['status'] != 'OK') {
+    return null;
+   }
+
+   print_r($response);
+   $geometry = $response['results'][0]['geometry'];
+
+    $longitude = $geometry['location']['lng'];
+    $latitude = $geometry['location']['lat'];
+
+    $array = array(
+        'latitude' => $latitude,
+        'longitude' => $longitude,
+        'location_type' => $geometry['location_type'],
+    );
+
+    return $array;
+
 }
-</script>
+?>
 
 
 <footer>
