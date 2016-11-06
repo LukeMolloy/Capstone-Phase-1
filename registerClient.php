@@ -83,7 +83,7 @@
 			<label id="S1Label"><h2>Step 1</h2> </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="S2Label"><h2>Step 2</h2></label><br /><br /><br /><br />
 			<div id="step1form">
 
-			<label id="FirstName">First Name: </label> <input name="FirstName" type="text"/><label id="FirstNameError" class="error"></label><br /><br /><br /><br />
+			<label id="FirstName">First Name: </label> <input name="FirstName" type="text" value="Jenna"/><label id="FirstNameError" class="error"></label><br /><br /><br /><br />
 
 			<label id="LastName">Last Name: </label> <input name="LastName" type="text"/><label id="LastNameError" class="error"></label><br /><br /><br /><br />
 
