@@ -85,11 +85,11 @@
 
 			<label id="FirstName">First Name: </label> <input name="FirstName" type="text" value="Jenna"/><label id="FirstNameError" class="error"></label><br /><br /><br /><br />
 
-			<label id="LastName">Last Name: </label> <input name="LastName" type="text"/><label id="LastNameError" class="error"></label><br /><br /><br /><br />
+			<label id="LastName">Last Name: </label> <input name="LastName" type="text" value="Smith"/><label id="LastNameError" class="error"></label><br /><br /><br /><br />
 
-			<label id="Email">Email Address: </label> <input name="Email" type="text"/><label id="EmailError" class="error"></label><br /><br /><br /><br />
+			<label id="Email">Email Address: </label> <input name="Email" type="text" value="jennasmith@hotmail.com"/><label id="EmailError" class="error"></label><br /><br /><br /><br />
 			
-			<label id="Phone">Phone Number: </label> <input name="Phone" type="text"/><label id="PhoneError" class="error"></label><br /><br /><br /><br />
+			<label id="Phone">Phone Number: </label> <input name="Phone" type="text" value="0418276368"/><label id="PhoneError" class="error"></label><br /><br /><br /><br />
 			<button id="next" type="button" onclick="return validateRegistrationForm()">Next</button>
 			</div>
 			
