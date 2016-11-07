@@ -65,41 +65,41 @@
 					<center>
 						<br />
 						<div id="step1form" width="40%">
-							<label id="FirstName">First Name: </label> <input name="FirstName" type="text" />
+							<label id="FirstName">First Name: </label> <input name="FirstName" type="text" value="Tom" />
 							<label id = "FirstNameError" class="error"></label> <br /><br /><br />
 			
-							<label id="LastName">Last Name: </label> <input name="LastName" type="text" />
+							<label id="LastName">Last Name: </label> <input name="LastName" type="text" value="Robinson" />
 							<label id = "LastNameError" class="error"></label> <br /><br /><br />
 			
 							<label id="PhoneNumber">Phone Number: </label>
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">This will be the first point of call when someone needs shelter in your home</span>
-								<input name="PhoneNumber" type="text" />
+								<input name="PhoneNumber" type="text" value="0453623784" />
 							</div>
 							<label id = "PhoneError" class="error"></label> <br /><br /><br />
 			
 							<label id="Email">Email: </label> 
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Please use an email you will check regularly.</span>
-								<input name="Email" type="email"/>
+								<input name="Email" type="email" value="tomrobinson@hotmail.com" />
 							</div>
 							<label id = "EmailError" class="error"></label> <br /><br /><br />
 						
 							<label id="licenseNumber">License Number:</label>
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Your license number is used to verify your identity and address</span>
-								<input name="licenseNumber" type="text" />
+								<input name="licenseNumber" type="text" value="132 285 923" />
 							</div>
 							<label id = "LicenseError" class="error"></label> <br /><br /><br />
 							
 							<label id="password">Password: </label>
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Your password needs to be a minimum of six characters</span>
-  								<input name="Password" type="password" />
+  								<input name="Password" type="password" value="password"/>
 							</div>
 							<label id = "PasswordError" class="error"></label> <br /><br /><br />
 			
-							<label id="ConfirmPassword">Confirm Password: </label> <input name="ConfirmPassword" type="password" />
+							<label id="ConfirmPassword">Confirm Password: </label> <input name="ConfirmPassword" type="password" value="password" />
 							<label id = "ConfirmPasswordError" class="error"></label> <br /><br /><br />
 							<button id="next" type="button" onclick="return validateFirstSafeHavenRegistrationForm()">Next</button>
 							<br />
@@ -107,19 +107,19 @@
 						</div>
 						<div id="step2form" width="40%">
 						
-							<label id="Address">Address: </label> <input name="Address" type="text" />
+							<label id="Address">Address: </label> <input name="Address" type="text" value="5 Lorikeet Drive"/>
 							<label id = "AddressError" class="error"></label> <br /><br /><br />
 			
-							<label id="Suburb">Suburb: </label> <input name="Suburb" type="text" />
+							<label id="Suburb">Suburb: </label> <input name="Suburb" type="text" value="Thornlands"/>
 							<label id = "SuburbError" class="error"></label> <br /><br /><br />
 			
 							<label id="PostCode">Post Code: </label> <input name="PostCode" type="text" />
 							<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 				
-							<label id="City">City/Town: </label> <input name="City" type="text" />
+							<label id="City">City/Town: </label> <input name="City" type="text" value="Brisbane" />
 							<label id = "CityError" class="error"></label> <br /><br /><br />
 			
-							<label id="State">State: </label> <input name="State" type="text" />
+							<label id="State">State: </label> <input name="State" type="text" value="QLD"/>
 							<label id = "StateError" class="error"></label> <br /><br /><br />
 			
 							<label id="SpacesAvailable">Spaces Available: </label> 
