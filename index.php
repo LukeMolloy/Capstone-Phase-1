@@ -27,7 +27,7 @@
     <input name="Signin" type="submit"/>
     </form>----->
     <div class="header">
-    	<label class="title">Safe Haven Our Women</label>
+    	<label class="title">Safe Haven Community</label>
 		
 			<li><a href="/safehavenregistration.php">Safe Haven Application</a></li>
  		 	<li><a href="/registration.php">User Application</a></li>
