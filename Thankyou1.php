@@ -5,7 +5,8 @@
 	<?php include 'dbLogin.php' ?>
 	<?php
 	session_start();
-	sleep(5);
+	sleep(2);
+	header("Location: login.php");
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
