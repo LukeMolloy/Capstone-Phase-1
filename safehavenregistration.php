@@ -113,7 +113,7 @@
 							<label id="Suburb">Suburb: </label> <input name="Suburb" type="text" value="Thornlands"/>
 							<label id = "SuburbError" class="error"></label> <br /><br /><br />
 			
-							<label id="PostCode">Post Code: </label> <input name="PostCode" type="text" />
+							<label id="PostCode">Post Code: </label> <input name="PostCode" type="text" value="4164"/>
 							<label id = "PostCodeError" class="error"></label> <br /><br /><br />
 				
 							<label id="City">City/Town: </label> <input name="City" type="text" value="Brisbane" />
@@ -249,7 +249,7 @@ $("#step2form").css('visibility', 'hidden');
 
 <footer>
 <br />
-
+<!--
 <table class="footertable">
 	<tr>
 		<td class="lightertext">SHOW<br /><hr></td>
@@ -279,7 +279,7 @@ $("#step2form").css('visibility', 'hidden');
 		</td>
 	</tr>
 </table>
-</footer>
+</footer>-->
 
 
 </html>
