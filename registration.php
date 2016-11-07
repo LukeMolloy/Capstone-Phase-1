@@ -42,8 +42,7 @@
 	<div class="loginform">
 		<form name="authorityRegistration" id ="authorityRegistration" onsubmit="return validateRegistrationForm()" method="post" action="usregister.php">
 				<p>
-					<h1>Register as...</h1><br />
-					<h2>Authority or Safe Haven</h2>
+					<h1>Register as a member of authority</h1><br />
 				</p>
 				
 			
