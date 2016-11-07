@@ -88,7 +88,7 @@
 							<label id="licenseNumber">License Number:</label>
 							<div class="tooltip">
   								<span class="tooltiptext tooltip-right">Your license number is used to verify your identity and address</span>
-								<input name="licenseNumber" type="text" value="132 285 923" />
+								<input name="licenseNumber" type="text" value="132285923" />
 							</div>
 							<label id = "LicenseError" class="error"></label> <br /><br /><br />
 							
