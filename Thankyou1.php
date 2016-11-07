@@ -5,6 +5,7 @@
 	<?php include 'dbLogin.php' ?>
 	<?php
 	session_start();
+	sleep(5);
 	?>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>SafeHaven.OurWomen</title>
